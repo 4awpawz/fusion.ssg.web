@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/libs/pico/pico.min.css">
+        <link rel="stylesheet" href="/css/libs/highlight/github.min.css">
+        <link rel="stylesheet" href="/css/fusion.css">
+        <script src="/scripts/libs/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <title>{title}</title>
+    </head>
+    <body class="docpage">
+        {{global/defaultSiteNav}}
+        <main class="container">
+            <aside>
+                <nav>
+                    <ul>
+                        <details open>
+                            <summary>getting started</summary>
+                            <ul>
+                                <li><a class="secondary">Installation</a></li>
+                            </ul>
+                        </details>
+                        <details closed>
+                            <summary>getting started</summary>
+                            <ul>
+                                <li><a class="secondary">Introduction</a></li>
+                                <li><a class="secondary">Pages</a></li>
+                                <li><a class="secondary">Templates</a></li>
+                                <li><a class="secondary">Front Matter</a></li>
+                                <li><a class="secondary">Includes</a></li>
+                                <li><a class="secondary">Tokens</a></li>
+                                <li><a class="secondary">Components</a></li>
+                            </ul>
+                        </details>
+                        <details closed>
+                            <summary>getting started</summary>
+                            <ul>
+                                <li><a class="secondary" href="#">Introduction</a></li>
+                            </ul>
+                        </details>
+                        <details closed>
+                            <summary>getting started</summary>
+                            <ul>
+                                <li><a class="secondary" href="#">Introduction</a></li>
+                            </ul>
+                        </details>
+                        <details closed>
+                            <summary>getting started</summary>
+                            <ul>
+                                <li><a class="secondary" href="#">fusion.json</a></li>
+                            </ul>
+                        </details>
+                    </ul>
+                </nav>
+            </aside>
+            <div>
+                {{template}}
+            </div>
+        </main>
+        {{global/defaultSiteFooter}}
+    </body>
+</html>

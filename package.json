@@ -1,0 +1,27 @@
+{
+    "name": "fusion-web",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "fusion": "fusion build",
+        "watch:live-server": "live-server build --quiet",
+        "watch:serve": "chokidar \"src/**/*\" \"fusion.json\" --silent true --initial true -c \"npm run fusion\"",
+        "watch": "npm run watch:serve & npm run watch:live-server"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@tsconfig/node16-strictest-esm": "^1.0.3",
+        "@types/node": "^18.11.7",
+        "@types/react": "^18.0.28",
+        "@typescript-eslint/eslint-plugin": "^5.41.0",
+        "@typescript-eslint/parser": "^5.41.0",
+        "chokidar-cli": "^3.0.0",
+        "eslint": "^8.26.0",
+        "eslint-plugin-import": "^2.26.0",
+        "preact": "^10.13.1"
+    }
+}

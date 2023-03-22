@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/libs/pico/pico.min.css">
+        <link rel="stylesheet" href="/css/libs/highlight/github.min.css">
+        <link rel="stylesheet" href="/css/fusion.css">
+        <script src="/scripts/libs/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <title>{title}</title>
+    </head>
+    <body class="homepage">
+        {{global/defaultSiteNav}}
+        {{home-page/hero}}
+        <main>
+            <section id="Examples"class="container">
+                <article>
+                    <hgroup>
+                        <h2>Create HtML Document Using Constructs You May Already Be Familiar With</h2>
+                        <p>Start by creating an HTML document using <i>Pages, Templates, Includes, Front Matter and Tokens</i></p>
+                    </hgroup>
+                    <section>
+                        <hgroup>
+                            <h3>Pages</h3>
+                            <p>Pages provide the overall <i>layout</i> of your HTML documents. They also act as containers for the content provided by <i>Templates</i>, <i>Includes</i>, <i>Front Matter</i>, <i>Tokens</i> and <a href="#Typescript Components"><i>Typescript Components</i></a>.</p>
+                        </hgroup>
+                    </section>
+                    <section>
+                        <hgroup>
+                            <h3>Templates And Front Matter</h3>
+                            <p>Templates can provide addtional content to <i>Pages</i> in two ways:</p>
+                            <ul>
+                                <li>They can provide content specific to a document which replaces the document's template token, e.g. <i>&lt;body>&gt;&lt;main&gt;{template}&lt;main&gt;&lt;body&gt;</i>.</li>
+                                <li>They can declare tokens, e.g. <code>tokens: {pageTitle: All About Cats}</code> in their front matter whose values replace the document's matching tokens, e.g. <code>&lt;h1&gt;{pageTitle}&lt;h1&gt;</code>.</li>
+                            </ul>
+                        </hgroup>
+                        <p><mark><i>See examples below.</i></mark></p>
+                    </section>
+                    <section>
+                        <hgroup>
+                            <h2>Components</h2>
+                            <p>Use Typescript Components and JSON data sources for when your pages require more complex composition.</p>
+                        </hgroup>
+                    </section>
+                </article>
+            </section>
+            <section class="container">
+                <article>
+                    <h2 id="Typescript Components">All the poswer of <code>.tsx</code> Components</h2>
+                    <p>When your HTML documents require more dynamic content you can use Typescript <code>compoents</code> along with <code>JSON</code> data sources that return markup.</p>
+                    <p><mark><i>Fusion compiles and runs components in its own sandboxed Typescript environment!</i></mark></p>
+                    <p><i>Create a component...</i></p>
+                    {{home-page/examples/componentExample}}
+                    <p>Add a <i>component tag</i> to your template or page or include.</p>
+                    {{home-page/examples/simplePageTemplate}}
+                    <p><b>Fusion passes your JSON <i>data source</i> to your components</b></p>
+                    {{home-page/examples/sampleJSONDataSource}}
+                    <p>and replaces the markup's <i>component tag</i> wth the <i>HTML</i> returned from the component.</p>
+                    {{home-page/examples/sampleHydrationResult}}
+                </article>
+            </section>
+        </main>
+        {{global/defaultSiteFooter}}
+    </body>
+</html>

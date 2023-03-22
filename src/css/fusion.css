@@ -1,0 +1,109 @@
+body {
+    padding-top: 160px;
+}
+mark {
+    padding: 0 2ch 0 2ch;
+}
+
+/* remove detail's widget */
+details summary::after {
+    display: none;
+}
+details {
+    font-size: calc(1rem - 6px);
+    border-bottom: 0;
+}
+/* prevent overflow of detail's parent container */
+details ul {
+    padding-left: .5rem;
+    margin: 0;
+}
+
+/* documentation pages */
+.docpage nav ul {
+    margin: 0;
+    padding: 0;
+}
+.docpage details a {
+    font-size: calc(1rem - 4px);
+}
+.docpage summary {
+    text-transform: uppercase;
+}
+@media (min-width: 992px) {
+    .docpage main {
+        display: grid;
+        grid-column-gap: calc(var(--block-spacing-horizontal) * 5);
+        grid-template-columns: 200px auto;
+    }
+}
+
+/* top navbar */
+nav {
+    border-bottom: 1px solid rgba(187,198,206, 0.2);
+}
+nav img {
+    width: 20px;
+    height: 20px;
+}
+@media (min-width: 576px) {
+    nav a {
+        font-size: 20px;
+    }
+    nav img {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (min-width: 768px) {
+    nav a {
+        font-size: 28px;
+    }
+    nav img {
+        width: 28px;
+        height: 28px;
+    }
+}
+@media (min-width: 992px) {
+    nav a {
+        font-size: 29px;
+    }
+    nav img {
+        width: 29px;
+        height: 29px;
+    }
+}
+@media (min-width: 1200px) {
+    nav a {
+        font-size: 30px;
+    }
+    nav img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* hero home page header */
+.hero h1 {
+    max-width: 21ch;
+}
+@media (min-width: 576px) {
+    .hero h1 {
+        --font-size: 2rem;
+    }
+}
+@media (min-width: 768px) {
+    .hero h1 {
+        --font-size: 200%;
+    }
+}
+@media (min-width: 992px) {
+    .hero h1 {
+        --font-size: 300%;
+    }
+}
+@media (min-width: 1200px) {
+    .hero h1 {
+        --font-size: 400%;
+    }
+}

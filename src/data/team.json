@@ -1,0 +1,43 @@
+[
+    {
+        "name": {
+            "first": "John",
+            "last": "Doe"
+        },
+        "address": {
+            "street": "512 Branson St.",
+            "apt": "3",
+            "city": "Miami",
+            "state": "FL",
+            "zip": "00000"
+        },
+        "phone": "555-555-5555"
+    },
+    {
+        "name": {
+            "first": "Jane",
+            "last": "Doe"
+        },
+        "address": {
+            "street": "512 Branson St.",
+            "apt": "3",
+            "city": "Miami",
+            "state": "FL",
+            "zip": "00000"
+        },
+        "phone": "555-555-5555"
+    },
+    {
+        "name": {
+            "first": "July",
+            "last": "Doe"
+        },
+        "address": {
+            "street": "512 Branson St.",
+            "apt": "3",
+            "city": "Miami",
+            "state": "FL",
+            "zip": "00000"
+        },
+        "phone": "555-555-5555"
+    }]
