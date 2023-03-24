@@ -1,4 +1,6 @@
-node_modules/
-build/
+.DS_Store
+.meta
+.assets.json
+build
 lib
-assets.json
+node_modules

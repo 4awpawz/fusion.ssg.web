@@ -2,16 +2,18 @@
     "compilerOptions": {
         "module": "ES2022",
         "moduleResolution": "node",
-        "rootDir": "src/components",
-        "outDir": "lib/",
         "allowJs": true,
-        "target": "es2021",
+        "target": "es2022",
         "strict": true,
         "jsx": "preserve",
         "jsxImportSource": "preact",
+        "noEmit": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
         "noImplicitAny": true,
         "typeRoots": ["node_modules/@types"],
-        "baseUrl": "./"
+        "moduleDetection": "force"
     },
-    "include": ["./src/components/**/*", "./src/components/@types"]
+    "exclude": ["node_modules"]
 }

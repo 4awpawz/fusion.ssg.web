@@ -1,5 +1,8 @@
+import { PostDate } from "./PostDate.js";
 interface AssetItem {
+    postTimeStamp: number,
     fm: {
+        excerpt: string,
         data: {
             tokens: {
                 title: string
@@ -7,6 +10,7 @@ interface AssetItem {
         }
     },
     htmlDocumentName: string,
+    url: string,
     isPost: boolean
 }
 
@@ -15,14 +19,16 @@ interface Props {
 }
 
 export const BlogList = function({ assets }: Props) {
-    const posts = assets.filter(asset => asset.isPost && asset.htmlDocumentName.includes("posts/"));
+    const posts = assets.filter(asset => asset.isPost).sort((aAsset, bAsset) => bAsset.postTimeStamp - aAsset.postTimeStamp);
     return (
         <ul>
             {posts.map(post => {
                 return <li style="list-style: none;">
                     <span>
-                        <a href={post.htmlDocumentName}>{post.fm.data.tokens.title}</a>
+                        <a href={`{baseURL}${post.url}`}>{post.fm.data.tokens.title}</a> <small><PostDate asset={post} /></small>
                     </span>
+                    <br />
+                    <small>{post.fm.excerpt}</small>
                 </li>;
             })}
         </ul>

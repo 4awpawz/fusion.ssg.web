@@ -1,6 +1,4 @@
 ```typescript
-import { render } from "preact-render-to-string";
-
 interface TeamMember {
     "name": {
         "first": string,
@@ -20,14 +18,12 @@ function formatName(member: TeamMember): string {
     return `${member.name.first} ${member.name.last}`;
 }
 
-export const TeamList = function({ team }: Props): string {
-    return render(
+export const TeamMembers = function({ team }: Props): string {
+    return (
         <ul>
             {team.map(member => {
                 return <li>
-                    <span>
-                        <a href={formatHref(member)}>{formatName(member)}</a>
-                    </span>
+                    <a href={formatHref(member)}>{formatName(member)}</a>
                 </li>;
             })}
         </ul>

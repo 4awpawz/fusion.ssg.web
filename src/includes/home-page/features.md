@@ -1,0 +1,11 @@
+- Simple HTML document creation using pages, templates, includes, .tsx and .jsx (next release) components, and JSON data sources.
+- Simple token replacement involving front matter property values and matching property names in HTML.
+- Component compilation and sand-boxed execution.
+- Document hydration using components and JSON data sources.
+- Multiple HTML document generation (i.e. Collections) using components and JSON data sources.
+- Development and release builds.
+- Base URLs for release builds.
+- Work in progress templates are ignored during release builds for individual files and folders.
+- Content posting (e.g. Blogging), including categories and tags.
+- Beautified HTML documents.
+- Project generator rapidly creates new projects requiring no initial configuration to begin building your site.

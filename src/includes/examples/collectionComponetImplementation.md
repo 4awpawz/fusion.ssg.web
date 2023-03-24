@@ -1,3 +1,4 @@
+```typescript
 interface TeamMember {
     name: {
         first: string,
@@ -13,10 +14,11 @@ interface TeamMember {
 }
 
 interface Props {
-    team: TeamMember[]
+    team: TeamMember[],
+    index: number
 }
 
-export const TeamMember = function(index: number, { team }: Props): { content: unknown, title: string, htmlDocumentName: string } | undefined {
+export const TeamMember = function({ team, index }: Props): { content: unknown, title: string, htmlDocumentName: string } | undefined {
     if (index === team.length) return;
     const content = (
         <>
@@ -27,5 +29,7 @@ export const TeamMember = function(index: number, { team }: Props): { content: u
         </>
     );
     const title = `${team[index].name.first} ${team[index].name.last}`;
-    return { content, title, htmlDocumentName: `${team[index].name.first}-${team[index].name.last}` };
+    const htmlDocumentName = `${team[index].name.first}-${team[index].name.last}`;
+    return { content, title, htmlDocumentName };
 };
+```

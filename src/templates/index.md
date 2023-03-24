@@ -1,7 +1,7 @@
 ---
 page: home
 tokens: {
-    title: Fusion SSG • Minimal Framework for Building Static Web Sites,
+    title: fusion.ssg • Minimal Framework for Building Static Websites,
     demoPageTitle: title
 }
 ---

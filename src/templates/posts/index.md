@@ -1,14 +1,10 @@
 ---
-page: default
+page: blog
 tokens: {
-    title: Blog,
+    title: News,
 }
 ---
 
-# Blog Landing Page
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deleniti eum neque libero fugit fugiat quam illum non in? Asperiores, facilis praesentium. Iure maiores nisi nulla, sapiente adipisci facilis quisquam.
-
-# Blogs
+# Articles
 
 <BlogList />

@@ -1,36 +1,136 @@
-body {
-    padding-top: 160px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --selected-nav-item: rgb(255, 255, 255, .09);
+    --demo-background: linear-gradient(180deg, #11191f 0%, rgba(10, 53, 67, 0.5) 33%, rgba(10, 53, 67, 0.5) 66%, #11191f 100%);
 }
+
+html {
+    scroll-padding-top: 6em;
+}
+
+body {
+    padding-top: 4rem;
+}
+@media (min-width: 576px) {
+    body {
+        padding-top: 4.5rem;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        padding-top: 5.5rem;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        padding-top: 6rem;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        padding-top: 6rem;
+    }
+}
+
 mark {
     padding: 0 2ch 0 2ch;
 }
+pre {
+    white-space: pre-wrap;
+}
+
+/* site menu */
+.topnav {
+    position: fixed;
+    z-indes: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #11191f;
+    border-bottom: 1px solid rgba(187,198,206, 0.2);
+}
+
+/* site footer */
+
+.bottomnav {
+    border-top: 1px solid rgba(187,198,206, 0.2);
+}
+.bottomnav .navigation {
+    word-spacing: 1rem;
+}
+.bottomnav .navigation a {
+    text-decoration: underline;
+    color: var(--muted-color);
+}
+.bottomnav .attribution {
+    margin-top: 1rem;
+    color: var(--muted-color);
+}
+.bottomnav .attribution small:nth-child(2) {
+    margin-left: 1rem;
+}
 
 /* remove detail's widget */
-details summary::after {
+.docpage aside .version {
+    font-size: calc(1rem - 4px);
+    margin-bottom: 1rem;
+    color: var(--muted-color);
+}
+.docpage details summary::after {
     display: none;
 }
-details {
-    font-size: calc(1rem - 6px);
-    border-bottom: 0;
+.docpage aside nav {
+    border-bottom: none;
+    padding-bottom: var(--block-spacing-vertical);
 }
-/* prevent overflow of detail's parent container */
-details ul {
-    padding-left: .5rem;
-    margin: 0;
-}
-
-/* documentation pages */
-.docpage nav ul {
-    margin: 0;
-    padding: 0;
-}
-.docpage details a {
-    font-size: calc(1rem - 4px);
+.docpage details {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: var(--spacing);
 }
 .docpage summary {
     text-transform: uppercase;
+    padding-bottom: .5rem;
+    font-size: calc(1rem - 2px);
+}
+.docpage details li a {
+    font-size: 1rem;
+}
+.docpage details ul {
+    padding-left: .5rem;
+}
+.docpage dtails ul, .docpage details li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1rem;
+}
+.docpage details[open] summary {
+    margin-bottom: 0;
+}
+.docpage .selected-nav-item {
+    background-color: var(--selected-nav-item);
+}
+.docpage aside nav [aria-current]:not([aria-current="false"]) {
+    color: var(--primary-hover);
+}
+.docpage footer {
+    padding-top: var(--block-spacing-vertical);
 }
 @media (min-width: 992px) {
+    .docpage aside nav {
+        position: fixed;
+        width: 200px;
+        max-height: calc(100vh - 240px);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .docpage summary {
+        font-size: 80%;
+    }
+    .docpage details li a {
+        font-size: 16px;
+    }
     .docpage main {
         display: grid;
         grid-column-gap: calc(var(--block-spacing-horizontal) * 5);
@@ -38,72 +138,100 @@ details ul {
     }
 }
 
-/* top navbar */
-nav {
-    border-bottom: 1px solid rgba(187,198,206, 0.2);
+#navbar-sol {
+    width: 30px;
+    height: 30px;
 }
-nav img {
-    width: 20px;
-    height: 20px;
+#navbar-github {
+    width: var(--font-size);
+    height: var(--font-size);
+    color: #fff;
+}
+nav a {
+    font-size: var(--font-size);
 }
 @media (min-width: 576px) {
-    nav a {
-        font-size: 20px;
-    }
-    nav img {
-        width: 20px;
-        height: 20px;
-    }
-}
-@media (min-width: 768px) {
-    nav a {
-        font-size: 28px;
-    }
-    nav img {
-        width: 28px;
-        height: 28px;
-    }
-}
-@media (min-width: 992px) {
-    nav a {
-        font-size: 29px;
-    }
-    nav img {
-        width: 29px;
-        height: 29px;
-    }
-}
-@media (min-width: 1200px) {
-    nav a {
-        font-size: 30px;
-    }
-    nav img {
-        width: 30px;
-        height: 30px;
+    #navbar-sol {
+        width: 38px;
+        height: 38px;
     }
 }
 
-/* hero home page header */
+/* home page */
+.homepage #principles {
+    text-align: center;
+    max-width: 60ch;
+}
+
+/* hero */
+.hero {
+    text-align: center;
+    background: var(--demo-background);
+}
 .hero h1 {
-    max-width: 21ch;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
 }
 @media (min-width: 576px) {
     .hero h1 {
-        --font-size: 2rem;
+        --font-size: 2.2rem;
+        --font-weight: 700;
     }
 }
 @media (min-width: 768px) {
     .hero h1 {
-        --font-size: 200%;
+        --font-size: 2.5rem;
+        --font-weight: 700;
     }
 }
 @media (min-width: 992px) {
     .hero h1 {
-        --font-size: 300%;
+        --font-size: 2.7rem;
+        --font-weight: 700;
     }
 }
 @media (min-width: 1200px) {
     .hero h1 {
-        --font-size: 400%;
+        --font-size: 3rem;
+        --font-weight: 700;
     }
+}
+.hero div p, hero div hgroup p {
+    text-align: center;
+}
+.hero #version {
+    display: inline-block;
+    margin: 1rem;
+    padding: .25rem;
+    font-weight: 600;
+    font-size: var(--font-size);
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #000;
+}
+
+p.info {
+    font-style: italic;
+}
+p.info::before {
+    content: "i";
+    background-color: var(--primary);
+    font-style: italic;
+    font-weight: bold;
+    padding: 0rem .25rem;
+    border: solid 1px blue;
+    border-radius: 20%;
+    margin-right: .5rem;
+}
+
+/* article header example */
+article header p.example::before {
+    content: "Example: ";
+    font-weight: 800;
+}
+
+/* utility classes */
+.centered {
+    width: 100%;
+    margin: 0 auto 0 auto;
 }

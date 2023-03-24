@@ -1,3 +1,5 @@
 {
-    "baseURL": "fusion/"
+"postsFolder": "news",
+"wips": ["team/"],
+"baseURL": ""
 }
