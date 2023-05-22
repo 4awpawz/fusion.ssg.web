@@ -1,11 +1,11 @@
 ---
 page: docpages/index
 tokens: {
-title: "fusion.ssg: Documentation - Components",
+    title: "fusion.ssg: Documentation - Components",
 }
 docindex: {
-topic: htmldocuments,
-subtopic: components
+    topic: htmldocuments,
+    subtopic: components,
 }
 ---
 
@@ -15,7 +15,7 @@ subtopic: components
 
 <section class="container">
 <div><small>Required: <em>No</em></small></div>
-<div><small>Type: <em>Typescript, i.e. .tsx</em></small></div>
+<div><small>Type: <em>.tsx</em> and <em>.jsx</em></small></div>
 <div><small>Return Type: <em>string</em></small></div>
 <div><small>Project Location: <em>src/components</em></small></div>
 </section>

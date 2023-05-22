@@ -19,12 +19,13 @@ export const DocIndex = function({ asset }: Props) {
     const subtopic = asset.fm.data.docindex.subtopic;
     return <aside>
         <nav class="closed-on-mobile">
-            <p class="version">v1.0.0-beta.7</p>
+            <p class="version">{"{version}"}</p>
             <details open={topic === "gettingstarted"}>
                 <summary>getting started</summary>
                 <ul>
                     <li><a class="secondary" href="{baseURL}/docs" aria-current={subtopic === "synopsis" && "page"}>Synopsis</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/installation" aria-current={subtopic === "installation" && "page"}>Installation & Create Your First Project</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/installation" aria-current={subtopic === "installation" && "page"}>Installation</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/projectgenerator" aria-current={subtopic === "projectgenerator" && "page"}>Project Generator</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/projectstructure" aria-current={subtopic === "projectstructure" && "page"}>Project Structure</a></li>
                 </ul>
             </details>

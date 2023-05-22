@@ -1,17 +1,23 @@
 ---
 page: docpages/index
 tokens: {
-    title: "fusion.ssg: Documentation - Metadata",
+    title: "fusion.ssg: Documentation - assets.json",
 }
 docindex: {
-topic: metadata,
-subtopic: fusion.json
+    topic: metadata,
+    subtopic: fusion.json,
 }
 ---
 
 <em>METADATA</em>
 
 # Metadata
+
+While most text is meant to be read by a human, metadata is text that's meant to be easily readable by a program, for example fusion.ssg.
+
+## Metadata Format
+
+[YAML](https://yaml.org/) is a human-friendly data serialization language for all programming languages. It is a widely used configuration format that's readable by both humans and machines. Each piece of metadata consists of a key and a corresponding value.
 
 The metadata that fusion.ssg generates from parsing your project's files drive's each build-cycle. At the conclusion of each build-cycle, fusion.ssg serializes this metadata to the file _.assets.json_, which is located in the project's root folder.
 

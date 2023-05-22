@@ -1,11 +1,12 @@
-- Simple HTML document creation using pages, templates, includes, .tsx and .jsx (next release) components, and JSON data sources.
-- Simple token replacement involving front matter property values and matching property names in HTML.
-- Component compilation and sand-boxed execution.
-- Document hydration using components and JSON data sources.
-- Multiple HTML document generation (i.e. Collections) using components and JSON data sources.
-- Development and release builds.
-- Base URLs for release builds.
-- Work in progress templates are ignored during release builds for individual files and folders.
-- Content posting (e.g. Blogging), including categories and tags.
+- No initial project configuration is required.
+- DOMless and serverless, so builds are really very quick.
+- Create HTML documents using markdown, HTML, tokens, components, JSON data sources and meta data.
+- Built-in .tsx and .jsx component compilation.
+- Built-in .ts browser scripts compilation.
+- Portfolio generation via collections.
+- package.json scripts for development and release builds.
+- CLI for one-off development and one-off release builds.
+- Base URL support for sites hosted in sub folders.
+- Works in progress for HTML documents that need to be ignored during release builds.
+- Blogging support, including categories and tags.
 - Beautified HTML documents.
-- Project generator rapidly creates new projects requiring no initial configuration to begin building your site.

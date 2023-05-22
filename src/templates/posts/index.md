@@ -1,7 +1,7 @@
 ---
 page: blog
 tokens: {
-    title: News,
+    title: News
 }
 ---
 

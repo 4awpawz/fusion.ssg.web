@@ -4,8 +4,8 @@ tokens: {
     title: "fusion.ssg: Documentation - Pages",
 }
 docindex: {
-topic: htmldocuments,
-subtopic: pages
+    topic: htmldocuments,
+    subtopic: pages
 }
 ---
 

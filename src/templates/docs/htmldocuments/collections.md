@@ -1,11 +1,11 @@
 ---
 page: docpages/index
 tokens: {
-title: "fusion.ssg: Documentation - Collections",
+    title: "fusion.ssg: Documentation - Collections",
 }
 docindex: {
-topic: htmldocuments,
-subtopic: collections
+    topic: htmldocuments,
+    subtopic: collections,
 }
 ---
 
@@ -49,7 +49,7 @@ Simply put, fusion.ssg invokes collection components just like it does _"normal"
 
 ## Collection Components
 
-A collection components is a higher order component that produces the content for multiple HTML documents (i.e. a collection) and differ from <b>_simple components_</b>, which produce content for a single HTML document.
+A collection component is a higher order component that produces the content for multiple HTML documents (i.e. a collection) and differ from <b>_simple components_</b>, which produce content for a single HTML document.
 
 The following discussion assumes that you have already read about simple <a href="{baseURL}/docs/htmldocuments/components">components</a>.
 

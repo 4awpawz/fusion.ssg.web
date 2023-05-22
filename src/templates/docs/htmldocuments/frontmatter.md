@@ -1,11 +1,11 @@
 ---
 page: docpages/index
 tokens: {
-title: "fusion.ssg: Documentation - Front Matter",
+    title: "fusion.ssg: Documentation - Front Matter",
 }
 docindex: {
-topic: htmldocuments,
-subtopic: frontmatter
+    topic: htmldocuments,
+    subtopic: frontmatter,
 }
 ---
 

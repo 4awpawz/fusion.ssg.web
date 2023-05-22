@@ -1,11 +1,11 @@
 ---
 page: docpages/index
 tokens: {
-title: "fusion.ssg: Documentation - Configuration",
+    title: "fusion.ssg: Documentation - Configuration",
 }
 docindex: {
-topic: configuration,
-subtopic: fusionjson
+    topic: configuration,
+    subtopic: fusionjson,
 }
 ---
 
@@ -18,6 +18,7 @@ The following configuration options are available for you to override in your pr
 1. <a href="#postsfolder">postsFolder</a>
 1. <a href="#baseurl">baseURL</a>
 1. <a href="#wips">wips</a>
+1. <a href="#tokens">tokens</a>
 
 ## postsFolder
 
@@ -40,7 +41,7 @@ If your site is served from a <em>subfloder</em>, such as is the case for sites 
 
 <aside>
 <header>
-<p><em>Example</em>: Assisgn the path of the subfolder to use</p>
+<p><em>Example</em>: Assign the path of the subfolder to use</p>
 </header>
 <pre><code class="language-JSON">
 "baseURL": "/fusion.ssg.docs"
@@ -64,5 +65,18 @@ These are files and folders of <a href="{baseURL}/docs/htmldocuments/templates">
 <aside>
 <pre><code class="language-JSON">"wips": ["docs/next-version", "!docs/next-version/index.md"]</code></pre>
 <p class="info">Files and folders prepended with "!" are <em>negated.</em></p>
+</footer>
+</aside>
+
+## Tokens
+
+<p class="ver">Introduced in v1.0.0-beta.8</p>
+
+These property values replace all matching simple tokens declared in _all HTML documents_. Please see <a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens">Simple Tokens</a> for more information.
+
+- default: {}
+
+<aside>
+<pre><code class="language-JSON">"tokens": {"version": "v1.0.0"}</code></pre>
 </footer>
 </aside>

@@ -1,11 +1,11 @@
 ---
 page: docpages/index
 tokens: {
-title: "fusion.ssg: Documentation - JSON Data Sources",
+    title: "fusion.ssg: Documentation - JSON Data Sources",,
 }
 docindex: {
-topic: htmldocuments,
-subtopic: jsondatasources
+    topic: htmldocuments,
+    subtopic: jsondatasources
 }
 ---
 

@@ -4,8 +4,8 @@ tokens: {
     title: "fusion.ssg: Documentation - Tokens",
 }
 docindex: {
-topic: htmldocuments,
-subtopic: tokens
+    topic: htmldocuments,
+    subtopic: tokens,
 }
 ---
 
@@ -22,9 +22,15 @@ subtopic: tokens
 
 ## Simple Tokens
 
+fusion.ssg supports _two_ types of simple tokens:
+1. <a href="#local-simple-tokens">Local simple tokens</a> are defined in a _template's front matter_
+1. <a href="#global-simple-tokens">Global simple tokens</a> are defined in _fusion.json_, the project <a href="{baseURL}/docs/configuration">configuration</a> file.
+
 <em>syntax: {simple token property name}</em>
 
-Simple token properties are defined in template front matter, specifically in the `tokens` object, and their property values replace all matching simple tokens found in the HTML document.
+### Local Simple Tokens
+
+Local simple token properties are defined in a template's front matter, specifically in the `tokens` object, and their property values replace all matching simple tokens declared in the HTML document. If both a local simple token and a global simple token have the same name _the local simple token takes precedence_.
 
 <article>
     <header>
@@ -95,6 +101,12 @@ tokens: {
 &lt;/html&gt;
 </code></pre>
 </article>
+
+### Global Simple Tokens
+
+<p class="ver">Introduced in v1.0.0-beta.8</p>
+
+Global simple token properties are defined in fusion.json, the project configuration file, specifically in the `tokens` object, and their property values replace all matching simple tokens declared in _all HTML documents_. If both a local simple token and a global simple token have the same name _the local simple token takes precedence_.
 
 ## Template Tokens
 

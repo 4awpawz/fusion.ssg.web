@@ -18,21 +18,22 @@ The project's scope is limited to generating robust and resilient HTML documents
 
 ## Current Status
 
-The project is still in its Alpha/prerelease stage. One or more _Beta releases_ will follow and both Alpha and Beta releases should be considered _unstable_ and _transient_. While in Beta, features and implementations might change dramatically and this should be considered the norm.
+The project is still in its  v1.0.0-beta stage. Beta releases should be considered _stable_. While in Beta, features and implementations might change dramatically and this should be considered the norm.
 
 ## Versioning
 
-fusion will use [semantic versioning](https://semver.org/) and will distinguish between _development_ builds and _release_ builds by their major version numbers
+fusion.ssg will use [semantic versioning](https://semver.org/) and will distinguish between _development_ and _release_ builds by their major version numbers
   1. Odd major version number are to be considered development versions.
   1. Even major version number are to be considered release versions.
 
 ## What Has Already Been Implemented
 
 - [X] Support for _simple HTML document creation_ using _Pages, Templates and Includes_.
-- [X] Support for _simple token replacement_ involving _front matter property values_ and _matching property names_ in HTML.
-- [X] Support for Typescript _`.tsx` components_, _compilation_ and _sand-boxed execution_.
-- [X]  Support for _document hydration_ using Typescript components and JSON data sources.
-- [X] Support for generating _collections of pages_ using Typescript components and JSON data sources.
+- [X] Support for _simple token replacement_ involving property values_ and _matching property names_ in HTML.
+- [X] Support for _`.tsx` and `.jsx` components_, _compilation_ and _sand-boxed execution_.
+- [X] Support for _`.ts` browser script compilation.
+- [X]  Support for _document hydration_ using components and JSON data sources.
+- [X] Support for generating _collections of pages_ using components and JSON data sources.
 - [X] Support for base URLs.
 - [X] Support for development and release builds.
 - [X]  Support for content posting (e.g. Blogging)
@@ -47,15 +48,15 @@ fusion will use [semantic versioning](https://semver.org/) and will distinguish 
 
 ## What Still Remains To Be Done
 
-- Logo, fusion.ssg is desperately in need of a great logo.
-- fusionssg.com and documentation is _currently under development_.
+- fusion.ssg is desperately in need of a great logo.
+- Documentation is _continuously under development_.
 - Encourage early community involvement and adoption.
 - Provide sufficient testing to reduce the likelihood of introducing regressions.
 
 ## Longer Term Goals
 
 - Seek RFC.
-- Accept pull requests when the codebase is stable enough to receive them, which will probably coincide with the first major Alpha release.
+- Accept pull requests when the codebase is stable enough to receive them, which will probably coincide with the first major release.
 
 ## Community
 

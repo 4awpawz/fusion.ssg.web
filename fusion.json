@@ -1,5 +1,10 @@
 {
-"postsFolder": "news",
-"wips": ["team/"],
-"baseURL": ""
+    "postsFolder": "news",
+    "wips": [
+        "team/"
+    ],
+    "baseURL": "",
+    "tokens": {
+        "version": "v1.0.0-beta.8"
+    }
 }

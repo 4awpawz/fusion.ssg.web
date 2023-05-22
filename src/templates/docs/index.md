@@ -1,11 +1,11 @@
 ---
 page: docpages/index
 tokens: {
-title: "fusion.ssg: Documentation - HTML Documents",
+    title: "fusion.ssg: Documentation - Synopsis",
 }
 docindex: {
-topic: gettingstarted,
-subtopic: synopsis
+    topic: gettingstarted,
+    subtopic: synopsis,
 }
 ---
 
@@ -19,7 +19,7 @@ subtopic: synopsis
 <br>
 <br>
 
-If you are new to working with fusion.ssg, it is advantageous to have a high altitude, conceptual understanding of how it seamlessly fuses together your project's templates + pages + components + tokens to create HTML documents.
+If you are new to working with fusion.ssg, it is advantageous to have a high level, conceptual understanding of how it seamlessly fuses together your project's templates + pages + components + tokens to create HTML documents.
 
 The discussion below focuses on the creation of a single HTML document as all HTML documents are subject to the identical workflow.
 
@@ -47,6 +47,6 @@ fusion.ssg now checks if the template's front matter has declared any tokens and
 At this point the HTML document is now 100% complete. fusion.ssg now serializes it to its respective file in the project's _build_ folder.
 </article>
 
-While the actual process that fusion.ssg uses is quite a bit more complex than what this high altitude overview provides, you should now have a very good conceptual understanding of how fusion.ssg goes about its business of producing HTML documents.
+While the actual process that fusion.ssg uses is quite a bit more complex than what this high level overview provides, you should now have a very good conceptual understanding of how fusion.ssg goes about its business of producing HTML documents.
 
 <p class="info">The remaining documentation relies heavily on examples. It assumes that you already have some working knowledge of <b>HTML</b>, <b>markdown</b>, <b>YAML front matter</b> and <b>TypeScript components</b>.</p>

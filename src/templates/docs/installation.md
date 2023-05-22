@@ -4,8 +4,8 @@ tokens: {
     title: "fusion.ssg: Documentation - Installation",
 }
 docindex: {
-topic: gettingstarted,
-subtopic: installation
+    topic: gettingstarted,
+    subtopic: installation,
 }
 ---
 

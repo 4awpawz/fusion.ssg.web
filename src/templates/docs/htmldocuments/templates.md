@@ -4,8 +4,8 @@ tokens: {
     title: "fusion.ssg: Documentation - Templates",
 }
 docindex: {
-topic: htmldocuments,
-subtopic: templates
+    topic: htmldocuments,
+    subtopic: templates,
 }
 ---
 

@@ -4,8 +4,8 @@ tokens: {
     title: "fusion.ssg: Documentation - CLI",
 }
 docindex: {
-topic: commandline,
-subtopic: cli
+    topic: commandline,
+    subtopic: cli,
 }
 ---
 

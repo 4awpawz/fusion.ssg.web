@@ -1,19 +1,23 @@
 ---
 page: blog
 tokens: {
-    title: "First Public Beta Release"
+    title: "Second Public Beta Release"
 }
 post: {
     categories: "release",
 }
 ---
-We are very pleased to announce the first public release of fusion.ssg, v1.0.0-beta.7.
+We are very pleased to announce the second public release of fusion.ssg, v1.0.0-beta.8.
 <!-- end -->
-<section class="container video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PuoOGCEs1gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</section>
+v1.0.0-beta.8 has been tested extensively and is considered stable. However, because of limited resources, we have only been able to test fusion.ssg on Mac OS. We would be so grateful if those of you who are running either Windows or Linux can help us test fusion.ssg's OS compatibility by simply installing and running the instructions below.
 
-v1.0.0-beta.7 has been tested extensively and is considered stable. However, because of limited resources, we have only been able to test fusion.ssg on Mac OS. We would be so grateful if those of you who are running either Windows or Linux can help us test OS compatibility by simply installing and running the instructions below.
+## What's new
+
+This release adds the following capabilities:
+
+- Support for <a href="{baseURL}/docs/htmldocuments/components">.jsx components</a>.
+- Support for .ts browser scripts.
+- Support for <a href="{baseURL}/docs/htmldocuments/tokens#global-simple-tokens">global tokens</a>.
 
 ## Install and run fusion.ssg
 
