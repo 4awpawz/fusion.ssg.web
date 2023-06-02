@@ -147,7 +147,7 @@ fusion.ssg projects will contain the files and folders that are depicted below.
         </tr>
         <tr>
             <td>tsconfig.json</td>
-            <td>Your project's Typescript configuration file.</td>
+            <td>Your project's TypeScript configuration file.</td>
         </tr>
     </tbody>
 </table>

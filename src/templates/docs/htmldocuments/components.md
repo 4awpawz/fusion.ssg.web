@@ -22,7 +22,7 @@ docindex: {
 
 ## Synopsis
 
-<p class="info">Please note that familiarity with TSX components (that's JSX components with TypeScript) is required. Please see this handy guide that provides a <a href="https://www.typescriptlang.org/docs/handbook/jsx.html">deep dive into JSX</a>.</p>
+<p class="info">Please note that familiarity with JSX and TSX components is required. Please see these handy guides that provide a <a href="https://www.typescriptlang.org/docs/handbook/jsx.html">deep dive into JSX</a> and a <a href="https://www.typescriptlang.org/docs/handbook/react.html">deep dive into TSX</a>.</p>
 
 
 Components _render HTML_ that replace their associated _component tags_. They are applicable in <a href="{baseURL}/docs/htmldocuments/includes">includes</a>, <a href="{baseURL}/docs/htmldocuments/templates">templates</a> and <a href="{baseURL}/docs/htmldocuments/pages">pages</a>.
