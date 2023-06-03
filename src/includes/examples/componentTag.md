@@ -1,3 +1,3 @@
 ```html
-<TeamList dataSources="team.json" />
+<HelloWorld />
 ```
