@@ -1,10 +1,9 @@
 - No initial project configuration is required.
 - DOMless and serverless, so builds are really very quick.
 - Create HTML documents using markdown, HTML, tokens, components, JSON data sources and meta data.
-- Built-in .tsx and .jsx component compilation.
-- Built-in .ts browser scripts compilation.
+- Support for .tsx and .jsx components, including sand-boxed execution, and for .ts browser scripts.
 - Portfolio generation via collections.
-- package.json scripts for development and release builds.
+- package.json scripts provided for development and release builds.
 - CLI for one-off development and one-off release builds.
 - Base URL support for sites hosted in sub folders.
 - Works in progress for HTML documents that need to be ignored during release builds.

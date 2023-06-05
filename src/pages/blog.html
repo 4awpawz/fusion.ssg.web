@@ -18,7 +18,10 @@
 <body>
     <MainMenu target="news" />
     <main class="container">
-        <h1>{title}</h1>
+        <hgroup>
+            <h1>{title}</h1>
+            <p>Posted <PostDate /></p>
+        </hgroup>
         <article>
             {{template}}
         </article>

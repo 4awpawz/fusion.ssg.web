@@ -22,38 +22,9 @@ The project is still in its  v1.0.0-beta stage. Beta releases should be consider
 
 ## Versioning
 
-fusion.ssg will use [semantic versioning](https://semver.org/) and will distinguish between _development_ and _release_ builds by their major version numbers
-  1. Odd major version number are to be considered development versions.
-  1. Even major version number are to be considered release versions.
+Beginning with v1.0.0, which will be our first production release, we will be dropping the use of _beta_ when versioning a development release. Going forward, all development releases will use `-dev.n` instead of -beta.n.
 
-## What Has Already Been Implemented
-
-- [X] Support for _simple HTML document creation_ using _Pages, Templates and Includes_.
-- [X] Support for _simple token replacement_ involving property values_ and _matching property names_ in HTML.
-- [X] Support for _`.tsx` and `.jsx` components_, _compilation_ and _sand-boxed execution_.
-- [X] Support for _`.ts` browser script compilation.
-- [X]  Support for _document hydration_ using components and JSON data sources.
-- [X] Support for generating _collections of pages_ using components and JSON data sources.
-- [X] Support for base URLs.
-- [X] Support for development and release builds.
-- [X]  Support for content posting (e.g. Blogging)
-  - [X] Support for tags.
-  - [X] Support for categories.
-- [X] Work in progress templates.
-  - [X] Individual files.
-  - [X] Folders.
-  - [X] Ignored.
-- [X] End user project creation.
-- [X] Configure website domain.
-
-## What Still Remains To Be Done
-
-- fusion.ssg is desperately in need of a great logo.
-- Documentation is _continuously under development_.
-- Encourage early community involvement and adoption.
-- Provide sufficient testing to reduce the likelihood of introducing regressions.
-
-## Longer Term Goals
+## Long Term Goals
 
 - Seek RFC.
 - Accept pull requests when the codebase is stable enough to receive them, which will probably coincide with the first major release.
