@@ -1,5 +1,5 @@
 ---
-page: blog
+page: posts
 tokens: {
     title: News
 }

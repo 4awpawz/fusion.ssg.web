@@ -7,7 +7,6 @@ post: {
     categories: "release",
 }
 ---
-# {title}
 We are changing how we use semantic versioning for development builds.
 <!-- end -->
 
