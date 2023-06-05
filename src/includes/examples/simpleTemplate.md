@@ -2,5 +2,5 @@
 
 <p>thanks to our team, our rollout has been a success.</p>
 
-<h2>contributors</h2>
+<h2>Contributors</h2>
 &lt;Teamlist datasources="team.json" /&gt;
