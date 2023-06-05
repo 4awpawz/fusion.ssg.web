@@ -58,11 +58,11 @@ fusion.ssg projects will contain the files and folders that are depicted below.
     </thead>
     <tbody>
         <tr>
-            <td>.git</td>
-            <td>Used by Git.</td>
+            <td class="lighter-text">.git</td>
+            <td>Created and used by Git.</td>
         </tr>
         <tr>
-            <td>.meta</td>
+            <td class="lighter-text">.meta</td>
             <td>Contains metadata used internally by fusion.ssg during each build cycle.</td>
         </tr>
         <tr>
@@ -74,7 +74,7 @@ fusion.ssg projects will contain the files and folders that are depicted below.
             <td>Contains your project's compiled components.</td>
         </tr>
         <tr>
-            <td>node_modules</td>
+            <td class="lighter-text">node_modules</td>
             <td>Contains your project's Node packages.</td>
         </tr>
         <tr>
@@ -118,15 +118,15 @@ fusion.ssg projects will contain the files and folders that are depicted below.
             <td>Contains post markdown files.</td>
         </tr>
         <tr>
-            <td>.eslintignore</td>
+            <td class="lighter-text">.eslintignore</td>
             <td>Lists the files and folders that eslint is to ignore.</td>
         </tr>
         <tr>
-            <td>.eslintrc.json</td>
+            <td class="lighter-text">.eslintrc.json</td>
             <td>Your project's eslint configuration file.</td>
         </tr>
         <tr>
-            <td>.gitignore</td>
+            <td class="lighter-text">.gitignore</td>
             <td>lists the files and folders that Git is to ignore.</td>
         </tr>
         <tr>
@@ -138,15 +138,14 @@ fusion.ssg projects will contain the files and folders that are depicted below.
             <td>Your project's configuration file.</td>
         </tr>
         <tr>
-        <tr>
-            <td>package-lock.json</td>
+            <td class="lighter-text">package-lock.json</td>
             <td>NPM lock manifest.</td>
         </tr>
-            <td>package.json</td>
+            <td class="lighter-text">package.json</td>
             <td>NPM package manifest.</td>
         </tr>
         <tr>
-            <td>tsconfig.json</td>
+            <td class="lighter-text">tsconfig.json</td>
             <td>Your project's TypeScript configuration file.</td>
         </tr>
     </tbody>

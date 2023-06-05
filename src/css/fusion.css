@@ -259,3 +259,6 @@ article header p.example::before {
     width: 100%;
     margin: 0 auto 0 auto;
 }
+.lighter-text {
+    color: var(--secondary);
+}
