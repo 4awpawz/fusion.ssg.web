@@ -13,7 +13,7 @@ docindex: {
 
 # fusions.json
 
-The following configuration options are available for you to override in your project's <em>src/fusion.json</em> file:
+The following _configuration options_ are available for you to override in your project's _src/fusion.json file_:
 
 1. <a href="#postsfolder">postsFolder</a>
 1. <a href="#baseurl">baseURL</a>
@@ -22,7 +22,7 @@ The following configuration options are available for you to override in your pr
 
 ## postsFolder
 
-The name to use for the folder that hosts your site's <a href="{baseURL}/docs/htmldocuments/posts">posts</a>.
+The _name_ to use for the folder that hosts your site's <a href="{baseURL}/docs/htmldocuments/posts">posts</a>.
 
 - default: "posts"
 
@@ -58,25 +58,31 @@ If your site is served from a <em>subfloder</em>, such as is the case for sites 
 
 ## wips
 
-These are files and folders of <a href="{baseURL}/docs/htmldocuments/templates">templates</a> that are to be ignored during <a href="{baseURL}/docs/cli#npm-run-release">release builds</a>.
+These are _files_ and _folders_ located in the <a href="{baseURL}/docs/htmldocuments/templates">templates</a> folder that are to be _ignored_ during <a href="{baseURL}/docs/cli#npm-run-release">release builds</a>.
 
 - default: []
 
 <aside>
+<header>
+<p><em>Example</em>: Declaring the files and folders to be ignored during release builds.</p>
+</header>
 <pre><code class="language-JSON">"wips": ["docs/next-version", "!docs/next-version/index.md"]</code></pre>
-<p class="info">Files and folders prepended with "!" are <em>negated.</em></p>
+<p class="info">Files and folders prepended with "!" are <em>negated and will be generated.</em></p>
 </footer>
 </aside>
 
-## Tokens
+## tokens
 
 <p class="ver">Introduced in v1.0.0-beta.8</p>
 
-These property values replace all matching simple tokens declared in _all HTML documents_. Please see <a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens">Simple Tokens</a> for more information.
+These property values _replace_ all matching simple tokens declared in _all_ HTML documents. Please see <a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens">Simple Tokens</a> for more information.
 
 - default: {}
 
 <aside>
+<header>
+<p><em>Example</em>: Declaring tokens.</p>
+</header>
 <pre><code class="language-JSON">"tokens": {"version": "v1.0.0"}</code></pre>
 </footer>
 </aside>
