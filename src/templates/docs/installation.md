@@ -15,21 +15,17 @@ docindex: {
 
 <p class="info">fusion.ssg requires <a href="https://nodejs.org/en" target="_blank">Node.js</a> to be installed. It also requires that you have <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> globally installed on your system.</p>
 
-<article>
-    <p>Run the following in your terminal:</p>
-    <pre><code class="language-SHELL">
-npm i -g @4awpawz/fusion.ssg
-    </code></pre>
-</article>
+<p class="info">Beginning with v1.0.0, fusion.ssg no longer includes a project generator in its package and no longer provides the ability to create new projects directly through its CLI. Please read <a href="{baseURL}/docs/projectgenerator">Project Generator</a> for more information about the new project generator, fpg.</p>
 
-## Create Your First Project
+The following will guide you through installing both _fusion.ssg_ and _fusion.fpg_, fusion.ssg's _project generator_.
 
 <article>
-<p>fusion.ssg's <em><b>project generator</b></em> takes the drudgery out of setting up a new fusion.ssg project. To create a new project, open your terminal and in a folder of your choice run the following commands:</p>
+
+Run the following in your terminal to install both fusion.ssg and fusion.fpg:
 
 ```shell
-fusion new [project name]
-cd [project name]
-npm run development
+npm i -g @4awpawz/fusion.ssg @4awpawz/fusion.fpg
 ```
 </article>
+
+<p class="info">Now that you have installed all the required packages, you can now create your very first fusion.ssg project by following the instructions found in  <a href="{baseURL}/docs/projectgenerator">Project Generator</a>.</p>

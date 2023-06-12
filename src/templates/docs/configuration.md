@@ -37,6 +37,8 @@ The _name_ to use for the folder that hosts your site's <a href="{baseURL}/docs/
 
 If your site is served from a <em>subfloder</em>, such as is the case for sites hosted on <em>github.io</em>, prepend <em>&lbrace;baseURL&rbrace;</em> to your site's <a href="https://www.ibm.com/docs/en/eslm/10.0.4?topic=parameters-absolute-root-relative-url">root relative URLs</a> and they will be replaced with this value during <a href="{baseURL}/docs/cli#npm-run-release">release builds</a>.
 
+<p class="warn">baseURL is a reserved symbol! Though &lbrace;baseURL&rbrace; looks like a simple token declaration, it should never be used as one. Never use baseURL to declare a local simple token or a global simple token.</p>
+
 - default: ""
 
 <aside>
@@ -75,7 +77,7 @@ These are _files_ and _folders_ located in the <a href="{baseURL}/docs/htmldocum
 
 <p class="ver">Introduced in v1.0.0-beta.8</p>
 
-These property values _replace_ all matching simple tokens declared in _all_ HTML documents. Please see <a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens">Simple Tokens</a> for more information.
+Simple token property values declared here are global to the project and replace all matching simple tokens declared in _all HTML documents_. If both a local simple token and a global simple token have the same name _the local simple token takes precedence_.
 
 - default: {}
 

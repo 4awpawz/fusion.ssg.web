@@ -51,18 +51,18 @@ fusion.ssg supports _two_ types of components:
 
 ## Component Implementation
 
-<p class="info">fusion.ssg relieves you of the burden of having to configure TypeScript for your project. When building your project, fusion.ssg compiles your project's components when they are stale and invokes them asynchronously in a sand-boxed environment that supports relative import paths to sub-components and libraries.</p>
+<p class="info">fusion.ssg relieves you of the burden of having to configure TypeScript for your project. When building your project, fusion.ssg compiles your project's components when they are stale and invokes them asynchronously in a sand-boxed environment.</p>
 
 ### Properties
 
-Component can reference their individual properties using _destructuring_, as in _`{[property name]}`_ (see <a href="#component-with-datasource">example</a> below).
+Component can reference their individual properties using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank">destructuring</a>, as in _`{[property name]}`_ (see <a href="#component-with-datasource">example</a> below).
 
 #### Predefined Properties
 
 fusion.ssg recognizes _two predefined component tag properties_ as having special significance:
 
-- _isCollection_: `boolean`, default `false`. When set to _true_ component are recognized as being _collection components_. Please see <a href="{baseURL}/docs/htmldocuments/collections">Collections</a> for details.
-- _dataSources_:  `string`, default `""`. A comma separated list of JSON file names. Components that have this property are recognized as being _consumers_ of data sources that are located in your project's _src/data_ folder, and at runtime fusion.ssg reads each data source, converting them to JavaScript objects, and passes the converted data sources to your component. Data sources passed to your components can be <em>destructured</em> from <em>props</em> using their JSON file name minus the .json extension. Please see <a href="{baseURL}/docs/htmldocuments/jsondatasources">JSON Datasources</a> for details.
+- _isCollection_: `boolean`, default `false`. When set to _true_, component are recognized as being _collection components_. Please see <a href="{baseURL}/docs/htmldocuments/collections">Collections</a> for details.
+- _dataSources_:  `string`, default `""`. A comma separated list of JSON file names. Components that have this property are recognized as being _consumers_ of data sources that are located in your project's _src/data_ folder. At runtime, fusion.ssg reads each data source, converting them to JavaScript objects, and passes the converted data sources to your component. Data sources passed to your components can be <em>destructured</em> from <em>props</em> using their JSON file name minus the .json extension. Please see <a href="{baseURL}/docs/htmldocuments/jsondatasources">JSON Datasources</a> for details.
 
 #### Metadata Properties
 

@@ -20,16 +20,16 @@ docindex: {
     <div><small>Project Location: <em>src/includes</em></small></div>
 </section>
 
-An _include_, like <a href="{baseURL}/docs/htmldocuments/templates">templates</a> and <a href="{baseURL}/docs/htmldocuments/pages">pages</a>, contributes its content to the HTML document. But unlike those, whose content are generally more specific to the intention of the HTML document, such  as its subject matter, main topic, etc., includes are intended to be used to encapsulate blocks of content that are used in multiple HTML documents, such as blocks of meta tags, navbars, footers, sidebars, .etc. Includes also allow you to leverage the benefit of using either markdown or HTML for a particular part of an HTML document.
+An _include_, like <a href="{baseURL}/docs/htmldocuments/templates">templates</a> and <a href="{baseURL}/docs/htmldocuments/pages">pages</a>, contributes its content to the HTML document. But unlike those, whose content is generally more specific to the HTML document, such  as its subject matter, main topic, etc., includes are intended to be used to encapsulate blocks of content that are used in multiple HTML documents, such as blocks of meta tags, navbars, footers, sidebars, .etc. Includes also allow you to leverage the benefit of using either markdown or HTML for a particular part of an HTML document.
 
-Both pages and templates can incorporate includes using <a href="{baseURL}/docs/htmldocuments/tokens#include-tokens">include tokens</a>, whose syntax is the path to the include file, minus its file type, that resides in the src/includes folder surrounded by double curly braces, e.g. &lbrace;&lbrace;_path/to/include_&rbrace;&rbrace;.
+Both _pages_ and _templates_ can declare _one or more_ <a href="{baseURL}/docs/htmldocuments/tokens#include-tokens">include tokens</a> that declare the paths, minus their file type, to their respective include files that reside in the src/includes folder.
 
 <article>
     <header>
-        <p class="example">A page with two include tokens.</p>
+        <p class="example">A page with two include tokens, &lbrace;&lbrace;navbar&rbrace;&rbrace; and &lbrace;&lbrace;footer&rbrace;&rbrace;.</p>
     </header>
     {{examples/pagewithincludes}}
     <footer>
-    <p>This page's include tokens will be replaced by the their respective include files' content.</p>
+    <p>This page's include tokens will be replaced by the content from their respective include files'.</p>
     </footer>
 </article>

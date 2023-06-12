@@ -13,10 +13,11 @@ docindex: {
 
 # CLI
 
+<p class="info">Beginning with v1.0.0, fusion.ssg no longer includes a project generator in its package and no longer provides the ability to create new projects directly through its CLI. Please read <a href="{baseURL}/docs/projectgenerator">Project Generator</a> for more information about the new project generator, fpg.</p>
+
 The following commands are available through the command line.
 
 - <a href="#fusion-help">fusion help</a>
-- <a href="#fusion-new">fusion new</a>
 - <a href="#fusion-build">fusion build</a>
 - <a href="#fusion-release">fusion release</a>
 - <a href="#npm-run-development">npm run development</a>
@@ -26,7 +27,7 @@ The following commands are available through the command line.
 
 ### fusion help
 
-Prints _help_ for a supported command, i.e. build, release, new.
+Prints _help_ for a supported command.
 
 - usage:
 
@@ -34,27 +35,6 @@ Prints _help_ for a supported command, i.e. build, release, new.
 <pre><code class="language-shell">fusion -h | --help [command]</code></pre>
 </footer>
 </aside>
-
-### fusion new
-
-Creates a _new_ fusion.ssg project in a folder named _[project name]_ with _TypeScript_ and _live server_ support in the current folder and installs all project dependencies.
-
-- usage:
-
-<aside>
-<pre><code class="language-shell">fusion -n|--new [project name]</code></pre>
-</footer>
-</aside>
-
-To create a new project, open your terminal and in a folder of your choice run the following commands:
-
-```shell
-fusion new [project name]
-cd [project name]
-npm run development
-```
-
-The above will create the project, install its dependencies, build the project and serve it in the browser.
 
 ### fusion build
 
@@ -74,6 +54,8 @@ must be run from project's root folder.
 ### fusion release
 
 Directs fusion.ssg to run a one-off _release_ build.
+
+When building for release, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 - usage:
 
@@ -98,7 +80,7 @@ must be run from project's root folder.
 
 ### npm run development
 
-Watches project's _root/src_ and _root/fusion.json_ for changes, builds for _development_, launches live server.
+Watches your project's _root/src_ and _root/fusion.json_ for changes, builds for _development_, and launches Browser-Sync.
 
 - usage:
 
@@ -113,7 +95,9 @@ must be run from project's root folder.
 
 ### npm run release
 
-Watches project's root/src and root/fusion.json for changes, builds for release, launches live server.
+Watches your project's root/src and root/fusion.json for changes, builds for release, and launches Browser-Sync.
+
+When building for release, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 - usage:
 
@@ -121,14 +105,6 @@ Watches project's root/src and root/fusion.json for changes, builds for release,
 <pre><code class="language-shell">npm run release</code></pre>
 </footer>
 </aside>
-
-<p class="info">
-Files and folders included in your configuration's <a href="{baseURL}/docs/configuration/#wips">wips</a> are ignored.
-</p>
-
-<p class="info">
-<a href="{baseURL}/docs/configuration/#baseurl">&lbrace;baseURL&rbrace;</a> is applied to URLs.
-</p>
 
 <p class="info">
 Must be run from project's root folder.

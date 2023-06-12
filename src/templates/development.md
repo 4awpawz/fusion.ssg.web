@@ -11,7 +11,7 @@ The project is written in ` TypeScript` and runs on `Node`.
 
 ## The Name
 
-_fusion_ plays on the idea of seamlessly **_fusing_** together various technologies, e.g. HTML, Markdown, TypseScript Components, JSON Data, YAML Front Matter, etc., to seamlessly work together to simplify the creation of HTML documents and static websites.
+_fusion_ plays on the idea of seamlessly **_fusing_** together various technologies like HTML, Markdown, TypseScript and JavaScript Components, JSON Data, YAML Front Matter, etc., to seamlessly work together to simplify the creation of HTML documents and static websites.
 
 ## Project Scope
 The project's scope is limited to generating robust and resilient HTML documents and nothing else. It will not provide any other tooling other than what is absolutely necessary to accomplish that. Importantly, fusion.ssg requires no knowledge of front-end frameworks like React. This keeps the scope of the project focused, preventing feature creep, and benefits users who will be able to pick and chose their own tools.

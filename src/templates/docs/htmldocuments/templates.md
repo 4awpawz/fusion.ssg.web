@@ -22,13 +22,12 @@ docindex: {
 
 <p class="info">Please note that familiarity with YAML Front Matter is required. Please see this handy guide that provides a <a href="https://support.typora.io/YAML/">deep dive into YAML Front Matter</a>.</p>
 
-Every HTML document that fusion.ssg generates requires a template and every template <em>associates</em> with a <a href="{baseURL}/docs/htmldocuments/pages">page</a> using the <em>page</em> <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a> property.
-If a template has its own content, its content will be <em>merged</em> into the page that it associates with, replacing that page's <a href="{baseURL}/docs/htmldocuments/tokens#template-tokens">template token</a>.
+Every HTML document that fusion.ssg generates requires a template and every template <em>associates</em> with a <a href="{baseURL}/docs/htmldocuments/pages">page</a> using the  <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a> <em>"page"</em> property.
+If a template has its own content, its content will be <em>merged</em> into the page that it associates with, replacing that page's <a href="{baseURL}/docs/htmldocuments/tokens#template-tokens">template token</a>. When the front matter "page" property is omitted, fusion.ssg will associate the default page (i.e., src/pages/default.html) with the template. If the default.html page doesn't exist, fusion.ssg will display an error.
 
-<p class="info">When the front matter "page" property is omitted, fusion.ssg will associate the default page, i.e. src/pages/default.html, with the template. If the default.html page doesn't exist, fusion.ssg will display an error.</p>
 <article>
     <header>
-        <p class="example">A template associated with a page.</p>
+        <p class="example">A template associated with the page found at src/pages/main.html.</p>
     </header>
     <pre><code class="language-YAML">
 ---
@@ -36,7 +35,4 @@ page: main
 ---
 # This is content
     </code></pre>
-    <footer>
-    <p>This template associates with the page found at src/pages/main.html.</p>
-    </footer>
 </article>

@@ -41,6 +41,7 @@ export const DocIndex = function({ asset }: Props) {
                     <li><a class="secondary" href="{baseURL}/docs/htmldocuments/components" aria-current={subtopic === "components" && "page"}>Components</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/htmldocuments/collections" aria-current={subtopic === "collections" && "page"}>Collections</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/htmldocuments/posts" aria-current={subtopic === "posts" && "page"}>Posts</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/htmldocuments/404-pages" aria-current={subtopic === "404.html" && "page"}>404.html</a></li>
                 </ul>
             </details>
             <details open={topic === "metadata"}>

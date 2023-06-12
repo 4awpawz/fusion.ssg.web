@@ -21,11 +21,9 @@ docindex: {
 </section>
 
 
-Every HTML document that fusion.ssg generates requires a <a href="{baseURL}/docs/htmldocuments/templates">template</a> and every template <em>associates</em> with a page using the <em>page</em> <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a> property. Pages associated with templates provide the HTML document with their own content as well as its overall <em>structure</em>. Pages associated with templates with content will have their <a href="{baseURL}/docs/htmldocuments/tokens#template-tokens">template tokens</a> replaced by the template's content.
+Every HTML document that fusion.ssg generates requires a <a href="{baseURL}/docs/htmldocuments/templates">template</a> and every template <em>associates</em> with a page using the  <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a> <em>"page"</em> property. Pages provide HTML documents with their own content (if they have content) as well as their overall <em>structure</em>. Pages associated with templates with content will have their <a href="{baseURL}/docs/htmldocuments/tokens#template-tokens">template tokens</a> replaced by the template's content.
 
-<p class="info">A page can have only one template token and it should be placed anywhere within the page that makes sense for the HTML document.</p>
-
-<p class="info">Pages without template tokens are also valid, they provide their own content, and are convenient for <em>one-off</em> pages. Their associated template's content, if any, is ignored.</p>
+A page can have only one template token and it should be placed anywhere within the page that makes sense for the HTML document. Pages without template tokens are also valid, they provide their own content, and are convenient for <em>one-off</em> pages. Their associated template's content, if any, is ignored.
 
 <article>
     <header>
@@ -47,7 +45,4 @@ Every HTML document that fusion.ssg generates requires a <a href="{baseURL}/docs
     &lt;/body&gt;
 &lt;/html&gt;
     </code></pre>
-    <footer>
-    <p>This page's template token will be replaced by its associated template's content.</p>
-    </footer>
 </article>

@@ -22,42 +22,28 @@ docindex: {
 
 ## Simple Tokens
 
-fusion.ssg supports _two_ types of simple tokens:
-1. <a href="#local-simple-tokens">Local simple tokens</a> are defined in a _template's front matter_
-1. <a href="#global-simple-tokens">Global simple tokens</a> are defined in _fusion.json_, the project <a href="{baseURL}/docs/configuration">configuration</a> file.
+<em>syntax: &lbrace;token-name&rbrace;</em>
 
-<em>syntax: {simple token property name}</em>
-
-### Local Simple Tokens
-
-Local simple token properties are defined in a template's front matter, specifically in the `tokens` object, and their property values replace all matching simple tokens declared in the HTML document. If both a local simple token and a global simple token have the same name _the local simple token takes precedence_.
+Simple token declarations like the above are replaced by their respective property values. Simple token property values can be declared in either <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a> or in your project's <a href="{baseURL}/docs/configuration#tokens">configuration</a> file. If the same token name is used in both, the token's value declared in front matter takes precedence.
 
 <article>
     <header>
-        <p class="example">A template that defines three simple token properties.</p>
+        <p class="example">Front matter with three simple token property declarations.</p>
     </header>
 <pre><code class="language-YAML">
 ---
-page: cat
 tokens: {
     docTitle: Cats,
-    catName: Felix,
-    breed: Persian
+    breed: Persian,
+    catName: Felix
 }
 ---
-# This is content
 </code></pre>
-    This template defines the following three <em>simple token properties.</em>:
-    <ol>
-        <li><em>docTitle</em>, with a value of "<em>"Cats"</em>"</li>
-        <li><em>catName</em> with a value of "<em>"Felix"</em>"</li>
-        <li><em>breed</em> with a value of "<em>Persian</em>"</li>
-    </ol>
 </article>
 
 <article>
     <header>
-        <p class="example">A page with three simple tokens declared.</p>
+        <p class="example"><em>An HTML document with three simple tokens.</p>
     </header>
 <pre><code class="language-HTML">
 &lt;!DOCTYPE html&gt;
@@ -76,12 +62,11 @@ tokens: {
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-    <p>All simple tokens declared in the HTML document that match the simple tokens defined in the template will be replaced by their respective values.</p>
 </article>
 
 <article>
     <header>
-        <p class="example">The resulting HTML document after three simple tokens have been applied.</p>
+        <p class="example">The resulting HTML document after three simple token values have been applied.</p>
     </header>
 <pre><code class="language-HTML">
 &lt;!DOCTYPE html&gt;
@@ -102,21 +87,16 @@ tokens: {
 </code></pre>
 </article>
 
-### Global Simple Tokens
-
-<p class="ver">Introduced in v1.0.0-beta.8</p>
-
-Global simple token properties are defined in fusion.json, the project configuration file, specifically in the `tokens` object, and their property values replace all matching simple tokens declared in _all HTML documents_. If both a local simple token and a global simple token have the same name _the local simple token takes precedence_.
-
 ## Template Tokens
 
 <em>syntax: &lbrace;&lbrace;template&rbrace;&rbrace;</em>
 
-Template tokens are only relevant in <a href="{baseURL}/docs/htmldocuments/pages">pages</a> and are replaced by the content, if any, of their associated templates.
+Template tokens are only relevant in <a href="{baseURL}/docs/htmldocuments/pages">pages</a> and are replaced by the content of their associated <a href="{baseURL}/docs/htmldocuments/templates">templates</a>.
 
+<p class="warn">template is a reserved symbol and &lbrace;&lbrace;template&rbrace;&rbrace; should only be used in this context.</p>
 <article>
     <header>
-        <p class="example">A page with a template token declared.</p>
+        <p class="example">An HTML document with a template token.</p>
     </header>
 <pre><code class="language-HTML">
 &lt;body&gt;
@@ -129,7 +109,7 @@ Template tokens are only relevant in <a href="{baseURL}/docs/htmldocuments/pages
 
 <article>
     <header>
-        <p class="example">The resulting HTML document after the template's content has been applied.</p>
+        <p class="example">The resulting HTML document after a template's content has been applied.</p>
     </header>
 <pre><code class="language-HTML">
 &lt;body&gt;
@@ -144,11 +124,11 @@ Template tokens are only relevant in <a href="{baseURL}/docs/htmldocuments/pages
 
 <em>syntax: &lbrace;&lbrace;path/to/include&rbrace;&rbrace;</em> minus file type
 
-Include tokens are relevant in <a href="{baseURL}/docs/htmldocuments/pages">pages</a> and <a href="{baseURL}/docs/htmldocuments/templates">templates</a> and are replaced by their respective <a href="{baseURL}/docs/htmldocuments/includes">include</a>'s content.
+Include tokens are relevant in <a href="{baseURL}/docs/htmldocuments/pages">pages</a> and <a href="{baseURL}/docs/htmldocuments/templates">templates</a> and are replaced by their respective <a href="{baseURL}/docs/htmldocuments/includes">include</a> file's content. The path to the respective include file should not contain its file type.
 
 <article>
     <header>
-        <p class="example">A page with two include tokens declared.</p>
+        <p class="example">An HTML document with two include tokens.</p>
     </header>
 <pre><code class="language-HTML">
 &lt;body&gt;
@@ -159,11 +139,14 @@ Include tokens are relevant in <a href="{baseURL}/docs/htmldocuments/pages">page
     &lbrace;&lbrace;footer&rbrace;&rbrace;
 &lt;/body&gt;
 </code></pre>
+<footer>
+The include tokens are pointing to two files, src/includes/header.[ md|html ], and src/includes/footer.[md|html].
+</footer>
 </article>
 
 <article>
     <header>
-        <p class="example">The resulting HTML document after the two include files' content have been applied.</p>
+        <p class="example">The resulting HTML document after the content from the two include files have been applied.</p>
     </header>
 <pre><code class="language-HTML">
 &lt;body&gt;

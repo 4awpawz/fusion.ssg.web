@@ -58,7 +58,7 @@ A _collection component tag_ is any component tag that declares the property `is
 
 ## Collection Component Implementation
 
-Collection components are higher order components that produce multiple HTML documents (i.e. A collection).
+Collection components are higher order components that produce multiple HTML documents.
 
 fusion.ssg repeatedly invokes collection components until they indicate that they shouldn't be invoked again.
 
@@ -80,7 +80,7 @@ When there are no more HTML documents to be generate for this collection, the co
 To generate an HTML document, collection components should always return an _object_ with the following properties:
 
 - content: `markdown`. This markdown will replace the <a href="{baseURL}/docs/htmldocuments/tokens#template-tokens">template token</a> in the associated page with this content.
-- title: `string`. Replaces the <a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens">simple token</a> in this HTML document's title tag, e.g. &lt;title&gt;&#123;title&#125;&lt;/title&gt;.
+- title: `string`. Replaces the <a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens">simple token</a> in this HTML document's title tag (e.g., &lt;title&gt;&#123;title&#125;&lt;/title&gt;).
 - htmlDocumentName: `string`. The _file name_ for this HTML document.
 
 <p class="info">When collection components no longer have content to contribute to an HTML document, they return nothing.</p>

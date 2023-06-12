@@ -209,8 +209,12 @@ nav a {
     color: #000;
 }
 
-p.info, p.info a, p.ver{
+p.info, p.info a, p.warn, p.ver{
     font-style: italic;
+}
+p.warn {
+    color: yellow;
+    font-style: uppercase;
 }
 p.info::before {
     content: "i";
@@ -232,7 +236,15 @@ p.ver::before {
     border-radius: 20%;
     margin-right: .5rem;
 }
-
+p.warn::before {
+    content: "🔔";
+    background-color: rgb(255 255 0 / .2);
+    font-style: italic;
+    padding: 0rem .25rem;
+    border: solid 1px yellow;
+    border-radius: 4px;
+    margin-right: .5rem;
+}
 /* Youtube video sources */
 .video-container {
     position: relative;

@@ -26,7 +26,7 @@ Posts are specialized <a href="{baseURL}/docs/htmldocuments/templates">templates
 
 ## Naming Convention
 
-Unlike all other templates, post templates have a strict naming convention, e.g . 2023-02-28-upsidedown-cake.md, which allows fusion.ssg to structure your posts chronologically. Post template names must begin with the year, -, month, -, and day, i.e. YYYY-MM-DD, followed by a dash, i.e. -, and ending with the actual file name, including its type, i.e. [file name].md|html.
+Unlike all other templates, post templates have a strict naming convention, e.g . 2023-02-28-upsidedown-cake.md, which allows fusion.ssg to structure your posts chronologically. Post template names must begin with the year, -, month, -, and day (i.e., YYYY-MM-DD), followed by a dash (i.e., -), and ending with the actual file name, including its type, i.e. [file name].md|html.
 
 For example, a post without categories (see below) named <em>2023-02-28-upsidedown-cake.md</em> would be rendered to the posts folder as 2003/02/28/upsidedown-cake/index.html, and a post with categories "recipes, cakes" named <em>2023-02-28-upsidedown-cake.md</em> would be rendered to the posts folder as recipes/cakes/2003/02/28/upsidedown-cake/index.html.
 

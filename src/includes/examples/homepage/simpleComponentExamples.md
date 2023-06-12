@@ -22,7 +22,7 @@ tokens: {
 <TeamMembers datasources="team.json" />
 ```
 
-The simple TeamMembers component implementation.
+The simple TeamMembers component implementation in TypeScript.
 
 ```typescript
 interface TeamMember {
@@ -53,6 +53,25 @@ export const TeamMembers = function({ team }: Props): string {
 };
 ```
 
+The same simple TeamMembers component but implemented in plain old JavaScript.
+
+```javascript
+function formatName(member) {
+    return `${member.name.first} ${member.name.last}`;
+}
+
+export const TeamMembers = function({ team } {
+    return (
+        <ul>
+            {team.map(member => {
+                return <li>
+                    <p><{formatName(member)}</p>
+                </li>;
+            })}
+        </ul>
+    );
+};
+```
 The template's associated page.
 
 ```html
