@@ -1,10 +1,8 @@
 import fs from "fs";
 import chalk from "chalk";
-import { dirname, join, normalize, parse } from "path";
+import { dirname, join, normalize } from "path";
 import { fileURLToPath } from 'url';
 import browsersync from "browser-sync";
-
-const bs = browsersync.create();
 
 // __dirName...
 
@@ -23,33 +21,11 @@ const args = process.argv.length > 2 ? process.argv.slice(2) : [];
 const serverStrategy = args.includes("release") ? "release" : "development";
 console.log(chalk.black.bgWhiteBright("browser-sync server strategy:", serverStrategy));
 
-// Path to the user config file.
-let pathToUserConfig = "";
-for (const arg of args) {
-    if (arg.startsWith("config=")) {
-        const pathParts = arg.split("=");
-        pathToUserConfig = pathParts.length === 2 && join(__dirname, pathParts[1]);
-        const ext = parse(pathToUserConfig).ext;
-        if (ext !== ".json") {
-            console.log(chalk.red(`Error: ignoring file ${pathToUserConfig} - expected file type of JSON but found ${ext}.`));
-            pathToUserConfig = "";
-            break;
-        }
-        if (!fs.existsSync(pathToUserConfig)) {
-            console.log(chalk.red(`Error: file ${pathParts[1]} does not exist!`));
-            pathToUserConfig = "";
-            break;
-        }
-        pathToUserConfig && console.log(chalk.black.bgWhiteBright("browser-sync config:", pathToUserConfig));
-        break;
-    }
-}
-
 // baseURL...
 
+const fusion_json = JSON.parse(fs.readFileSync(join(__dirname, "fusion.json")));
 let baseURL = "";
 if (serverStrategy === "release") {
-    const fusion_json = JSON.parse(fs.readFileSync(join(__dirname, "fusion.json")));
     baseURL = Object.hasOwn(fusion_json, "baseURL") ? fusion_json.baseURL : "";
 }
 
@@ -72,12 +48,17 @@ const defaultOptions = {
     files: "build/**",
     watch: true
 };
-let configOptions = pathToUserConfig !== "" && fs.existsSync(pathToUserConfig) && { ...defaultOptions, ...JSON.parse(fs.readFileSync(pathToUserConfig)) } || defaultOptions;
+
+const pathToConfig = join(__dirname, "browsersync-options.json");
+let configOptions = fs.existsSync(pathToConfig) && JSON.parse(fs.readFileSync(pathToConfig))?.[serverStrategy] || {};
+configOptions = { ...defaultOptions, ...configOptions };
 // If thee's a baseURL the site should be served from build/baseURL.
 if (baseURL !== "") defaultOptions.startPath = normalize(`${baseURL}`);
 console.log(chalk.black.bgWhiteBright("browser-sync configuration options:"), configOptions);
 
 // Start the server...
+
+const bs = browsersync.create();
 
 bs.init(configOptions, (err, bs) => {
     bs.addMiddleware("*", (req, res) => {
