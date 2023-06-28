@@ -55,7 +55,7 @@ must be run from project's root folder.
 
 Directs fusion.ssg to run a one-off _release_ build.
 
-When building for release, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
+When building for release, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration/#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 - usage:
 
@@ -65,11 +65,11 @@ When building for release, the files and folders included in your configuration'
 </aside>
 
 <p class="info">
-Files and folders included in your configuration's <a href="{baseURL}/docs/configuration/#wips">wips</a> are ignored.
+Files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration#wips">wips</a> are ignored.
 </p>
 
 <p class="info">
-<a href="{baseURL}/docs/configuration/#baseurl">&lbrace;baseURL&rbrace;</a> is applied to URLs.
+<a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">&lbrace;baseURL&rbrace;</a> is applied to URLs.
 </p>
 
 <p class="info">
@@ -80,7 +80,7 @@ must be run from project's root folder.
 
 ### npm run development
 
-Watches your project's _root/src_ and _root/fusion.json_ for changes, builds for _development_, and launches Browser-Sync.
+Watches your project's _root/src_ and _root/fusion.json_ for changes, builds for _development_, and launches Browsersync.
 
 - usage:
 
@@ -95,9 +95,9 @@ must be run from project's root folder.
 
 ### npm run release
 
-Watches your project's root/src and root/fusion.json for changes, builds for release, and launches Browser-Sync.
+Watches your project's root/src and root/fusion.json for changes, builds for release, and launches Browsersync.
 
-When building for release, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
+When building for release, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 - usage:
 

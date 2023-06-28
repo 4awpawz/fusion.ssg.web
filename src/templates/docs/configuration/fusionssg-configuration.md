@@ -11,9 +11,9 @@ docindex: {
 
 <em>CONFIGURATION</em>
 
-# fusions.json
+# fusions.ssg Configuration
 
-The following _configuration options_ are available for you to override in your project's _src/fusion.json file_:
+The following _configuration options_ are available for you to override in your project's _src/fusion.json_ file:
 
 1. <a href="#postsfolder">postsFolder</a>
 1. <a href="#baseurl">baseURL</a>

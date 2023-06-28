@@ -24,7 +24,7 @@ docindex: {
 
 <em>syntax: &lbrace;token-name&rbrace;</em>
 
-Simple token declarations like the above are replaced by their respective property values. Simple token property values can be declared in either <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a> or in your project's <a href="{baseURL}/docs/configuration#tokens">configuration</a> file. If the same token name is used in both, the token's value declared in front matter takes precedence.
+Simple token declarations like the above are replaced by their respective property values. Simple token property values can be declared in either <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a> or in your project's <a href="{baseURL}/docs/configuration/fusionssg-configuration#tokens">configuration</a> file. If the same token name is used in both, the token's value declared in front matter takes precedence.
 
 <article>
     <header>

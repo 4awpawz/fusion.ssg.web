@@ -55,7 +55,7 @@ fusion.ssg supports _two_ types of components:
 
 ### Properties
 
-Component can reference their individual properties using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank">destructuring</a>, as in _`{[property name]}`_ (see <a href="#component-with-datasource">example</a> below).
+Component can reference their individual properties using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring</a>, as in _`{[property name]}`_ (see <a href="#component-with-datasource">example</a> below).
 
 #### Predefined Properties
 

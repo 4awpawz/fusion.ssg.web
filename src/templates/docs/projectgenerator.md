@@ -17,7 +17,7 @@ docindex: {
 
 <p class="info">Beginning with v1.0.0, fusion.ssg's no longer includes a project generator in its package and now requires that it be installed separately as a global package. Please read <a href="{baseURL}/docs/installation">Installation</a> for instructions regarding its installation.</p>
 
-<p class="info">Beginning with v1.0.0, <a href="https://browsersync.io/">Browser-Sync</a>, which provides synchronized browser testing, has replaced live-server.</p>
+<p class="info">Beginning with v1.0.0, <a href="https://browsersync.io/">Browsersync</a>, which provides synchronized browser testing, has replaced live-server.</p>
 
 _fpg_, fusion.ssg's project generator,  relieves you of the burden of having to manually create and configure your projects. When run, it creates your project and also installs all of the project's dependencies. The most difficult task you will face when creating a new fusion.ssg project is deciding what to name it :).
 

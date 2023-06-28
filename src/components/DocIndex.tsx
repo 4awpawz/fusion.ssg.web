@@ -53,7 +53,8 @@ export const DocIndex = function({ asset }: Props) {
             <details open={topic === "configuration"}>
                 <summary>configuration</summary>
                 <ul>
-                    <li><a class="secondary" href="{baseURL}/docs/configuration" aria-current={subtopic === "fusionjson" && "page"}>fusion.json</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/configuration/fusionssg-configuration" aria-current={subtopic === "fusionjson" && "page"}>fusion.ssg</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/configuration/browsersync-configuration" aria-current={subtopic === "browsersync-options" && "page"}>Browsersync</a></li>
                 </ul>
             </details>
             <details open={topic === "commandline"}>

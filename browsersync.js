@@ -19,7 +19,7 @@ const __dirname = fileDirName(import.meta);
 // Server strategy.
 const args = process.argv.length > 2 ? process.argv.slice(2) : [];
 const serverStrategy = args.includes("release") ? "release" : "development";
-console.log(chalk.black.bgWhiteBright("browser-sync server strategy:", serverStrategy));
+console.log(chalk.black.bgWhiteBright("Browsersync server strategy:", serverStrategy));
 
 // baseURL...
 
@@ -49,12 +49,12 @@ const defaultOptions = {
     watch: true
 };
 
-const pathToConfig = join(__dirname, "browsersync-options.json");
-let configOptions = fs.existsSync(pathToConfig) && JSON.parse(fs.readFileSync(pathToConfig))?.[serverStrategy] || {};
+const pathToUserOptions = join(__dirname, "browsersync-options.json");
+let configOptions = fs.existsSync(pathToUserOptions) && JSON.parse(fs.readFileSync(pathToUserOptions))?.[serverStrategy] || {};
 configOptions = { ...defaultOptions, ...configOptions };
 // If thee's a baseURL the site should be served from build/baseURL.
-if (baseURL !== "") defaultOptions.startPath = normalize(`${baseURL}`);
-console.log(chalk.black.bgWhiteBright("browser-sync configuration options:"), configOptions);
+if (baseURL !== "") configOptions.startPath = normalize(`${baseURL}`);
+console.log(chalk.black.bgWhiteBright("Browsersync configuration options:"), configOptions);
 
 // Start the server...
 
