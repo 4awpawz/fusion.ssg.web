@@ -32,7 +32,7 @@ For example, a post without categories (see below) named <em>2023-02-28-upsidedo
 
 ## Categories
 
-Categories are strictly for rendering posts in a particular _folder hierarchy_. For example, a post with a single category, such as _"recipes"_ would be rendered in the "posts/recipes/" folder and a post with two categories, such as _"recipes, cakes and pies"_ would be rendered in the "posts/recipes/cakes and pies" folder/.
+Categories are strictly for rendering posts in a particular _folder hierarchy_. For example, a post with a single category, such as _"recipes"_, would be rendered in the "posts/recipes/" folder and a post with two categories, such as _"recipes, cakes and pies"_, would be rendered in the "posts/recipes/cakes and pies" folder/.
 
 Categories are declared in a post's front matter as shown below:
 
@@ -55,7 +55,7 @@ post: {
 </code></pre>
 
 <article>
-<header><p class="example">A post with multiple <em>tags</em> and categories.</p></header>
+<header><p class="example">A post with a <em>tag</em> and multiple categories.</p></header>
 <pre><code class="laguage-HTML">
 ---
 page: blog
