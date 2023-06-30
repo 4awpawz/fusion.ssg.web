@@ -1,5 +1,5 @@
 - No initial project configuration is required.
-- DOMless and serverless, so builds are really very quick.
+- DOMless and serverless makes for very quick builds, even for very large sites.
 - Create HTML documents using markdown, HTML, tokens, components, JSON data sources and meta data.
 - Support for .tsx and .jsx components, including sand-boxed execution, and for .ts browser scripts.
 - Portfolio generation via collections.
