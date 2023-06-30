@@ -18,11 +18,11 @@ The project's scope is limited to generating robust and resilient HTML documents
 
 ## Current Status
 
-The project is still in its  v1.0.0-beta stage. Beta releases should be considered _stable_. While in Beta, features and implementations might change dramatically and this should be considered the norm.
+<p class="ver">v1.0.0</p>
 
 ## Versioning
 
-Beginning with v1.0.0, which will be our first production release, we will be dropping the use of _beta_ when versioning a development release. Going forward, all development releases will use `-dev.n` instead of -beta.n.
+Development releases will use `-dev.n`.
 
 ## Long Term Goals
 
