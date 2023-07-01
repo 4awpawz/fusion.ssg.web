@@ -17,6 +17,7 @@ docindex: {
 
 The following commands are available through the command line.
 
+- <a href="#fusion-version">fusion version</a>
 - <a href="#fusion-help">fusion help</a>
 - <a href="#fusion-build">fusion build</a>
 - <a href="#fusion-release">fusion release</a>
@@ -25,62 +26,65 @@ The following commands are available through the command line.
 
 ## Commands Directly Supported By fusion.ssg
 
-### fusion help
+### fusion version
 
-Prints _help_ for a supported command.
+Displays the version.
 
 - usage:
 
 <aside>
-<pre><code class="language-shell">fusion -h | --help [command]</code></pre>
-</footer>
+<pre><code class="language-shell">fusion -v | --version</code></pre>
+</aside>
+
+### fusion help
+
+Displays general and command specific _help_.
+
+- usage:
+
+<aside>
+<pre><code class="language-shell">fusion -h [optional command] | --help [optional command]</code></pre>
 </aside>
 
 ### fusion build
 
 Directs fusion.ssg to run a one-off _development_ build.
 
+When building for _development_, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration/#wips">wips</a> property are not ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is not applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
+
 - usage:
 
 <aside>
-<pre><code class="language-shell">fusion build</code></pre>
-</footer>
+<pre><code class="language-shell">fusion b | build</code></pre>
 </aside>
 
 <p class="info">
-must be run from project's root folder.
+Must be run from project's root folder.
 </p>
 
 ### fusion release
 
 Directs fusion.ssg to run a one-off _release_ build.
 
-When building for release, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration/#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
+When building for _release_, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration/#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 - usage:
 
 <aside>
-<pre><code class="language-shell">fusion release</code></pre>
-</footer>
+<pre><code class="language-shell">fusion r | release</code></pre>
 </aside>
 
 <p class="info">
-Files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration#wips">wips</a> are ignored.
-</p>
-
-<p class="info">
-<a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">&lbrace;baseURL&rbrace;</a> is applied to URLs.
-</p>
-
-<p class="info">
-must be run from project's root folder.
+Must be run from project's root folder.
 </p>
 
 ## Commands Supported Through Project NPM Scripts
 
 ### npm run development
 
-Watches your project's _root/src_ and _root/fusion.json_ for changes, builds for _development_, and launches Browsersync.
+Watches your project's _root/src_ and _root/fusion.json_ for changes, and runs <a href="#fusion-build">fusion build</a> for _development_, and launches Browsersync.
+
+When building for _development_, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration/#wips">wips</a> property are not ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is not applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 - usage:
 
@@ -90,14 +94,14 @@ Watches your project's _root/src_ and _root/fusion.json_ for changes, builds for
 </aside>
 
 <p class="info">
-must be run from project's root folder.
+Must be run from project's root folder.
 </p>
 
 ### npm run release
 
-Watches your project's root/src and root/fusion.json for changes, builds for release, and launches Browsersync.
+Watches your project's root/src and root/fusion.json for changes, and runs <a href="#fusion-release">fusion release</a> for _release_, and launches Browsersync.
 
-When building for release, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
+When building for _release_, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 - usage:
 
