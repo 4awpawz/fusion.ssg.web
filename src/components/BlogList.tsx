@@ -24,11 +24,11 @@ export const BlogList = function({ assets }: Props) {
         <ul>
             {posts.map(post => {
                 return <li style="list-style: none;">
-                    <span>
-                        <a href={`{baseURL}${post.url}`}>{post.fm.data.tokens.title}</a> <small><PostDate asset={post} /></small>
-                    </span>
-                    <br />
-                    <small>{post.fm.excerpt}</small>
+                    <a href={`{baseURL}${post.url}`} style="display: block;">
+                        <span style="font-size: calc(var(--font-size) * 1.2)">{post.fm.data.tokens.title}</span>,&nbsp;<small><PostDate asset={post} /></small>
+                        <br />
+                        <small style="color: #fff;">{post.fm.excerpt}</small>
+                    </a>
                 </li>;
             })}
         </ul>

@@ -7,5 +7,5 @@
 - CLI for one-off development and one-off release builds.
 - Base URL support for sites hosted in sub folders.
 - Works in progress for HTML documents that need to be ignored during release builds.
-- Blogging support, including categories and tags.
+- Blogging support, including multiple categories and tags.
 - Beautified HTML documents.

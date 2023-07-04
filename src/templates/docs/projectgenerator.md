@@ -26,7 +26,7 @@ _fpg_, fusion.ssg's project generator,  relieves you of the burden of having to 
 To create a new project, run the following in your terminal in a folder of your choice:
 
 ```shell
-fpg target_folder
+fpg -n | --new <target_folder>
 ```
 
 When you run the above, fusion.ssg will generate a new project in the current folder using the name that you provided for _target_folder_.

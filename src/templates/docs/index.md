@@ -49,4 +49,4 @@ At this point the HTML document is now 100% complete. fusion.ssg now serializes 
 
 While the actual process that fusion.ssg uses is quite a bit more complex than what this high level overview provides, you should now have a very good conceptual understanding of how fusion.ssg goes about its business of producing HTML documents.
 
-<p class="info">The remaining documentation relies heavily on examples. It assumes that you already have some working knowledge of <b>HTML</b>, <b>markdown</b>, <b>YAML front matter</b> and <b>TypeScript components</b>.</p>
+<p class="info">The remaining documentation relies heavily on examples. It assumes that you have some working knowledge of <b>HTML</b>, <b>markdown</b>, <b>YAML front matter</b> and <b>JavaScript</b> or <b>TypeScript components</b>.</p>

@@ -18,11 +18,11 @@ The project's scope is limited to generating robust and resilient HTML documents
 
 ## Current Status
 
-<p class="ver">v1.0.0</p>
+<p class="ver">{version}</p>
 
 ## Versioning
 
-Development releases will use `-dev.n`.
+We use <a href="https://semver.org/">semantic versioning</a>.
 
 ## Long Term Goals
 
