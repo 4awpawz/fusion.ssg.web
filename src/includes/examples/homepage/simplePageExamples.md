@@ -1,15 +1,15 @@
-A template with content and front matter that contains a simple token property.
+Template with front matter with two token values:
 
-```html
+```markdown
 ---
 tokens: {
-    pageTitle: Greetings
+    pageTitle: Greetings,
+    greeting: Hello World
 }
 ---
-<h1>Hello World</h1>
 ```
 
-A page with a simple token and a template token.
+Page with two tokens:
 
 ```html
 <!DOCTYPE html>
@@ -22,13 +22,13 @@ A page with a simple token and a template token.
     </head>
     <body>
         <main>
-            {{template}}
+            <h1>{greeting}</h1>
         </main>
     </body>
 </html>
 ```
 
-The generated page.
+Generated HTML Document:
 
 ```html
 <!DOCTYPE html>

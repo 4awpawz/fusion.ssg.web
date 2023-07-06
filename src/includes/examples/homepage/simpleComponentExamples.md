@@ -1,4 +1,4 @@
-The team.json data source.
+team.json data source:
 
 ```json
 [
@@ -8,7 +8,7 @@ The team.json data source.
 ]
 ```
 
-A template with a simple TeamMembers component tag that declares team.json as a data source.
+Template with a TeamMembers component tag that declares team.json as a data source:
 
 ```html
 ---
@@ -16,13 +16,33 @@ tokens: {
     pageTitle: Team Members
 }
 ---
-<h1>team</h1>
+<h1>Team</h1>
 <p>Thanks to our team our rollout has been a huge success.</p>
 <h2>Contributors</h2>
 <TeamMembers datasources="team.json" />
 ```
 
-The simple TeamMembers component implementation in TypeScript.
+TeamMembers component implemented in __JavaScript__:
+
+```javascript
+function formatName(member) {
+    return `${member.name.first} ${member.name.last}`;
+}
+
+export const TeamMembers = function({ team } {
+    return (
+        <ul>
+            {team.map(member => {
+                return <li>
+                    <p><{formatName(member)}</p>
+                </li>;
+            })}
+        </ul>
+    );
+};
+```
+
+TeamMembers component implementation in __TypeScript__:
 
 ```typescript
 interface TeamMember {
@@ -53,26 +73,7 @@ export const TeamMembers = function({ team }: Props): string {
 };
 ```
 
-The same simple TeamMembers component but implemented in plain old JavaScript.
-
-```javascript
-function formatName(member) {
-    return `${member.name.first} ${member.name.last}`;
-}
-
-export const TeamMembers = function({ team } {
-    return (
-        <ul>
-            {team.map(member => {
-                return <li>
-                    <p><{formatName(member)}</p>
-                </li>;
-            })}
-        </ul>
-    );
-};
-```
-The template's associated page.
+Page:
 
 ```html
 <!DOCTYPE html>
@@ -91,7 +92,7 @@ The template's associated page.
 </html>
 ```
 
-The generated page.
+Generated HTML Document:
 
 ```html
 <html lang="en">
