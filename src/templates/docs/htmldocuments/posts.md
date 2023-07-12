@@ -68,7 +68,7 @@ post: {
 }
 ---
 Yada yada...
-<!-- end -->
+&lt;!-- end --&gt;
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo dolor dolorum, vel temporibus impedit quam animi, aliquam porro assumenda tenetur iure nemo voluptas voluptates quis distinctio, eveniet suscipit aliquid.
 </code></pre>
 </article>
