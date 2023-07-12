@@ -13,20 +13,16 @@ docindex: {
 
 # Metadata
 
-While most text is meant to be read by a human, metadata is text that's meant to be easily readable by a program, for example fusion.ssg.
+fusion.ssg generates metadata while parsing your project's files which it uses to drive each build-cycle. At the conclusion of each build-cycle, fusion.ssg serializes this metadata to the file _.assets.json_, which is located in the project's root folder.
 
-## Metadata Format
+Each piece of metadata consists of a key and a corresponding value.
 
-[YAML](https://yaml.org/) is a human-friendly data serialization language for all programming languages. It is a widely used configuration format that's readable by both humans and machines. Each piece of metadata consists of a key and a corresponding value.
+fusion.ssg makes this metadata available to your project's <a href="{baseURL}/docs/htmldocuments/components">components</a>, which they can use to add dynamic content to your site's HTML documents. In most cases, you want to limit your focus on those metadata items whose **assetType** equals _"template"_. For more information, please see <a href="{baseURL}/docs/htmldocuments/components#metadata-properties">Metadata Properties</a>.
 
-The metadata that fusion.ssg generates from parsing your project's files drive's each build-cycle. At the conclusion of each build-cycle, fusion.ssg serializes this metadata to the file _.assets.json_, which is located in the project's root folder.
-
-<p class="info"><a href="{baseURL}/docs/htmldocuments/templates">Template</a> related metadata includes their <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a>.</p>
-
-<p class="info">fusion.ssg makes this metadata available to your project's <a href="{baseURL}/docs/htmldocuments/components">components</a>, which they can use to add dynamic content to your site's HTML documents. In most cases, you want to limit your focus on those items that are <b>"assetType": "template"</b>. For more information, please see <a href="{baseURL}/docs/htmldocuments/components#metadata-properties">Metadata Properties</a>.</p>
+<p class="info"><a href="{baseURL}/docs/htmldocuments/templates">Template</a> metadata includes their <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a>.</p>
 
 <article>
-<header><p class="example">.assets.json</p></header>
+<header><p class="example">A template asset in .assets.json</p></header>
 <pre><code class="language-JSON"> [
   {
     "timestamp": 1683293747955.9675,
@@ -52,7 +48,5 @@ The metadata that fusion.ssg generates from parsing your project's files drive's
   }
 ]
 </code></pre>
-<footer>
-<p>The example above contains the metadata for a single <em>template</em>.</p>
-</footer>
 </article>
+<p class="info">Template metadata contains two similarly named properties, <b>fm.content</b> and <b>content</b>. <b>fm.content</b> contains the raw content, either HTML or markdown, if any, taken directly from the template asset, whereas <b>content</b> contains the actual content that fusion.ssg will use to generate the HTML document for this template.</p>
