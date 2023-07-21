@@ -66,7 +66,7 @@ For each invocation, the component receives arguments for an _index_, for <a hre
 
 The value of the index is initially set to _0_ and is incremented by _1_ for each subsequent invocation, and can be used, for example, to _"iterate"_ through one or more data sources, one invocation at a time.
 
-When there are no more HTML documents to be generate for this collection, the component returns nothing which signals to fusion.ssg that it is to stop calling the component.
+When there are no more HTML documents to be generated for this collection, the component returns nothing which signals to fusion.ssg that it is to stop calling the component.
 
 ### Properties Passed As Arguments
 
@@ -79,7 +79,7 @@ When there are no more HTML documents to be generate for this collection, the co
 
 To generate an HTML document, collection components should always return an _object_ with the following properties:
 
-- content: `markdown`. This markdown will replace the <a href="{baseURL}/docs/htmldocuments/tokens#template-tokens">template token</a> in the associated page with this content.
+- content: `HTML`. This content will replace the <a href="{baseURL}/docs/htmldocuments/tokens#template-tokens">template token</a> in the associated page with this content.
 - title: `string`. Replaces the <a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens">simple token</a> in this HTML document's title tag (e.g., &lt;title&gt;&#123;title&#125;&lt;/title&gt;).
 - htmlDocumentName: `string`. The _file name_ for this HTML document.
 

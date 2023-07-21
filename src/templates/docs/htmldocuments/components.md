@@ -16,7 +16,7 @@ docindex: {
 <section class="container">
 <div><small>Required: <em>No</em></small></div>
 <div><small>Type: <em>.tsx</em> and <em>.jsx</em></small></div>
-<div><small>Return Type: <em>markdown</em></small></div>
+<div><small>Return Type: <em>HTML</em></small></div>
 <div><small>Project Location: <em>src/components</em></small></div>
 </section>
 
@@ -77,7 +77,7 @@ During each build cycle, fusion.ssg extracts _metadata_ from your project that c
 
 ### Returns
 
-Components should always return markdown.
+Components should always return HTML.
 
 ## A Complete Implementation Example
 
