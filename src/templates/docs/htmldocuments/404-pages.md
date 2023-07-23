@@ -21,4 +21,4 @@ docindex: {
 
 fusion.ssg supports the generation and correct placement of _404.html documents_.
 
-During each build cycle, when fusion.ssg finds a <a href="{baseURL}/docs/htmldocuments/templates">template</a> named _404.md_ or _404.html_, it will serialize the generated 404.html document into the root of the _build folder_ for development builds, and into the root of the _build/&lbrace;baseURL&rbrace;_ folder for release builds when <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> is defined in the project's configuration file, fusion.json.
+During each build cycle, when fusion.ssg finds a <a href="{baseURL}/docs/htmldocuments/templates">template</a> named _404.md_ or _404.html_, it will serialize the generated 404.html document into the root of the _build folder_ for development builds, and into the root of the _build/&lbrace;baseURL&rbrace;_ folder for release builds when <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> is defined in <a href="{baseURL}/docs/configuration/fusionssg-configuration">fusion.json</a>, the project's configuration file.
