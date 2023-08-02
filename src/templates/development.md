@@ -33,7 +33,7 @@ We use <a href="https://semver.org/">semantic versioning</a>.
 
 For help, discussion about best practices, or any other conversation that would benefit from being searchable:
 
-[Discuss _fusion.ssg _on Github](https://github.com/4awpawz/fusion.ssg/discussions)
+[Discuss _fusion.ssg _on Github](https://github.com/4awpawz/fusion.ssg/discussions).
 
 For casual conversation with others about using _fusion.ssg_:
 

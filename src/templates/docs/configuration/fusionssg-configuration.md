@@ -81,6 +81,9 @@ Simple token property values declared here are global to the project and replace
 
 - default: {}
 
+<p class="ver">Introduced in v1.1.0</p>
+At the end of each build cycle, fusion.ssg will report any unresolved simple tokens that it finds in your project's generated HTML documents.
+
 <aside>
 <header>
 <p><em>Example</em>: Declaring tokens.</p>

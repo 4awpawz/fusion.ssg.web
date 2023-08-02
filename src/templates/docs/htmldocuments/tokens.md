@@ -87,6 +87,12 @@ tokens: {
 </code></pre>
 </article>
 
+### Unresolved Simple Token Reporting
+
+<p class="ver">Introduced in v1.1.0</p>
+
+At the end of each build cycle, fusion.ssg will report any unresolved simple tokens that it finds in your project's generated HTML documents. These warnings indicate that either the token name has been misspelled or that its value has not been declared.
+
 ## Template Tokens
 
 <em>syntax: &lbrace;&lbrace;template&rbrace;&rbrace;</em>
