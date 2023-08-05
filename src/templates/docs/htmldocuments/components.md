@@ -90,14 +90,14 @@ Components should always return HTML.
 
 <article>
 <header>
-<p class="example">The JSON data source declared in the component's tag that fusion.ssg passes to the component.</p>
+<p class="example">The team.json data source declared in the component's tag that fusion.ssg passes to the component.</p>
 </header>
 {{examples/sampleJSONDataSource}}
 </article>
 
 <article id="component-with-datasource">
 <header>
-<p class="example">A component implementation that consumes a data source and returns a list.</p>
+<p class="example">A component implementation that consumes the team.json data source and returns a list.</p>
 </header>
 {{examples/componentExample}}
 </article>

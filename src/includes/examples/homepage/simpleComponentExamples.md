@@ -8,7 +8,7 @@ team.json data source:
 ]
 ```
 
-Template with a TeamMembers component tag that declares team.json as a data source:
+Template with a TeamMembers component tag that consumes team.json as a data source:
 
 ```html
 ---
