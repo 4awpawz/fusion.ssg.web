@@ -20,7 +20,7 @@ docindex: {
     <div><small>Project Location: <em>src/templates/posts</em></small></div>
 </section>
 
-Posts are specialized <a href="{baseURL}/docs/htmldocuments/templates">templates</a> that can be useful for creating any <em>blog</em> type HTML documents, or any type of HTML document that would benefit from a chronologically ordered folder structure, <em>tags</em> and <em>categories</em>.
+Posts are specialized <a href="{baseURL}/docs/htmldocuments/templates">templates</a> that can be useful for creating <em>blog-like</em> HTML documents, or any type of HTML document that would benefit from a <em>chronologically ordered folder structure</em>, <em>tags</em> and <em>categories</em>.
 
 <p class="info">In metadata, posts can identified by their <b>"isPost": true</b> property.</p>
 
