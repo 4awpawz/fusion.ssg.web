@@ -24,7 +24,7 @@ docindex: {
 
 <em>syntax: &lbrace;token-name&rbrace;</em>
 
-Simple token declarations like the above are replaced by their respective property values. Simple token property values can be declared in either <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a> or in your project's <a href="{baseURL}/docs/configuration/fusionssg-configuration#tokens">configuration</a> file. If the same token name is used in both, the token's value declared in front matter takes precedence.
+Simple token declarations like the above that fusion.ssg finds in your developing HTML documents are replaced by their respective property values. Simple token property values can be declared in either a _template's <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a>_ or in _fusion.json_, your project's <a href="{baseURL}/docs/configuration/fusionssg-configuration#tokens">configuration</a> file. If the same token name is used in both, the token's value declared in front matter takes precedence.
 
 <article>
     <header>
@@ -92,6 +92,18 @@ tokens: {
 <p class="ver">Introduced in v1.1.0</p>
 
 At the end of each build cycle, fusion.ssg will report any unresolved simple tokens that it finds in your project's generated HTML documents. These warnings indicate that either the token name has been misspelled or that its value has not been declared.
+
+<img src="{baseURL}/media/posts/v1.1.0-CLI-unresolved-tokens.png" alt="report of unresolved tokens" width="700">
+
+### Auto Generated Simple Tokens
+
+<p class="ver">Introduced in v1.2.0</p>
+
+Besides the simple tokens that you define in your _template's front matter_ and globally in your project's _fusion.json_ file, fusion.ssg also defines the following simple tokens, whose values it has obtained from the meta data associated with your _posts_ templates, that you can use:
+
+- &lbrace;postDate&rbrace; - the _post date_ extracted from the post's _file name_ and converted to a _locale date string_ e.g. "mm/dd/yyyy".
+- &lbrace;categories&rbrace; - the _categories_ extracted from the post's _front matter post.categories property_ and converted to a _path_ e.g. "cata/catb/catc".
+- &lbrace;tags&rbrace; - the _tags_ extracted from the post's _front matter post.tags property_ and converted to a _comma separated list_  e.g. "taga,tagb,tagc".
 
 ## Template Tokens
 

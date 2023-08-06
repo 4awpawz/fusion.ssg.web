@@ -19,7 +19,7 @@ docindex: {
 
 <p class="info">Beginning with v1.0.0, <a href="https://browsersync.io/">Browsersync</a>, which provides synchronized browser testing, has replaced live-server.</p>
 
-_fpg_, fusion.ssg's project generator,  relieves you of the burden of having to manually create and configure your projects. When run, it creates your project and also installs all of the project's dependencies. The most difficult task you will face when creating a new fusion.ssg project is deciding what to name it :).
+_fpg_, fusion.ssg's project generator,  relieves you of the burden of having to manually create and configure your projects. When run, it *__creates your project and installs all of the project's dependencies__*. The most difficult task you will face when creating a new fusion.ssg project is deciding what to name it :).
 
 ## Usage
 
@@ -29,22 +29,8 @@ To create a new project, run the following in your terminal in a folder of your 
 fpg n | new <target_folder>
 ```
 
-When you run the above, fusion.ssg will generate a new project in the current folder using the name that you provided for _target_folder_.
+When you run the above, fusion.ssg will generate a new project in the current folder using the name that you provided for _target_folder_ and you can explore its content in your editor while reading the documentation for <a href="{baseURL}/docs/projectstructure">Project Structure.</a>
 
-## Building and Serving Your New Project
+## Building And Serving Your Project
 
-Two NPM scripts, _development_ and _release_, are provided in the project's package.json file for building and serving your project. To build and serve your project for development, run the following in your terminal
-
-```shell
-cd target_folder
-npm run development
-```
-and to build and serve your project for release, run the following in your terminal.
-
-```shell
-cd target_folder
-npm run release
-```
-<p class="info">Please also see <a href="{baseURL}/docs/cli">CLI</a> for additional CLI features.</p>
-
-Now that you have created a project, please open the project in your editor and explore its contents while reading the documentation for <a href="{baseURL}/docs/projectstructure">Project Structure.</a>
+fusion.ssg's <a href="{baseURL}/docs/cli">CLI</a> provides numerous *__scripts and commands__* that you can run when _developing your site_ and when you are ready to _release your site_. Please read its documentation to familiarize yourself with the commands and options that support the *__development__* and *__release__* workflows.

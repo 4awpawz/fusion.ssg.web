@@ -29,6 +29,7 @@ fusion.ssg projects will contain the files and folders that are depicted below.
   ├─ node_modules/
   ├─ src/
   │  ├─ components/
+  │  ├─ css/
   │  ├─ data/
   │  ├─ etc/
   │  ├─ includes/
@@ -93,6 +94,10 @@ fusion.ssg projects will contain the files and folders that are depicted below.
             <td>Contains .tsx and .jsx components.</td>
         </tr>
         <tr>
+            <td>src/css</td>
+            <td>Contains your site's css. If you are using a css pre compiler, you should target its output to this folder.</td>
+        </tr>
+        <tr>
             <td>src/data</td>
             <td>Contains .json data sources used by components.</td>
         </tr>
@@ -114,7 +119,7 @@ fusion.ssg projects will contain the files and folders that are depicted below.
         </tr>
         <tr>
             <td>src/scripts</td>
-            <td>Contains browser script files, both .js and .ts.</td>
+            <td>Contains browser script files, both .js and .ts. If you are transpiling to JavaScript, you should target the transpiler to output to this folder.</td></td>
         </tr>
         <tr>
             <td>src/templates</td>

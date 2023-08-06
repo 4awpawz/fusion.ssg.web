@@ -33,3 +33,21 @@ Both _pages_ and _templates_ can declare _one or more_ <a href="{baseURL}/docs/h
     <p>This page's include tokens will be replaced by the content from their respective include files'.</p>
     </footer>
 </article>
+
+## Conditional Includes
+
+<p class="ver">Introduced in v1.2.0</p>
+
+A conditional _include_ contains content that is _only relevant when building for development or when building for release, but not for both_. For example, if an include contributes Google analytics to your site's HTML documents, you can exclude that content when building your site for development. Please see <a href="{baseURL}/docs/configuration/fusionssg-configuration#conditional-includes">conditional includes</a> for details regarding configuring your site's conditional includes.
+
+<article>
+    <header>
+        <p class="example">Declaring an include to be only relevant when building for release.</p>
+    </header>
+<pre><code class="language-JSON">"conditionalIncludes": {
+    "releaseOnly": ["analytics.md"]
+}</code></pre>
+    <footer>
+    <p>By declaring the <em>analytics.md</em> include for release only, its content will <em>not</em> be included when building for development.</p>
+    </footer>
+</article>

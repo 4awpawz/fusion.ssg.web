@@ -7,12 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{meta-tags/common}}
-    <meta property="og:title" content="A Minimal Framework for Static Websites">
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="fusion.ssg propels your static website development to a whole new level!">
-    <meta property="og:image" content="https://fusionssg.com/media/social/640x569-solar-energy.png">
-    <meta property="og:url" content="https://fusionssg.com">
-    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="{baseURL}/css/libs/pico/pico.min.css">
     <link rel="stylesheet" href="{baseURL}/css/libs/highlight/github-dark.min.css">
     <link rel="stylesheet" href="{baseURL}/css/fusion.css">
@@ -24,12 +18,16 @@
 <body>
     <MainMenu target="news" />
     <main class="container">
+        <img src="{baseURL}/media/posts/{image}" alt="image"
+            style="background-color: white; display: block; margin-bottom: 2ch;">
         <hgroup>
             <h1>{title}</h1>
-                <p>Posted on <i style="color: #fff; opacity: 0.555;">{postDate}</i> to <i style="color: #fff; opacity: 0.555;">{categories}</i></p>
+            <p><small>Posted on {postDate} to {categories}</small></p>
         </hgroup>
+        {{template}}
+        <h2>Tutorials</h2>
         <article>
-            {{template}}
+            yada
         </article>
     </main>
     {{global/defaultSiteFooter}}

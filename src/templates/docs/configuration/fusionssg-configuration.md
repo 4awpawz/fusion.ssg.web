@@ -15,10 +15,11 @@ docindex: {
 
 The following _configuration options_ are available for you to override in your project's _src/fusion.json_ file:
 
-1. <a href="#postsfolder">postsFolder</a>
-1. <a href="#baseurl">baseURL</a>
-1. <a href="#wips">wips</a>
-1. <a href="#tokens">tokens</a>
+- <a href="#postsfolder">postsFolder</a>
+- <a href="#baseurl">baseURL</a>
+- <a href="#wips">wips</a>
+- <a href="#tokens">tokens</a>
+- <a href="#conditional-includes">conditional includes</a>
 
 ## postsFolder
 
@@ -60,7 +61,7 @@ If your site is served from a <em>subfloder</em>, such as is the case for sites 
 
 ## wips
 
-These are _files_ and _folders_ located in the <a href="{baseURL}/docs/htmldocuments/templates">templates</a> folder that are to be _ignored_ during <a href="{baseURL}/docs/cli#npm-run-release">release builds</a>.
+These are _files_ and _folders_ located in the _src/templates_ folder that are _works in progress_ and that are to be _ignored_ during release builds.
 
 - default: []
 
@@ -70,12 +71,16 @@ These are _files_ and _folders_ located in the <a href="{baseURL}/docs/htmldocum
 </header>
 <pre><code class="language-JSON">"wips": ["docs/next-version", "!docs/next-version/index.md"]</code></pre>
 <p class="info">Files and folders prepended with "!" are <em>negated and will be generated.</em></p>
-</footer>
 </aside>
 
-## tokens
+<p class="ver">Introduced in v1.2.0</p>
 
-<p class="ver">Introduced in v1.0.0-beta.8</p>
+Beginning with v1.2.0, fusion.ssg will _report all works in progress_ for each release build cycle. These warnings serve to prevent the _unintended_ updating of web sites with missing HTML documents that should have been included but haven't because they are still marked as works in progress.
+
+<img src="{baseURL}/media/posts/WIPS-reporting.png" alt="imgage">
+
+
+## tokens
 
 Simple token property values declared here are global to the project and replace all matching simple tokens declared in _all HTML documents_. If both a local simple token and a global simple token have the same name _the local simple token takes precedence_.
 
@@ -86,10 +91,29 @@ Simple token property values declared here are global to the project and replace
 <p><em>Example</em>: Declaring tokens.</p>
 </header>
 <pre><code class="language-JSON">"tokens": {"version": "v1.0.0"}</code></pre>
-</footer>
 </aside>
 
 ### Unresolved Simple Token Reporting
 <p class="ver">Introduced in v1.1.0
 
 At the end of each build cycle, fusion.ssg will report any unresolved simple tokens that it finds in your project's generated HTML documents. Please see <a href="{baseURL}/docs/htmldocuments/tokens/#simple-tokens">Simple Tokens</a> for more information.
+
+## Conditional Includes
+
+<p class="ver">Introduced in v1.2.0</p>
+
+These are files located in the _src/includes_ folder that are specifically targeted for either _development_ or _release_ builds, but not for both.
+
+- default: conditionalIncludes: &lbrace; developmentOnly: [], releaseOnly: [] &rbrace;
+
+<aside>
+<header>
+<p><em>Example</em>: Declaring conditional includes.</p>
+</header>
+<pre><code class="language-JSON">"conditionalIncludes": {
+    "developmentOnly": ["path/to/include/in/src/includes", ...],
+    "releaseOnly": ["path/to/include/in/src/includes", ...]
+}</code></pre>
+</aside>
+
+<p class="info">All paths must be relative to the src/includes folder.</p>

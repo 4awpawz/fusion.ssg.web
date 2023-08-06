@@ -72,3 +72,9 @@ Yada yada...
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo dolor dolorum, vel temporibus impedit quam animi, aliquam porro assumenda tenetur iure nemo voluptas voluptates quis distinctio, eveniet suscipit aliquid.
 </code></pre>
 </article>
+
+## Post Specific Simple Tokens
+
+<p class="ver">Introduced in v1.2.0</p>
+
+Besides the simple tokens that you define in your _template's front matter_ and globally in your project's _fusion.json_ file, fusion.ssg also defines numerous simple tokens, whose values it has obtained from the meta data associated with your posts templates, that you can use. Please see <a href="{baseURL}/docs/htmldocuments/tokens#auto-generated-simple-tokens">Auto Generated Tokens</a> for details.

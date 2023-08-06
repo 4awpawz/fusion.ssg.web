@@ -1,11 +1,16 @@
 - No initial project configuration is required.
 - DOMless and serverless results in very quick build times.
-- HTML documents from markdown, HTML, tokens, components, JSON data sources and meta data.
-- Support for .tsx and .jsx components, including sand-boxed execution, and for .ts browser scripts.
-- Portfolio generation via collections.
-- package.json scripts provided for development and release builds.
+- HTML document composition from markdown, HTML, tokens, .jsx and .tsx components, JSON data sources and meta data.
+- .tsx and .jsx sand-boxed exaction.
+- .ts browser scripts.
+- Portfolio (multiple pages) generation via collections.
+- Generated projects provide package.json scripts for development and release builds.
 - CLI for one-off development and one-off release builds.
 - Base URL support for sites hosted in sub folders.
-- Works in progress for HTML documents that need to be ignored during release builds.
+- Works in progress for HTML documents that should be ignored during release builds.
 - Blogging support, including multiple categories and tags.
+- Optional cache busting during release builds for your project's assets <span class="secondary" style="font-size: .7rem; color: black; background-color: #ffe484">(v1.2.0)</span>.
+- Conditional composition of includes based on build strategy <span style="font-size: .7rem; color: black; background-color:  #ffe484;">(v1.2.0)</span>.
+- The reporting of works in progress during release builds <span style="font-size: .7rem; color: black; background-color: #ffe484;">(v1.2.0)</span>.
+- Additional post metadata exposed as simple tokens <span style="font-size: .7rem; color: black; background-color: #ffe484;">(v1.2.0)</span>.
 - Beautified HTML documents.
