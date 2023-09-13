@@ -95,7 +95,7 @@ fusion.ssg projects will contain the files and folders that are depicted below.
         </tr>
         <tr>
             <td>src/css</td>
-            <td>Contains your site's css. If you are using a css pre compiler, you should target its output to this folder.</td>
+            <td>Contains your site's css. If you are using a css pre compiler, you should target its output to this folder. During builds, fusion.ssg copies all the .css file from this folder to the targeted build folder's css folder.</td>
         </tr>
         <tr>
             <td>src/data</td>
@@ -119,7 +119,7 @@ fusion.ssg projects will contain the files and folders that are depicted below.
         </tr>
         <tr>
             <td>src/scripts</td>
-            <td>Contains browser script files, both .js and .ts. If you are transpiling to JavaScript, you should target the transpiler to output to this folder.</td></td>
+            <td>Contains browser script files, both .js and .ts. .ts files are compiled in place. If you are transpiling to JavaScript, you should target the transpiler to output to this folder. During builds, fusion.ssg copies all the .js files from this folder to the targeted build folder's scripts folder.</td></td></td>
         </tr>
         <tr>
             <td>src/templates</td>
