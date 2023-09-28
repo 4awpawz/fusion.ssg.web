@@ -10,7 +10,7 @@
         "release:build": "chokidar \"src/**/*\" \"fusion.json\" --silent true --initial true -c \"npm run release:fusion\"",
         "release": "concurrently --raw \"npm run release:build\" \"npm run release:bs\"",
         "development:bs": "node browsersync.js development",
-        "development:fusion": "fusion build",
+        "development:fusion": "fusion build --verbose",
         "development:build": "chokidar \"src/**/*\" \"fusion.json\" --silent true --initial true -c \"npm run development:fusion\"",
         "development": "concurrently --raw \"npm run development:build\" \"npm run development:bs\""
     },
