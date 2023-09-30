@@ -30,7 +30,7 @@ So, for example, if you want to create a link to an HTML document named __/some-
 
 ```
 
-and when linking to other site assets, such as .css, .js, and other media, you should use:
+and when linking to other site assets, such as *__.css__*, *__.js__*, and *__other media__*, you should use:
 
 ```html
 <link rel="stylesheet" href="/css/some-folder/mysite.css">
@@ -39,7 +39,7 @@ and when linking to other site assets, such as .css, .js, and other media, you s
 
 ```
 
-This strategy of using only site relative paths abides with the use of &#123;baseURL&#125; in hrefs
+This strategy of using only root relative paths abides with the use of *__&#123;baseURL&#125;__* in hrefs
 
 <pre><code class="language-HTML">
 &lt;a href="&lbrace;baseURL&rbrace;/some-folder/document"&gt;...&lt;/a&gt;,
@@ -53,7 +53,7 @@ and when linking to other site assets
 </code></pre>
 
 
-and with fusion.ssg's support for __cache busting__ your site.
+and with fusion.ssg's support for *__cache busting__* your site.
 
 <p class="info">
     For more information on &lbrace;baseURL&rbrace;, please see <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a>.
