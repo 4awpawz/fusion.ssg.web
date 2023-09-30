@@ -27,8 +27,8 @@ export const DocIndex = function({ asset }: Props) {
                     <li><a class="secondary" href="{baseURL}/docs/installation" aria-current={subtopic === "installation" && "page"}>Installation</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/projectgenerator" aria-current={subtopic === "projectgenerator" && "page"}>Project Generator</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/projectstructure" aria-current={subtopic === "projectstructure" && "page"}>Project Structure</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/urls" aria-current={subtopic === "urls" && "page"}>URLS</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/htmldocnamingconvention" aria-current={subtopic === "htmldocnamingconvention" && "page"}>HTML Document Naming Convention</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/htmlfilepathsandurls" aria-current={subtopic === "htmlfilepathsandurls" && "page"}>HTML File Paths And URLS</a></li>
                 </ul>
             </details>
             <details open={topic === "htmldocuments"}>

@@ -1,36 +1,38 @@
 ---
 page: docpages/index
 tokens: {
-    title: "fusion.ssg: Documentation - URLS",
+    title: "fusion.ssg: Documentation - HTML File Paths And URLS",
 }
 docindex: {
     topic: gettingstarted,
-    subtopic: urls,
+    subtopic: htmlfilepathsandurls,
 }
 ---
 
 <em>GETTING STARTED</em>
 
-# URLS
+# HTML File Paths And URLS
 
-Generally speaking, there are three primary formats to use when creating inter page links to HTML documents in a website. There are:
+Generally speaking, there are three primary formats to use for *__file paths__* that point to _HTML documents_ and other website _assets_:
 
-- absolute paths, e.g. &lt;img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"&gt;
-- root relative paths (sometimes called site relative paths), e.g. &lt;img src="/images/picture.jpg"&gt;
-- page relative paths, e.g. &lt;img src="../picture.jpg"&gt;	
+- absolute file paths, e.g. &lt;img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"&gt;
+- root relative file paths (sometimes called site relative paths), e.g. &lt;img src="/images/picture.jpg"&gt;
+- page relative file paths, e.g. &lt;img src="../picture.jpg"&gt;	
 
 <p class="info">For a more in-depth discussion on this topic, please see <a href="https://www.w3schools.com/html/html_filepaths.asp">HTML File Paths</a> for more information.</p>
 
-__fusion.ssg supports only _root relative_ URLS because both its _&lbrace;baseURL&rbrace;_ and _cache busting_ features rely on root relative URLS to work correctly.__
+<p class="info">
+    fusion.ssg supports only *__root relative__* file paths because both its _&lbrace;baseURL&rbrace;_ and _cache busting_ features rely on root relative URLS to work correctly.
+</p>
 
-So, for example, if you want to create a link to an HTML document named __/some-folder/document.html__ from anywhere in your site, you should use the following format for your hrefs
+So, for example, to link to an HTML document named __/some-folder/document.html__ from anywhere in your site, you would use a root relative file path:
 
 ```html
 <a href="/some-folder/document">document</a>
 
 ```
 
-and when linking to other site assets, such as *__.css__*, *__.js__*, and *__other media__*, you should use:
+When linking to your site's assets, such as *__.css__*, *__.js__*, and *__other media__*, you would also use root relative file paths:
 
 ```html
 <link rel="stylesheet" href="/css/some-folder/mysite.css">
@@ -39,7 +41,7 @@ and when linking to other site assets, such as *__.css__*, *__.js__*, and *__oth
 
 ```
 
-This strategy of using only root relative paths abides with the use of *__&#123;baseURL&#125;__* in hrefs
+This strategy of using only root relative file paths abides with the use of *__&#123;baseURL&#125;__* in hrefs
 
 <pre><code class="language-HTML">
 &lt;a href="&lbrace;baseURL&rbrace;/some-folder/document"&gt;...&lt;/a&gt;,
