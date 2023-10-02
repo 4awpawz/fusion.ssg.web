@@ -22,7 +22,7 @@ Generally speaking, there are three primary formats to use for *__file paths__* 
 <p class="info">For a more in-depth discussion on this topic, please see <a href="https://www.w3schools.com/html/html_filepaths.asp">HTML File Paths</a> for more information.</p>
 
 <p class="info">
-    fusion.ssg supports only *__root relative__* file paths because both its _&lbrace;baseURL&rbrace;_ and _cache busting_ features rely on root relative URLS to work correctly.
+    fusion.ssg supports only <b><em>root relative</em></b> file paths because both its <b><em>&lbrace;baseURL&rbrace;</em></b> and <b><em>cache busting</em></b> features rely on root relative URLS to work correctly.
 </p>
 
 So, for example, to link to an HTML document named __/some-folder/document.html__ from anywhere in your site, you would use a root relative file path:
