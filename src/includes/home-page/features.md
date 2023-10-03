@@ -1,16 +1,17 @@
 - No initial project configuration is required.
-- DOMless and serverless results in very quick build times.
+- Effortless project creation using fusion.ssg's project generator.
+- DOMless and serverless execution produces very quick build times.
 - HTML document composition from markdown, HTML, tokens, .jsx and .tsx components, JSON data sources and meta data.
-- .tsx and .jsx sand-boxed execution.
-- .ts browser scripts.
+- .tsx and .jsx compilation and sand-boxed execution.
+- .ts browser script compilations.
 - Portfolio (multiple pages) generation via collections.
 - Generated projects provide package.json scripts for development and release builds.
 - CLI for one-off development and one-off release builds.
 - Base URL support for sites hosted in sub folders.
-- Works in progress for HTML documents that should be ignored during release builds.
+- HTML documents that are works in progress can be ignored during release builds.
 - Blogging support, including multiple categories and tags.
-- Optional cache busting during release builds for your project's assets <span class="secondary" style="font-size: .7rem; color: black; background-color: #ffe484">(v1.2.0)</span>.
-- Conditional composition of includes based on build strategy <span style="font-size: .7rem; color: black; background-color:  #ffe484;">(v1.2.0)</span>.
-- The reporting of works in progress during release builds <span style="font-size: .7rem; color: black; background-color: #ffe484;">(v1.2.0)</span>.
-- Additional post metadata exposed as simple tokens <span style="font-size: .7rem; color: black; background-color: #ffe484;">(v1.2.0)</span>.
 - Beautified HTML documents.
+- Optional cache busting of project assets during release builds <span class="secondary" style="font-size: .7rem; color: black; background-color: #ffe484">(v1.2.0)</span>.
+- Conditional composition of includes based on build strategy <span style="font-size: .7rem; color: black; background-color:  #ffe484;">(v1.2.0)</span>.
+- Reporting of works in progress during release builds <span style="font-size: .7rem; color: black; background-color: #ffe484;">(v1.2.0)</span>.
+- Blog metadata exposed as simple tokens <span style="font-size: .7rem; color: black; background-color: #ffe484;">(v1.2.0)</span>.
