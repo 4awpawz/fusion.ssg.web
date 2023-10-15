@@ -5,13 +5,13 @@ tokens: {
 }
 ---
 
-# Project Development
+# fusion.ssg
+
+fusion.ssg seamlessly fuses together _HTML, Markdown, TypseScript/JavaScript Components, JSON, and YAML Front Matter_ in one cohesive development platform to simplify the creation of resilient HTML documents and static websites.
+
+## Project Development
 
 The project is written in ` TypeScript` and runs on `Node`.
-
-## The Name
-
-_fusion_ plays on the idea of seamlessly **_fusing_** together various technologies like HTML, Markdown, TypseScript and JavaScript Components, JSON Data, YAML Front Matter, etc., to seamlessly work together to simplify the creation of HTML documents and static websites.
 
 ## Project Scope
 The project's scope is limited to generating robust and resilient HTML documents and websites and requires no knowledge of other front-end frameworks. This keeps the scope of the project focused and prevents feature creep.
