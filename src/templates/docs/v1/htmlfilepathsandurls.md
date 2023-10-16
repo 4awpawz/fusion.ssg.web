@@ -58,10 +58,10 @@ and when linking to other site assets
 and with fusion.ssg's support for *__cache busting__* your site.
 
 <p class="info">
-    For more information on &lbrace;baseURL&rbrace;, please see <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a>.
+    For more information on &lbrace;baseURL&rbrace;, please see <a href="{baseURL}/docs/{docsCurrentVersion}/configuration/fusionssg-configuration#baseurl">baseURL</a>.
 </p>
 
 <p class="info">
-    For more information on cache busting, please see <a href="{baseURL}/docs/cli#optional-cache-busting-of-release-builds">cache busting</a>.
+    For more information on cache busting, please see <a href="{baseURL}/docs/{docsCurrentVersion}/cli#optional-cache-busting-of-release-builds">cache busting</a>.
 </p>
 

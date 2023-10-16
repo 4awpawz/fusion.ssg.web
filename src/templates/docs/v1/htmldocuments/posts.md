@@ -20,7 +20,7 @@ docindex: {
     <div><small>Project Location: <em>src/templates/posts</em></small></div>
 </section>
 
-Posts are specialized <a href="{baseURL}/docs/htmldocuments/templates">templates</a> that can be useful for creating <em>blog-like</em> HTML documents, or any type of HTML document that would benefit from a <em>chronologically ordered folder structure</em>, <em>tags</em> and <em>categories</em>.
+Posts are specialized <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">templates</a> that can be useful for creating <em>blog-like</em> HTML documents, or any type of HTML document that would benefit from a <em>chronologically ordered folder structure</em>, <em>tags</em> and <em>categories</em>.
 
 <p class="info">In metadata, posts can identified by their <b>"isPost": true</b> property.</p>
 
@@ -44,7 +44,7 @@ post: {
 
 ## Tags
 
-Tags are very useful for associating posts that have similar subject matter. <a href="{baseURL}/docs/htmldocuments/components">Components</a> can query <a href="{baseURL}/docs/htmldocuments/components#metadata-properties">metadata</a> using higher order array functions, such as _filter_ for example, to find all posts with a particular tag.
+Tags are very useful for associating posts that have similar subject matter. <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components">Components</a> can query <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components#metadata-properties">metadata</a> using higher order array functions, such as _filter_ for example, to find all posts with a particular tag.
 
 Tags are declared in a post's front matter as shown below:
 
@@ -77,4 +77,4 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo dolor dol
 
 <p class="ver">Introduced in v1.2.0</p>
 
-Besides the simple tokens that you define in your _template's front matter_ and globally in your project's _fusion.json_ file, fusion.ssg also defines numerous simple tokens, whose values it has obtained from the meta data associated with your posts templates, that you can use. Please see <a href="{baseURL}/docs/htmldocuments/tokens#auto-generated-simple-tokens">Auto Generated Tokens</a> for details.
+Besides the simple tokens that you define in your _template's front matter_ and globally in your project's _fusion.json_ file, fusion.ssg also defines numerous simple tokens, whose values it has obtained from the meta data associated with your posts templates, that you can use. Please see <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens#auto-generated-simple-tokens">Auto Generated Tokens</a> for details.

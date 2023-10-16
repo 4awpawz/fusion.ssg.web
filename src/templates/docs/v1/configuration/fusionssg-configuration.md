@@ -23,7 +23,7 @@ The following _configuration options_ are available for you to override in your 
 
 ## postsFolder
 
-The _name_ to use for the folder that hosts your site's <a href="{baseURL}/docs/htmldocuments/posts">posts</a>.
+The _name_ to use for the folder that hosts your site's <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/posts">posts</a>.
 
 - default: "posts"
 
@@ -36,7 +36,7 @@ The _name_ to use for the folder that hosts your site's <a href="{baseURL}/docs/
 
 ## baseURL
 
-If your site is served from a <em>subfloder</em>, such as is the case for sites hosted on <em>github.io</em>, prepend <em>&lbrace;baseURL&rbrace;</em> to your site's <a href="https://www.ibm.com/docs/en/eslm/10.0.4?topic=parameters-absolute-root-relative-url">root relative URLs</a> and they will be replaced with this value during <a href="{baseURL}/docs/cli#npm-run-release">release builds</a>.
+If your site is served from a <em>subfloder</em>, such as is the case for sites hosted on <em>github.io</em>, prepend <em>&lbrace;baseURL&rbrace;</em> to your site's <a href="https://www.ibm.com/docs/en/eslm/10.0.4?topic=parameters-absolute-root-relative-url">root relative URLs</a> and they will be replaced with this value during <a href="{baseURL}/docs/{docsCurrentVersion}/cli#npm-run-release">release builds</a>.
 
 <p class="warn">baseURL is a reserved symbol! Though &lbrace;baseURL&rbrace; looks like a simple token declaration, it should never be used as one. Never use baseURL to declare a local simple token or a global simple token.</p>
 
@@ -96,7 +96,7 @@ Simple token property values declared here are global to the project and replace
 ### Unresolved Simple Token Reporting
 <p class="ver">Introduced in v1.1.0
 
-At the end of each build cycle, fusion.ssg will report any unresolved simple tokens that it finds in your project's generated HTML documents. Please see <a href="{baseURL}/docs/htmldocuments/tokens/#simple-tokens">Simple Tokens</a> for more information.
+At the end of each build cycle, fusion.ssg will report any unresolved simple tokens that it finds in your project's generated HTML documents. Please see <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens/#simple-tokens">Simple Tokens</a> for more information.
 
 ## Conditional Includes
 

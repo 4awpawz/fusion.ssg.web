@@ -15,16 +15,16 @@ docindex: {
 
 <em>Tokens</em> serve as place holders that are <em>replaced</em> by content intended for the HTML document. fusion.ssg recognizes <em>three</em> types of tokens:
 <ol>
-    <li><a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens"><em>simple tokens</em></a></li>
-    <li><a href="{baseURL}/docs/htmldocuments/tokens#template-tokens"><em>template tokens</em></a></li>
-    <li><a href="{baseURL}/docs/htmldocuments/tokens#include-tokens"><em>include tokens</em></a></li>
+    <li><a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens#simple-tokens"><em>simple tokens</em></a></li>
+    <li><a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens#template-tokens"><em>template tokens</em></a></li>
+    <li><a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens#include-tokens"><em>include tokens</em></a></li>
 </ol>
 
 ## Simple Tokens
 
 <em>syntax: &lbrace;token-name&rbrace;</em>
 
-Simple token declarations like the above that fusion.ssg finds in your developing HTML documents are replaced by their respective property values. Simple token property values can be declared in either a _template's <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a>_ or in _fusion.json_, your project's <a href="{baseURL}/docs/configuration/fusionssg-configuration#tokens">configuration</a> file. If the same token name is used in both, the token's value declared in front matter takes precedence.
+Simple token declarations like the above that fusion.ssg finds in your developing HTML documents are replaced by their respective property values. Simple token property values can be declared in either a _template's <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/frontmatter">front matter</a>_ or in _fusion.json_, your project's <a href="{baseURL}/docs/{docsCurrentVersion}/configuration/fusionssg-configuration#tokens">configuration</a> file. If the same token name is used in both, the token's value declared in front matter takes precedence.
 
 <article>
     <header>
@@ -109,7 +109,7 @@ Besides the simple tokens that you define in your _template's front matter_ and 
 
 <em>syntax: &lbrace;&lbrace;template&rbrace;&rbrace;</em>
 
-Template tokens are only relevant in <a href="{baseURL}/docs/htmldocuments/pages">pages</a> and are replaced by the content of their associated <a href="{baseURL}/docs/htmldocuments/templates">templates</a>.
+Template tokens are only relevant in <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/pages">pages</a> and are replaced by the content of their associated <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">templates</a>.
 
 <p class="warn">template is a reserved symbol and &lbrace;&lbrace;template&rbrace;&rbrace; should only be used in this context.</p>
 <article>
@@ -142,7 +142,7 @@ Template tokens are only relevant in <a href="{baseURL}/docs/htmldocuments/pages
 
 <em>syntax: &lbrace;&lbrace;path/to/include&rbrace;&rbrace;</em> minus file type
 
-Include tokens are relevant in <a href="{baseURL}/docs/htmldocuments/pages">pages</a> and <a href="{baseURL}/docs/htmldocuments/templates">templates</a> and are replaced by their respective <a href="{baseURL}/docs/htmldocuments/includes">include</a> file's content. The path to the respective include file should not contain its file type.
+Include tokens are relevant in <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/pages">pages</a> and <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">templates</a> and are replaced by their respective <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/includes">include</a> file's content. The path to the respective include file should not contain its file type.
 
 <article>
     <header>

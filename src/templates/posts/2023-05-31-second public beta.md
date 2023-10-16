@@ -15,9 +15,9 @@ v1.0.0-beta.8 has been tested extensively and is considered stable. However, bec
 
 This release adds the following capabilities:
 
-- Support for <a href="{baseURL}/docs/htmldocuments/components">.jsx components</a>.
+- Support for <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components">.jsx components</a>.
 - Support for .ts browser scripts.
-- Support for <a href="{baseURL}/docs/htmldocuments/tokens#global-simple-tokens">global tokens</a>.
+- Support for <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens#global-simple-tokens">global tokens</a>.
 
 ## Install and run fusion.ssg
 

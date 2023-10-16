@@ -13,7 +13,7 @@ docindex: {
 
 # CLI
 
-<p class="info">Beginning with v1.0.0, fusion.ssg no longer includes a project generator in its package and no longer provides the ability to create new projects directly through its CLI. Please read <a href="{baseURL}/docs/projectgenerator">Project Generator</a> for more information about how to create a new project using <b><em>fpg</em></b>.</p>
+<p class="info">Beginning with v1.0.0, fusion.ssg no longer includes a project generator in its package and no longer provides the ability to create new projects directly through its CLI. Please read <a href="{baseURL}/docs/{docsCurrentVersion}/projectgenerator">Project Generator</a> for more information about how to create a new project using <b><em>fpg</em></b>.</p>
 
 fusion.ssg's CLI supports the following workflows and options:
 
@@ -25,7 +25,7 @@ fusion.ssg's CLI supports the following workflows and options:
 
 ## Development Workflows
 
-When building for _development_, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration/#wips">wips</a> property are not ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is not applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
+When building for _development_, the files and folders included in your configuration's <a href="{baseURL}/docs/{docsCurrentVersion}/configuration/fusionssg-configuration/#wips">wips</a> property are not ignored, and the <a href="{baseURL}/docs/{docsCurrentVersion}/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is not applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 <p class="info">The following commands must all be run from the project's root folder.</p>
 
@@ -55,7 +55,7 @@ or
 
 ## Release Workflows
 
-When building for _release_, the files and folders included in your configuration's <a href="{baseURL}/docs/configuration/fusionssg-configuration#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
+When building for _release_, the files and folders included in your configuration's <a href="{baseURL}/docs/{docsCurrentVersion}/configuration/fusionssg-configuration#wips">wips</a> property are ignored, and the <a href="{baseURL}/docs/{docsCurrentVersion}/configuration/fusionssg-configuration#baseurl">baseURL</a> property value declared in your project's configuration file is applied to all URLs that contain a _&lbrace;baseURL&rbrace;_ token.
 
 <p class="info">The following commands must all be run from the project's root folder.</p>
 

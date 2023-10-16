@@ -24,7 +24,7 @@ A <em>collection</em> consists of _one or more_ HTML documents created using a s
 
 <p class="info"><a href="https://github.com/4awpawz/fusion.ssg-flags-of-the-world-demo/tree/development">View this example project that demonstrates using a collection to generate pages for all the flags of the world.</a></p>
 
-<p class="info">The following discussion assumes that you have already read <a href="{baseURL}/docs/htmldocuments/components">simple components</a>.</p>
+<p class="info">The following discussion assumes that you have already read <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components">simple components</a>.</p>
 
 ## Synopsis
 
@@ -62,7 +62,7 @@ Collection components are higher order components that produce multiple HTML doc
 
 fusion.ssg repeatedly invokes collection components until they indicate that they shouldn't be invoked again.
 
-For each invocation, the component receives arguments for an _index_, for <a href="{baseURL}/docs/htmldocuments/components#metadata-properties">_asset_ and _assets_</a>,  and for any of the other <a href="{baseURL}/docs/htmldocuments/components#properties">properties</a> that it has declared, such as its data sources.
+For each invocation, the component receives arguments for an _index_, for <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components#metadata-properties">_asset_ and _assets_</a>,  and for any of the other <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components#properties">properties</a> that it has declared, such as its data sources.
 
 The value of the index is initially set to _0_ and is incremented by _1_ for each subsequent invocation, and can be used, for example, to _"iterate"_ through one or more data sources, one invocation at a time.
 
@@ -79,8 +79,8 @@ When there are no more HTML documents to be generated for this collection, the c
 
 To generate an HTML document, collection components should always return an _object_ with the following properties:
 
-- content: `HTML`. This content will replace the <a href="{baseURL}/docs/htmldocuments/tokens#template-tokens">template token</a> in the associated page with this content.
-- title: `string`. Replaces the <a href="{baseURL}/docs/htmldocuments/tokens#simple-tokens">simple token</a> in this HTML document's title tag (e.g., &lt;title&gt;&#123;title&#125;&lt;/title&gt;).
+- content: `HTML`. This content will replace the <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens#template-tokens">template token</a> in the associated page with this content.
+- title: `string`. Replaces the <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens#simple-tokens">simple token</a> in this HTML document's title tag (e.g., &lt;title&gt;&#123;title&#125;&lt;/title&gt;).
 - htmlDocumentName: `string`. The _file name_ for this HTML document.
 
 <p class="info">When collection components no longer have content to contribute to an HTML document, they return nothing.</p>

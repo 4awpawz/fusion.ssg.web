@@ -19,7 +19,7 @@ docindex: {
 <div><small>Project Location: <em>src/templates</em></small></div>
 </section>
 
-Front matter is integral to fusion.ssg's build process and it is required at the top of every <a href="{baseURL}/docs/htmldocuments/templates">template</a>, even when either or both the template and the front matter are empty.
+Front matter is integral to fusion.ssg's build process and it is required at the top of every <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">template</a>, even when either or both the template and the front matter are empty.
 
 <p class="info">fusion.ssg relies on the library <a href="https://www.npmjs.com/package/gray-matter">gray-matter</a> to convert front matter to JavaScript.</p>
 

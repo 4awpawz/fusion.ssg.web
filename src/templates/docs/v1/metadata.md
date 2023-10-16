@@ -17,9 +17,9 @@ fusion.ssg generates metadata while parsing your project's files which it uses t
 
 Each piece of metadata consists of a key and a corresponding value.
 
-fusion.ssg makes this metadata available to your project's <a href="{baseURL}/docs/htmldocuments/components">components</a>, which they can use to add dynamic content to your site's HTML documents. In most cases, you want to limit your focus on those metadata items whose **assetType** equals _"template"_. For more information, please see <a href="{baseURL}/docs/htmldocuments/components#metadata-properties">Metadata Properties</a>.
+fusion.ssg makes this metadata available to your project's <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components">components</a>, which they can use to add dynamic content to your site's HTML documents. In most cases, you want to limit your focus on those metadata items whose **assetType** equals _"template"_. For more information, please see <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components#metadata-properties">Metadata Properties</a>.
 
-<p class="info"><a href="{baseURL}/docs/htmldocuments/templates">Template</a> metadata includes their <a href="{baseURL}/docs/htmldocuments/frontmatter">front matter</a>.</p>
+<p class="info"><a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">Template</a> metadata includes their <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/frontmatter">front matter</a>.</p>
 
 <article>
 <header><p class="example">A template asset in .assets.json</p></header>

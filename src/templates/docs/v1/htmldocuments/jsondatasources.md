@@ -19,7 +19,7 @@ docindex: {
 <div><small>Project Location: <em>src/data</em></small></div>
 </section>
 
-<p>fusion.ssg supports <a href="{baseURL}/docs/htmldocuments/components">components</a> and <a href="{baseURL}/docs/htmldocuments/collections">collection components</a> that <em>consume JSON data sources</em>.
+<p>fusion.ssg supports <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/components">components</a> and <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/collections">collection components</a> that <em>consume JSON data sources</em>.
 
 <article>
 <header>

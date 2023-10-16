@@ -16,7 +16,7 @@ docindex: {
 
 fusion.ssg projects will contain the files and folders that are depicted below.
 
-<p class="info">fusion.ssg's <a href="{baseURL}/docs/projectgenerator">project generator</a> relieves you of the burden of having to manually create and configure your projects.</p>
+<p class="info">fusion.ssg's <a href="{baseURL}/docs/{docsCurrentVersion}/projectgenerator">project generator</a> relieves you of the burden of having to manually create and configure your projects.</p>
 
 <pre>
 
