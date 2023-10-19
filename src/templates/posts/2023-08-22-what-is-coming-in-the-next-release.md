@@ -7,7 +7,7 @@ post: {
     categories: "release,v1",
 }
 ---
-In our pursuit to provide you with the best tools for creating resilient static HTML documents and web sites, the next release of fusion.ssg will feature numerous enhancements (please see below for details).
+In our pursuit to provide you with the best tools for creating resilient static HTML documents and websites, the next release of fusion.ssg will feature numerous enhancements (please see below for details).
 <!-- end -->
 We are so thrilled to see fusion.ssg being adopted by creators from all over the world ❤️.
 
@@ -21,7 +21,7 @@ The Team
 ### Cache Busting
 
 <img style="float: left; border-radius: 50%; shape-outside: circle(); margin-right: 10px;" src="{baseURL}/media/posts/buster.png" alt="image" width="100">
-<p>The next release of fusion.ssg will make cache busting your web sites a snap 🫰🏼. When building for release, fusion.ssg will now <em>optionally</em> cache bust your site's assets (e.g. css, media, scripts, .etc), allowing your site's visitors to immediately experience its latest changes. Specifically, to <em>opt in to cache busting your release builds</em>, you will need to append <code>--cache-bust</code> to the <em>release:fusion</em> script located in your project's <em>package.json</em> file. Once appended, the release:fusion script should look exactly like the following:</p>
+<p>The next release of fusion.ssg will make cache busting your websites a snap 🫰🏼. When building for release, fusion.ssg will now <em>optionally</em> cache bust your site's assets (e.g. css, media, scripts, .etc), allowing your site's visitors to immediately experience its latest changes. Specifically, to <em>opt in to cache busting your release builds</em>, you will need to append <code>--cache-bust</code> to the <em>release:fusion</em> script located in your project's <em>package.json</em> file. Once appended, the release:fusion script should look exactly like the following:</p>
 
 ```json
 "release:fusion": "fusion release --cache-bust",
@@ -49,7 +49,7 @@ If an include's path matches one of these conditions, its content will not be in
 
 ### WIPS Reporting During Release Builds
 
-fusion.ssg will now report all WIPS for each release build cycle. These warnings will serve to prevent the _unintended_ updating of web sites with missing HTML documents that should have been included but aren't because they are still marked as WIPS.
+fusion.ssg will now report all WIPS for each release build cycle. These warnings will serve to prevent the _unintended_ updating of websites with missing HTML documents that should have been included but aren't because they are still marked as WIPS.
 
 <img src="{baseURL}/media/posts/WIPS-reporting.png" alt="imgage">
 

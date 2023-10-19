@@ -21,6 +21,8 @@ docindex: {
 
 _fpg_, fusion.ssg's project generator,  relieves you of the burden of having to manually create and configure your projects. When run, it *__creates your project and installs all of the project's dependencies__*. The most difficult task you will face when creating a new fusion.ssg project is deciding what to name it :).
 
+<p class="info">The generated project that fpg creates uses the <a href="https://picocss.com/">Pico.css</a> frameowork. However, you can delete it from your project's <b>src/css</b> folder and use whatever you prefer to build your website.</p>
+
 ## Usage
 
 To create a new project, run the following in your terminal in a folder of your choice:

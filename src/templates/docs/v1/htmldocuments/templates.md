@@ -39,12 +39,12 @@ page: main
 
 ## Works In Progress
 
-fusion.ssg can ignore templates that are _works in progress_ during release builds, thereby preventing their associated HTML documents from polluting your web site. Please see <a href="{baseURL}/docs/{docsCurrentVersion}/configuration/fusionssg-configuration#wips">wips</a> for more information.
+fusion.ssg can ignore templates that are _works in progress_ during release builds, thereby preventing their associated HTML documents from polluting your website. Please see <a href="{baseURL}/docs/{docsCurrentVersion}/configuration/fusionssg-configuration#wips">wips</a> for more information.
 
 ### Works In Progress Reporting
 
 <p class="ver">Introduced in v1.2.0</p>
 
-Beginning with v1.2.0, fusion.ssg will report all works in progress during release builds. These warnings serve to prevent the unintended updating of web sites with missing HTML documents that should have been included but aren't because they are still marked as WIPS.
+Beginning with v1.2.0, fusion.ssg will report all works in progress during release builds. These warnings serve to prevent the unintended updating of websites with missing HTML documents that should have been included but aren't because they are still marked as WIPS.
 
 <img src="{baseURL}/media/posts/WIPS-reporting.png" alt="image">

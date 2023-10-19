@@ -75,7 +75,7 @@ These are _files_ and _folders_ located in the _src/templates_ folder that are _
 
 <p class="ver">Introduced in v1.2.0</p>
 
-Beginning with v1.2.0, fusion.ssg will _report all works in progress_ for each release build cycle. These warnings serve to prevent the _unintended_ updating of web sites with missing HTML documents that should have been included but haven't because they are still marked as works in progress.
+Beginning with v1.2.0, fusion.ssg will _report all works in progress_ for each release build cycle. These warnings serve to prevent the _unintended_ updating of websites with missing HTML documents that should have been included but haven't because they are still marked as works in progress.
 
 <img src="{baseURL}/media/posts/WIPS-reporting.png" alt="imgage">
 
