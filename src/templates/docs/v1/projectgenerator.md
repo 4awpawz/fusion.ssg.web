@@ -19,9 +19,9 @@ docindex: {
 
 <p class="info">Beginning with v1.0.0, <a href="https://browsersync.io/">Browsersync</a>, which provides synchronized browser testing, has replaced live-server.</p>
 
-_fpg_, fusion.ssg's project generator,  relieves you of the burden of having to manually create and configure your projects. When run, it *__creates your project and installs all of the project's dependencies__*. The most difficult task you will face when creating a new fusion.ssg project is deciding what to name it :).
+_fpg_, fusion.ssg's project generator, relieves you of the burden of having to manually create and configure your projects. When run, it *__creates your project and installs all of the project's dependencies__*. The most difficult task you will face when creating a new fusion.ssg project is deciding what to name it :).
 
-<p class="info">The generated project that fpg creates uses the <a href="https://picocss.com/">Pico.css</a> frameowork. However, you can delete it from your project's <b>src/css</b> folder and use whatever you prefer to build your website.</p>
+<p class="info">The generated project uses the <a href="https://picocss.com/">Pico.css</a> frameowork for styling. However, you can delete it from your project's <b>src/css</b> folder and use whatever you prefer to style your website.</p>
 
 ## Usage
 
