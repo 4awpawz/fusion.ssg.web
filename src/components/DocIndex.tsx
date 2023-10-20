@@ -19,7 +19,7 @@ export const DocIndex = function({ asset }: Props) {
     const subtopic = asset.fm.data.docindex.subtopic;
     return <aside>
         <nav class="closed-on-mobile">
-            <p class="version">{"{version}"}</p>
+            <p class="version"><a href="{baseURL}/docs" class="secondary">{"{version}"}</a></p>
             <details open={topic === "gettingstarted"}>
                 <summary>getting started</summary>
                 <ul>
@@ -29,14 +29,15 @@ export const DocIndex = function({ asset }: Props) {
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/projectstructure" aria-current={subtopic === "projectstructure" && "page"}>Project Structure</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocnamingconvention" aria-current={subtopic === "htmldocnamingconvention" && "page"}>HTML Document Naming Convention</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmlfilepathsandurls" aria-current={subtopic === "htmlfilepathsandurls" && "page"}>HTML File Paths And URLS</a></li>
+                    {/* <li><a class="secondary" href="{baseURL}/docs/tutorials" aria-current={subtopic === "tutorials" && "page"}>Tutorials</a></li> */}
                 </ul>
             </details>
             <details open={topic === "htmldocuments"}>
                 <summary>html documents</summary>
                 <ul>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/frontmatter" aria-current={subtopic === "frontmatter" && "page"}>Front Matter</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates" aria-current={subtopic === "templates" && "page"}>Templates</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens" aria-current={subtopic === "tokens" && "page"}>Tokens</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates" aria-current={subtopic === "templates" && "page"}>Templates</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/pages" aria-current={subtopic === "pages" && "page"}>Pages</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/includes" aria-current={subtopic === "includes" && "page"}>Includes</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/jsondatasources" aria-current={subtopic === "jsondatasources" && "page"}>JSON Data Sources</a></li>

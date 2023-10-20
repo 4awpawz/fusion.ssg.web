@@ -19,32 +19,32 @@ docindex: {
 <br>
 <br>
 
-If you are new to working with fusion.ssg, it is advantageous to have a high level, conceptual understanding of how it seamlessly fuses together your project's templates + pages + components + tokens to create HTML documents.
+If you are new to fusion.ssg, it is advantageous for you to have a high level conceptual understanding of how it seamlessly fuses together your project's templates, pages, components and tokens to create HTML documents.
 
-The discussion below focuses on the creation of a single HTML document as all HTML documents are subject to the identical workflow.
+The discussion below focuses on the creation of a single HTML document.
 
 <article>
 <header><h2>Step 1 - Template + Page</h2></header>
 
-fusion.ssg parses the template file, insuring that it contains the required YAML front matter and possibly also content in the form of _HTML_ or _markdown_. In the template's front matter, it looks for a property called _page_ whose value is the path to a file located in the project's _src/pages_ folder. The page file is composed entirely of HTML and it exists to provide the overall structure of your finished HTML document. If fusion.ssg doesn't find a page property, it defaults to using the _src/pages/default.html_ page. If the template has content, fusion.ssg searches the page's content for a <code>&lbrace;&lbrace;template&rbrace;&rbrace;</code> token, and if it finds it, replaces it with the template's content. At this point, we have a _developing HTML document_.
+fusion.ssg looks for ___a property named page declared in the template's YAML front matter whose value points to a page file located in the project's src/pages___ folder. If fusion.ssg doesn't find the property, it defaults to using the _src/pages/default.html_ page. The page file provides the overall structure for the generated HTML document as well as any content of its own. ___If the template has its own content to contribute to the HTML document and the page's content contains a &lbrace;&lbrace;template&rbrace;&rbrace; token, fusion.ssg will replace the page's template token with the template's content___. At this point, we have a _developing HTML document_.
 </article>
 
 <article>
 <header><h2>Step 2 - Components</h2></header>
 
-This is where it begins to get interesting. fusion.ssg searches for all the _component tags_ (e.g., _&lt;MyComponent /&gt;_) in the developing HTML document's content. If it finds one or more component tags, fusion.ssg analyzes their _properties_ to  determine if they have  a `dataSources` property, which declares their dependency on one or more _JSON data sources_ residing in the project's _src/data_ folder. If they do, these data sources are now acquired and each component is then called, being passed their data sources along with any other properties that the component tag may have. As each component returns its content in the form of HTML, fusion.ssg replaces the component's respective tag in the developing HTML document with their content.
+fusion.ssg then searches the developing HTML document for ___component tags (e.g., &lt;MyComponent /&gt;)___ and if found, each component is called and ___their corresponding tags are replaced by the HTML they return___.
 </article>
 
 <article>
 <header><h2>Step 3 - Tokens</h2></header>
 
-fusion.ssg now checks if the template's front matter and fusion.json, the project's configuration file, has declared any tokens and, if they have, replaces all matching tokens (e.g., <code>&lbrace;title&rbrace;</code>) found in the developing HTML document's content with their corresponding token values.
+fusion.ssg then searches the developing HTML document's content for ___simple tokens (e.g., &lbrace;title&rbrace;)___ and, if found, ___replaces them with their matching token values___ found in either the template's _YAML front matter_ or _fusion.json_, the project's configuration file.
 </article>
 
 <article>
 <header><h2>Step 4 - Serialize The HTML Document</h2></header>
 
-At this point the HTML document is now 100% complete. fusion.ssg now serializes it to its respective file in the project's _build_ folder.
+The HTML document is now complete and ___its content is serialized to its respective path in the project's build folder___.
 </article>
 
 While the actual process that fusion.ssg uses is quite a bit more complex than what this high level overview provides, you should now have a very good conceptual understanding of how fusion.ssg goes about its business of producing HTML documents.

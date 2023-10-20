@@ -38,7 +38,7 @@ The _name_ to use for the folder that hosts your site's <a href="{baseURL}/docs/
 
 If your site is served from a <em>subfloder</em>, such as is the case for sites hosted on <em>github.io</em>, prepend <em>&lbrace;baseURL&rbrace;</em> to your site's <a href="https://www.ibm.com/docs/en/eslm/10.0.4?topic=parameters-absolute-root-relative-url">root relative URLs</a> and they will be replaced with this value during <a href="{baseURL}/docs/{docsCurrentVersion}/cli#npm-run-release">release builds</a>.
 
-<p class="warn">baseURL is a reserved symbol! Though &lbrace;baseURL&rbrace; looks like a simple token declaration, it should never be used as one. Never use baseURL to declare a local simple token or a global simple token.</p>
+<p class="warn"><code>{baseURL}</code> is a reserved token and should only be used in this context.</p>
 
 - default: ""
 
@@ -69,8 +69,9 @@ These are _files_ and _folders_ located in the _src/templates_ folder that are _
 <header>
 <p><em>Example</em>: Declaring the files and folders to be ignored during release builds.</p>
 </header>
-<pre><code class="language-JSON">"wips": ["docs/next-version", "!docs/next-version/index.md"]</code></pre>
-<p class="info">Files and folders prepended with "!" are <em>negated and will be generated.</em></p>
+<pre><code class="language-JSON">"wips": ["docs/next-version/", "!docs/next-version/index.md"]</code></pre>
+<p class="info">Files and folders prepended with "!" are <em>negated and will be generated</em>.</p>
+<p class="info">Folders must be appended with <em>"/"</em>.</p>
 </aside>
 
 <p class="ver">Introduced in v1.2.0</p>

@@ -1,7 +1,7 @@
 {
     "postsFolder": "news",
     "wips": [
-        "posts/2023-08-11-going-from-this-to-that-tutorials-intro.md"
+        "docs/tutorials/"
     ],
     "conditionalIncludes": {
         "developmentOnly": [],
@@ -10,6 +10,7 @@
     "baseURL": "",
     "tokens": {
         "version": "v1.2.0",
+        "majversion": "v1",
         "docsCurrentVersion": "v1"
     }
 }

@@ -19,9 +19,11 @@ docindex: {
 <div><small>Project Location: <em>src/templates</em></small></div>
 </section>
 
-Front matter is integral to fusion.ssg's build process and it is required at the top of every <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">template</a>, even when either or both the template and the front matter are empty.
+Front matter, specifically YAML front matter, is integral to fusion.ssg's build process and though not technically required, ___every <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">template</a> should include YAML front matter at the very top of the file___, even when the template has no content of its own and its front matter is empty.
 
-<p class="info">fusion.ssg relies on the library <a href="https://www.npmjs.com/package/gray-matter">gray-matter</a> to convert front matter to JavaScript.</p>
+<p class="info">Wherever <b>"front matter"</b> is mentioned on its own, assume it refers to <b>"YAML front matter"</b>.</p>
+
+<p class="info">fusion.ssg relies on the open source library <a href="https://www.npmjs.com/package/gray-matter">gray-matter</a> to convert YAML front matter to JavaScript.</p>
 
 <article>
 <header><p class="example">A template with front matter.</p></header>

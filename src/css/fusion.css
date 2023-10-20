@@ -212,10 +212,15 @@ nav a {
 p.info, p.info a, p.warn, p.ver{
     font-style: italic;
 }
+
 p.warn {
     color: yellow;
-    font-style: uppercase;
 }
+
+p.warn code {
+    all: unset;
+}
+
 p.info::before {
     content: "i";
     background-color: var(--primary);

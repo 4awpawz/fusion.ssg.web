@@ -8,11 +8,11 @@
         <title>fusion.ssg: Documentation - Includes</title>
     </head>
     <body>
-        {{navbar}
+        {{navbar}}
         <main class="container">
             {{template}}
         </main>
-        {{footer}
+        {{footer}}
     </body>
 </html>
 ```

@@ -52,12 +52,12 @@ tokens: {
         &lt;meta charset="UTF-8"&gt;
         &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-        &lt;title&gt;&lbrace;docTitle&rbrace;-&lbrace;breed&rbrace;&lt/title&gt;
+        &lt;title&gt;{docTitle}-{breed}&lt/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;main&gt;
             &lt;h1&gt;{catName}&lt;/h1&gt;
-            &lbrace;&lbrace;template&rbrace;&rbrace;
+            &lt;{{template}}&gt;
         &lt;/main&gt;
     &lt;/body&gt;
 &lt;/html&gt;
@@ -111,7 +111,7 @@ Besides the simple tokens that you define in your _template's front matter_ and 
 
 Template tokens are only relevant in <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/pages">pages</a> and are replaced by the content of their associated <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">templates</a>.
 
-<p class="warn">template is a reserved symbol and &lbrace;&lbrace;template&rbrace;&rbrace; should only be used in this context.</p>
+<p class="warn"><code>{{template}}</code> is a reserved token and should only be used in this context.</p>
 <article>
     <header>
         <p class="example">An HTML document with a template token.</p>
@@ -150,11 +150,11 @@ Include tokens are relevant in <a href="{baseURL}/docs/{docsCurrentVersion}/html
     </header>
 <pre><code class="language-HTML">
 &lt;body&gt;
-    &lbrace;&lbrace;header&rbrace;&rbrace;
+    {{header}}
     &lt;main&gt;
         &vellip;
     &lt;/main&gt;
-    &lbrace;&lbrace;footer&rbrace;&rbrace;
+    {{footer}}
 &lt;/body&gt;
 </code></pre>
 <footer>

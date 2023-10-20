@@ -25,10 +25,16 @@ _fpg_, fusion.ssg's project generator, relieves you of the burden of having to m
 
 ## Usage
 
-To create a new project, run the following in your terminal in a folder of your choice:
+To create a new project ___with scaffolding___, run the following in your terminal in a folder of your choice:
 
 ```shell
 fpg n | new <target_folder>
+```
+
+To create a new project ___without scaffolding___, run the following in your terminal in a folder of your choice
+
+```shell
+fpg n | new --bare <target_folder>
 ```
 
 When you run the above, fusion.ssg will generate a new project in the current folder using the name that you provided for _target_folder_ and you can explore its content in your editor while reading the documentation for <a href="{baseURL}/docs/{docsCurrentVersion}/projectstructure">Project Structure.</a>

@@ -20,7 +20,7 @@ docindex: {
     <div><small>Project Location: <em>src/includes</em></small></div>
 </section>
 
-An _include_, like <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">templates</a> and <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/pages">pages</a>, contributes its content to the HTML document. But unlike those, whose content is generally more specific to the HTML document, such  as its subject matter, main topic, etc., includes are intended to be used to encapsulate blocks of content that are used in multiple HTML documents, such as blocks of meta tags, navbars, footers, sidebars, .etc. Includes also allow you to leverage the benefit of using either markdown or HTML for a particular part of an HTML document.
+An _include_, like <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">templates</a> and <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/pages">pages</a>, contributes its content to the HTML document. But unlike those, whose content is generally more specific to the HTML document, such  as its subject matter, main topic, etc., includes are intended to be used to encapsulate blocks of content that are used in multiple HTML documents, such as blocks of meta tags, navbars, footers, sidebars, .etc. Includes, like templates, also allow you to leverage the benefit of using either markdown or HTML for a particular part of an HTML document.
 
 Both _pages_ and _templates_ can declare _one or more_ <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens#include-tokens">include tokens</a> that declare the paths, minus their file type, to their respective include files that reside in the src/includes folder.
 

@@ -19,13 +19,21 @@ docindex: {
 
 The following will guide you through installing both _fusion.ssg_ and _fusion.fpg_, fusion.ssg's _project generator_.
 
-<article>
+## Install fusion.ssg:
 
-Run the following in your terminal to install both fusion.ssg and fusion.fpg:
+Run the following in your terminal to install fusion.ssg
 
 ```shell
-npm i -g @4awpawz/fusion.ssg @4awpawz/fusion.fpg
+npm i -g @4awpawz/fusion.ssg
 ```
-</article>
+
+
+## Install fusion.fpg:
+
+Run the following in your terminal to install fusion.fpg
+
+```shell
+npm i -g @4awpawz/fusion.fpg
+```
 
 <p class="info">Now that you have installed all the required packages, you can now create your very first fusion.ssg project by following the instructions found in  <a href="{baseURL}/docs/{docsCurrentVersion}/projectgenerator">Project Generator</a>.</p>
