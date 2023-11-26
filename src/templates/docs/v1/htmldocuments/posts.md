@@ -22,7 +22,7 @@ docindex: {
 
 Posts are specialized <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/templates">templates</a> that can be useful for creating <em>blog-like</em> HTML documents, or any type of HTML document that would benefit from a <em>chronologically ordered folder structure</em>, <em>tags</em> and <em>categories</em>.
 
-<p class="info">In metadata, posts can identified by their <b>"isPost": true</b> property.</p>
+<p class="info">In metadata, posts can be identified by their <b>"isPost": true</b> property.</p>
 
 ## Naming Convention
 
