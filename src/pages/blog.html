@@ -21,12 +21,14 @@
     <title>{title}</title>
 </head>
 
-<body>
+<body class="blog">
     <MainMenu target="news" />
     <main class="container">
         <hgroup>
             <h1>{title}</h1>
-                <p>Posted on <i style="color: #fff; opacity: 0.555;">{postDate}</i> to <i style="color: #fff; opacity: 0.555;">{categories}</i></p>
+            <p>Posted on <i style="color: #fff; opacity: 0.555;">{postDate}</i> to
+                <i style="color: #fff; opacity: 0.555;">{categories}</i>
+            </p>
         </hgroup>
         <article>
             {{template}}

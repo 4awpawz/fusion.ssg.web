@@ -2,7 +2,10 @@
 
 :root {
     --selected-nav-item: rgb(255, 255, 255, .09);
-    --demo-background: linear-gradient(180deg, #11191f 0%, rgba(10, 53, 67, 0.5) 33%, rgba(10, 53, 67, 0.5) 66%, #11191f 100%);
+    --hero-background-gradient: radial-gradient(circle at center,  yellow, orange, white);
+    --hero-lighter-background-gradient: radial-gradient(circle at center,  yellow 50%, orange, white);
+    --white: white;
+    letter-spacing: 1px;
 }
 
 html {
@@ -10,37 +13,19 @@ html {
 }
 
 body {
-    padding-top: 4rem;
-}
-@media (min-width: 576px) {
-    body {
-        padding-top: 4.5rem;
-    }
-}
-@media (min-width: 768px) {
-    body {
-        padding-top: 5.5rem;
-    }
-}
-@media (min-width: 992px) {
-    body {
-        padding-top: 6rem;
-    }
-}
-@media (min-width: 1200px) {
-    body {
-        padding-top: 6rem;
-    }
+    padding-top: 0;
 }
 
 mark {
     padding: 0 2ch 0 2ch;
 }
+
 pre {
     white-space: pre-wrap;
 }
 
 /* site menu */
+
 .topnav {
     position: fixed;
     z-index: 99;
@@ -71,52 +56,70 @@ pre {
     margin-left: 1rem;
 }
 
+/* docpage */
+
+.docpage {
+    padding-top: 4rem;
+}
+
 /* remove detail's widget */
 .docpage aside .version {
     font-size: calc(1rem - 4px);
     margin-bottom: 1rem;
     color: var(--muted-color);
 }
+
 .docpage details summary::after {
     display: none;
 }
+
 .docpage aside nav {
     border-bottom: none;
     padding-bottom: var(--block-spacing-vertical);
 }
+
 .docpage details {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: var(--spacing);
 }
+
 .docpage summary {
     text-transform: uppercase;
     padding-bottom: .5rem;
     font-size: calc(1rem - 2px);
 }
+
 .docpage details li a {
     font-size: 1rem;
 }
+
 .docpage details ul {
     padding-left: .5rem;
 }
+
 .docpage dtails ul, .docpage details li {
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 1rem;
 }
+
 .docpage details[open] summary {
     margin-bottom: 0;
 }
+
 .docpage .selected-nav-item {
     background-color: var(--selected-nav-item);
 }
+
 .docpage aside nav [aria-current]:not([aria-current="false"]) {
     color: var(--primary-hover);
 }
+
 .docpage footer {
     padding-top: var(--block-spacing-vertical);
 }
+
 @media (min-width: 992px) {
     .docpage aside nav {
         position: fixed;
@@ -142,14 +145,17 @@ pre {
     width: 30px;
     height: 30px;
 }
+
 #navbar-github {
     width: var(--font-size);
     height: var(--font-size);
     color: #fff;
 }
+
 nav a {
     font-size: var(--font-size);
 }
+
 @media (min-width: 576px) {
     #navbar-sol {
         width: 38px;
@@ -157,56 +163,265 @@ nav a {
     }
 }
 
-/* home page */
-.homepage #principles {
-    text-align: center;
-    max-width: 60ch;
+.homepage main {
+    padding: 0;
+}
+
+.homepage article {
+    margin-block: 0;
+}
+
+.homepage :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: 500;
+}
+
+.homepage :is(h2, h3) {
+    margin-bottom: 0;
+}
+
+.homepage h2 {
+    font-size: 3em;
+}
+
+.homepage h3 {
+    font-size: 2.5rem;
 }
 
 /* hero */
+
 .hero {
     text-align: center;
-    background: var(--demo-background);
+    background: var(--hero-background-gradient);
+    letter-spacing: 2px;
+    padding-block: 8rem 4rem;
+    transition: background 350ms ease-in-out transform;
 }
-.hero h1 {
-    font-size: var(--font-size);
-    font-weight: var(--font-weight);
+
+.hero:hover {
+    background: var(--hero-lighter-background-gradient);
 }
+
+.hero hgroup {
+    margin: 0;
+}
+
+.hero hgroup h1 {
+    margin: 1rem auto;
+    font-size: 3.7rem;
+    line-height: 1em;
+    font-weight: 500;
+    color: #000;
+}
+
+.hero hgroup p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-block: 1rem;
+    margin-inline: auto;
+    max-width: 75%;
+    color: #000;
+}
+
+.hero-familiar-technologies {
+    margin-block: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.hero-familiar-technologies > code {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+    letter-spacing: 0;
+    background-color: transparent;
+    line-height: 1em;
+}
+
+.hero .button-group {
+    margin-block: 0 1rem;
+}
+
+.hero-button {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 50px;
+}
+
+.hero-version {
+    padding: .25rem .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: darkorange;
+    color: white;
+    border: 1px solid darkorange;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.hero-version:hover {
+    background-color: orange;
+    border-color: black;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.5s;
+}
+
+.hero-get-started {
+    background-color: hsl(195 , 85%, 41%);
+    color: hsl(33 100% 80%);
+    border: 1px solid hsl(195 , 85%, 41%);;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.hero-get-started:hover {
+    background-color: hsl(195 , 85%, 45%);
+    border-color: black;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.5s;
+}
+
+.hero-install-now {
+    background-color: #05b746;
+    color: #000;
+    border: 1px solid #05b746;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.hero-install-now:hover {
+    background-color: #05c746;
+    border-color: black;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.5s;
+}
+
 @media (min-width: 576px) {
     .hero h1 {
         --font-size: 2.2rem;
         --font-weight: 700;
     }
 }
+
 @media (min-width: 768px) {
     .hero h1 {
         --font-size: 2.5rem;
         --font-weight: 700;
     }
 }
+
 @media (min-width: 992px) {
     .hero h1 {
         --font-size: 2.7rem;
         --font-weight: 700;
     }
 }
+
 @media (min-width: 1200px) {
     .hero h1 {
         --font-size: 3rem;
         --font-weight: 700;
     }
 }
-.hero div p, hero div hgroup p {
+
+.why-fusion,
+.features,
+.examples,
+.show-appreciation{
+    margin-block: 3rem;
+}
+
+.why-fusion header h2,
+.features header h2,
+.examples header h2,
+.show-appreciation header h2
+{
+    text-align: center;
+    padding-block: 2rem;
+    line-height: initial;
+}
+
+.examples h3 {
     text-align: center;
 }
-.hero #version a {
-    display: inline-block;
-    padding: .25rem;
-    font-weight: 600;
-    font-size: var(--font-size);
-    border-radius: 0.25rem;
-    background-color: #ffe484;
+
+.examples pre code {
+    font-size: 1rem;
+}
+
+.examples h3 {
+    color: var(--primary);
+}
+
+.examples h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.why-fusion article {
+    background-color: hsl(0 0% 25%);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #999;
+    box-shadow: 5px 5px 10px #999;
+}
+
+.features article {
     color: #000;
+    border: 1px solid #999;
+    box-shadow: 5px 5px 10px #999;
+    margin-bottom: 1rem;
+    padding-block: 1rem;
+}
+
+.features article ul {
+    margin: 0;
+    padding-block: 2rem;
+    /* background-color: hsl(0 0% 25%); */
+}
+
+.examples h3 {
+    font-size: 2.5rem;
+}
+
+.why-fusion hgroup h3 {
+    color: var(--primary);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.why-fusion p {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.features li {
+    list-style: none;
+    display: block;
+    line-height: 1;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.features li::before {
+    content: "✅";
+    line-height: 1.3rem;
+    padding-right: .5rem;
+    font-size: .7rem;
+    vertical-align: middle;
+}
+
+.features li span {
+    font-size: .7rem;
+    color: black;
+    background-color: #ffe484;
+}
+
+iframe[title="GitHub"] {
+    display: block;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border: 0;
 }
 
 p.info, p.info a, p.warn, p.ver{
@@ -231,6 +446,7 @@ p.info::before {
     border-radius: 20%;
     margin-right: .5rem;
 }
+
 p.ver::before {
     content: "ver";
     background-color: var(--primary);
@@ -241,6 +457,7 @@ p.ver::before {
     border-radius: 20%;
     margin-right: .5rem;
 }
+
 p.warn::before {
     content: "🔔";
     background-color: rgb(255 255 0 / .2);
@@ -250,13 +467,16 @@ p.warn::before {
     border-radius: 4px;
     margin-right: .5rem;
 }
+
 /* Youtube video sources */
+
 .video-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
 }
+
 .video-container iframe {
     position: absolute;
     top: 0;
@@ -265,17 +485,34 @@ p.warn::before {
     height: 100%;
 }
 
+/* blog and posts */
+
+.blog {
+    padding-top: 4rem;
+}
+
 /* article header example */
+
 article header p.example::before {
     content: "Example: ";
     font-weight: 800;
 }
 
 /* utility classes */
+
 .centered {
     width: 100%;
     margin: 0 auto 0 auto;
 }
+
 .lighter-text {
     color: var(--secondary);
+}
+
+.button-group {
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    justify-content: center;
 }

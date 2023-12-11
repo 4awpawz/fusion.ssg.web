@@ -25,77 +25,71 @@
     <MainMenu />
     {{home-page/hero}}
     <main>
-        <section id="principles" class="container">
-            <hgroup>
-                <h2>Propel your development to a whole new level!</h2>
-                <p>Seamlessly fuse together HTML documents using familiar technologies in one cohesive development
-                    platform.</p>
-            </hgroup>
-        </section>
         <section class="container">
-            <article>
+            <div class="why-fusion">
                 <header>
-                    <h2 style="margin: 0; padding: 0;">Why fusion.ssg?</h2>
+                    <h2>Create resilient static websites</h2>
                 </header>
                 <section class="grid">
-                    <hgroup>
-                        <img src="{baseURL}/media/plato-64.png" alt="Plato">
-                        <h3>Philosophy</h3>
-                        <p>The most useful tools are those that embrace only those metaphors that directly reflect their
-                            utility.</p>
-                    </hgroup>
-                    <hgroup>
-                        <img src="{baseURL}/media/home-64.png" alt="Home">
-                        <h3>Familiarity</h3>
-                        <p>fusion.ssg seamlessly fuses together familiar concepts, such as templates, pages, includes,
-                            markdown, tokens, and JSX/TSX components.</p>
-                    </hgroup>
+                    <article>
+                        <hgroup>
+                            <h3><img src="{baseURL}/media/plato-64.png" alt="Plato">Philosophy</h3>
+                            <p>The most useful tools are those that fully embrace the functionality that directly
+                                reflects their purpose and ignores all others.</p>
+                        </hgroup>
+                    </article>
+                    <article>
+                        <hgroup>
+                            <h3><img src="{baseURL}/media/tiny-64.png" alt="Home">Minimalistic</h3>
+                            <p>fusion.ssg is built from the ground up to be just that, making it quick to learn for
+                                anyone who already has experience with HTML, JavaScript and CSS.</p>
+                        </hgroup>
+                    </article>
                 </section>
                 <section class="grid">
-                    <hgroup>
-                        <img src="{baseURL}/media/clock-64.png" alt="Home">
-                        <h3>Productivity</h3>
-                        <p> No complicated tooling and configuration to stand in the way of your creativity, and the
-                            project generator gets you up and
-                            creating quickly.</p>
-                    </hgroup>
-                    <hgroup>
-                        <img src="{baseURL}/media/tiny-64.png" alt="Home">
-                        <h3>Minimalistic</h3>
-                        <p>fusion.ssg is built from the ground up to be <i>just</i> that and very quick too.</p>
-                    </hgroup>
+                    <article>
+                        <hgroup>
+                            <h3><img src="{baseURL}/media/clock-64.png" alt="Home">Productivity</h3>
+                            <p> No complicated tooling and configuration to stand in the way of your creativity, and the
+                                project generator gets you up and creating quickly.</p>
+                        </hgroup>
+                    </article>
+                    <article>
+                        <hgroup>
+                            <h3><img src="{baseURL}/media/rocket.png" alt="Home"> Fast</h3>
+                            <p>Capable of generating hundreds of pages in under a second.</p>
+                        </hgroup>
+                    </article>
                 </section>
-            </article>
-            <article>
+            </div>
+            <div class="features">
                 <header>
-                    <h2 style="margin: 0; padding: 0;">Features</h2>
+                    <h2>Features</h2>
                 </header>
-                {{home-page/features}}
-            </article>
-        </section>
-        <section class="container">
-            <article>
+                <article>
+                    {{home-page/features}}
+                </article>
+            </div>
+            <div id="examples" class="examples">
                 <header>
-                    <h2 id="examples" style="margin: 0; padding: 0;">Examples</h2>
+                    <h2>Examples</h2>
                 </header>
                 <article>
                     <header>
-                        <h3>HTML Document From A Template And Page</h3>
+                        <h3>HTML Document<br>From A Template And A Page</h3>
                     </header>
                     {{examples/homepage/simplePageExamples}}
                 </article>
                 <article>
                     <header>
-                        <h3>HTML Document Using A Component To Generates A List</h3>
+                        <h3>HTML Document<br>With A List<br>From A Component And JSON</h3>
                     </header>
                     {{examples/homepage/simpleComponentExamples}}
                 </article>
-            </article>
-        </section>
-        <section class="container">
-            <article>
+            </div>
+            <div class="show-appreciation">
                 {{show-your-appreciation}}
-            </article>
+            </div>
         </section>
     </main>
     {{global/defaultSiteFooter}}

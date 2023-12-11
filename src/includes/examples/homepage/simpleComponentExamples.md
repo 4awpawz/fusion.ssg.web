@@ -1,4 +1,4 @@
-team.json data source:
+#### team.json data source
 
 ```json
 [
@@ -8,7 +8,7 @@ team.json data source:
 ]
 ```
 
-Template with a TeamMembers component tag that consumes team.json as a data source:
+#### Template with TeamMembers component
 
 ```html
 ---
@@ -22,7 +22,7 @@ tokens: {
 <TeamMembers datasources="team.json" />
 ```
 
-TeamMembers component implemented in __JavaScript__:
+#### TeamMembers.jsx component
 
 ```javascript
 function formatName(member) {
@@ -42,7 +42,7 @@ export const TeamMembers = function({ team }) {
 };
 ```
 
-TeamMembers component implementation in __TypeScript__:
+#### TeamMembers.tsx component
 
 ```typescript
 interface TeamMember {
@@ -73,7 +73,7 @@ export const TeamMembers = function({ team }: Props): string {
 };
 ```
 
-Page:
+#### Page
 
 ```html
 <!DOCTYPE html>
@@ -92,7 +92,7 @@ Page:
 </html>
 ```
 
-Generated HTML Document:
+#### Generated HTML document
 
 ```html
 <html lang="en">
@@ -104,7 +104,7 @@ Generated HTML Document:
 </head>
 <body>
     <main>
-        <h1>team</h1>
+        <h1>Team</h1>
         <p>Thanks to our team our rollout has been a huge success.</p>
         <h2>Contributors</h2>
         <ul>

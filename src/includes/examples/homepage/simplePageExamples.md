@@ -1,6 +1,6 @@
-Template with front matter with two token values:
+#### Template with token value declarations
 
-```markdown
+```html
 ---
 tokens: {
     pageTitle: Greetings,
@@ -9,7 +9,7 @@ tokens: {
 ---
 ```
 
-Page with two tokens:
+#### Page using tokens
 
 ```html
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ Page with two tokens:
 </html>
 ```
 
-Generated HTML Document:
+#### Generated HTML document
 
 ```html
 <!DOCTYPE html>

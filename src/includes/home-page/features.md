@@ -1,17 +1,15 @@
-- No initial project configuration is required.
-- Effortless project creation using fusion.ssg's project generator.
-- DOMless and serverless execution produces very quick build times.
-- HTML document composition from markdown, HTML, tokens, .jsx and .tsx components, JSON data sources and meta data.
-- .tsx and .jsx compilation and sand-boxed execution.
-- .ts browser script compilations.
-- Portfolio (multiple pages) generation via collections.
-- Generated projects provide package.json scripts for development and release builds.
-- CLI for one-off development and one-off release builds.
+- Zero initial project configuration.
+- DOMless and serverless execution.
+- .ts, .tsx and .jsx compilation.
+- .tsx and .jsx sand-boxed execution.
+- Multiple HTML documents generation via collections components.
+- package.json scripts for development and release builds.
+- CLI one-off development and release builds.
 - Base URL support for sites hosted in sub folders.
-- HTML documents that are works in progress can be ignored during release builds.
-- Blogging support, including multiple categories and tags.
-- Beautified HTML documents.
-- Optional cache busting of project assets during release builds <span class="secondary" style="font-size: .7rem; color: black; background-color: #ffe484">(v1.2.0)</span>.
-- Conditional composition of includes based on build strategy <span style="font-size: .7rem; color: black; background-color:  #ffe484;">(v1.2.0)</span>.
-- Reporting of works in progress during release builds <span style="font-size: .7rem; color: black; background-color: #ffe484;">(v1.2.0)</span>.
-- Blog metadata exposed as simple tokens <span style="font-size: .7rem; color: black; background-color: #ffe484;">(v1.2.0)</span>.
+- Works in progress ignored during release builds.
+- Works in progress reporting during release builds <span>(v1.2.0)</span>.
+- Blog posts with multiple categories and tags
+- Blog posts metadata exposed as simple tokens <span>(v1.2.0)</span>.
+- Beautified HTML and CSS documents.
+- Optional cache busting for release builds <span>(v1.2.0)</span>.
+- Conditional includes based on build strategy <span>(v1.2.0)</span>.
