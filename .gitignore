@@ -1,6 +1,7 @@
 .DS_Store
 .meta
 .assets.json
+.notes.txt
 build
 lib
 node_modules

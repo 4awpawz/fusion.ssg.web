@@ -2,8 +2,8 @@
 
 :root {
     --selected-nav-item: rgb(255, 255, 255, .09);
-    --hero-background-gradient: radial-gradient(circle at center,  yellow, orange, white);
-    --hero-lighter-background-gradient: radial-gradient(circle at center,  yellow 50%, orange, white);
+    --hero-background-gradient: radial-gradient(circle at center, yellow, orange, white);
+    --hero-lighter-background-gradient: radial-gradient(circle at center, yellow 50%, orange, white);
     --white: white;
     letter-spacing: 1px;
 }
@@ -33,13 +33,13 @@ pre {
     right: 0;
     left: 0;
     background: #11191f;
-    border-bottom: 1px solid rgba(187,198,206, 0.2);
+    border-bottom: 1px solid rgba(187, 198, 206, 0.2);
 }
 
 /* site footer */
 
 .site-footer {
-    border-top: 1px solid rgba(187,198,206, 0.2);
+    border-top: 1px solid rgba(187, 198, 206, 0.2);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -50,7 +50,7 @@ pre {
 
 .site-footer-column-heading {
     display: inline-block;
-    text-decoration: underline;
+    border-bottom: 1px dotted #ffffff;
     font-weight: 500;
     margin-bottom: .25rem;
 }
@@ -63,15 +63,22 @@ pre {
     color: var(--color);
     max-width: fit-content;
 }
-    
+
 @media (max-width: 768px) {
     .site-footer {
         display: block;
         text-align: center;
     }
+
     .site-footer-column {
         margin-bottom: 1rem;
     }
+}
+
+/* docpage */
+
+.docpage {
+    padding-top: 4rem;
 }
 
 /* docpage */
@@ -116,7 +123,8 @@ pre {
     padding-left: .5rem;
 }
 
-.docpage dtails ul, .docpage details li {
+.docpage dtails ul,
+.docpage details li {
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 1rem;
@@ -146,12 +154,15 @@ pre {
         overflow-x: hidden;
         overflow-y: auto;
     }
+
     .docpage summary {
         font-size: 80%;
     }
+
     .docpage details li a {
         font-size: 16px;
     }
+
     .docpage main {
         display: grid;
         grid-column-gap: calc(var(--block-spacing-horizontal) * 5);
@@ -252,7 +263,7 @@ nav a {
     justify-content: center;
 }
 
-.hero-familiar-technologies > code {
+.hero-familiar-technologies>code {
     font-weight: bold;
     font-size: 1.3rem;
     color: black;
@@ -290,14 +301,15 @@ nav a {
 }
 
 .hero-get-started {
-    background-color: hsl(195 , 85%, 41%);
+    background-color: hsl(195, 85%, 41%);
     color: hsl(33 100% 80%);
-    border: 1px solid hsl(195 , 85%, 41%);;
+    border: 1px solid hsl(195, 85%, 41%);
+    ;
     box-shadow: 0px 0px 0px transparent;
 }
 
 .hero-get-started:hover {
-    background-color: hsl(195 , 85%, 45%);
+    background-color: hsl(195, 85%, 45%);
     border-color: black;
     box-shadow: 1px 1px 5px black;
     transition: 0.5s;
@@ -348,15 +360,14 @@ nav a {
 .why-fusion,
 .features,
 .examples,
-.show-appreciation{
+.show-appreciation {
     margin-block: 3rem;
 }
 
 .why-fusion header h2,
 .features header h2,
 .examples header h2,
-.show-appreciation header h2
-{
+.show-appreciation header h2 {
     text-align: center;
     padding-block: 2rem;
     line-height: initial;
@@ -446,7 +457,10 @@ iframe[title="GitHub"] {
     border: 0;
 }
 
-p.info, p.info a, p.warn, p.ver{
+p.info,
+p.info a,
+p.warn,
+p.ver {
     font-style: italic;
 }
 
@@ -507,10 +521,28 @@ p.warn::before {
     height: 100%;
 }
 
-/* blog and posts */
+/* posts */
+
+.posts article ul {
+    padding-left: 0;
+}
+
+.posts {
+    padding-top: 0;
+}
+
+.posts article {
+    padding-top: 1rem;
+}
+
+/* blog */
 
 .blog {
-    padding-top: 4rem;
+    padding-top: 0;
+}
+
+.blog article {
+    padding-top: 1rem;
 }
 
 /* article header example */

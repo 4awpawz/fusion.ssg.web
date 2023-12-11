@@ -23,7 +23,7 @@ docindex: {
 
 <article>
 <header>
-<p class="example">A JSON data source source located in a file that resides in the src/data folder.</em>
+<p class="example">A JSON data source located in a file that resides in the src/data folder.</em>
 </p>
 </header>
 {{examples/sampleJSONDataSource}}

@@ -1,11 +1,14 @@
 {
     "postsFolder": "news",
     "wips": [
-        "docs/tutorials/"
+        "docs/tutorials/",
+        "posts/2024-11-15-v1.3.0.md"
     ],
     "conditionalIncludes": {
         "developmentOnly": [],
-        "releaseOnly": ["analytics/google.html"]
+        "releaseOnly": [
+            "analytics/google.html"
+        ]
     },
     "baseURL": "",
     "tokens": {

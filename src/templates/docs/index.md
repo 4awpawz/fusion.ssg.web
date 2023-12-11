@@ -9,4 +9,4 @@ tokens: {
 
 # Versions
 
-<a href="{baseURL}/docs/v1">{version} <span style="color: #888"><small>Latest</small></span></a>
+<a href="{baseURL}/docs/v1/gettingstarted">{version} <span style="color: #888"><small>Latest</small></span></a>

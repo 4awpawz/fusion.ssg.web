@@ -23,12 +23,13 @@ export const DocIndex = function({ asset }: Props) {
             <details open={topic === "gettingstarted"}>
                 <summary>getting started</summary>
                 <ul>
-                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}" aria-current={subtopic === "synopsis" && "page"}>Synopsis</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/installation" aria-current={subtopic === "installation" && "page"}>Installation</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/projectgenerator" aria-current={subtopic === "projectgenerator" && "page"}>Project Generator</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/projectstructure" aria-current={subtopic === "projectstructure" && "page"}>Project Structure</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocnamingconvention" aria-current={subtopic === "htmldocnamingconvention" && "page"}>HTML Document Naming Convention</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmlfilepathsandurls" aria-current={subtopic === "htmlfilepathsandurls" && "page"}>HTML File Paths And URLS</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted" aria-current={subtopic === "synopsis" && "page"}>Synopsis</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/installation" aria-current={subtopic === "installation" && "page"}>Installation</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/projectgenerator" aria-current={subtopic === "projectgenerator" && "page"}>Project Generator</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/projectstructure" aria-current={subtopic === "projectstructure" && "page"}>Project Structure</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/htmldocnamingconvention" aria-current={subtopic === "htmldocnamingconvention" && "page"}>HTML Document Naming Convention</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/htmlfilepathsandurls" aria-current={subtopic === "htmlfilepathsandurls" && "page"}>HTML File Paths And URLS</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/cheatsheet" aria-current={subtopic === "cheatsheet" && "page"}>Cheat Sheet</a></li>
                     {/* <li><a class="secondary" href="{baseURL}/docs/tutorials" aria-current={subtopic === "tutorials" && "page"}>Tutorials</a></li> */}
                 </ul>
             </details>
