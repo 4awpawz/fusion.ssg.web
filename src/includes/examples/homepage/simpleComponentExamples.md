@@ -29,7 +29,7 @@ function formatName(member) {
     return `${member.name.first} ${member.name.last}`;
 }
 
-export const TeamMembers = function({ team } {
+export const TeamMembers = function({ team }) {
     return (
         <ul>
             {team.map(member => {
