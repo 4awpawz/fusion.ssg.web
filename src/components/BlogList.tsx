@@ -21,6 +21,7 @@ interface Props {
     assets: AssetItem[]
 }
 
+// TODO: Use flexbox to group articles by their postdate year in descending value of postdate.
 export const BlogList = function({ assets }: Props) {
     const posts = assets.filter(asset => asset.isPost).sort((aAsset, bAsset) => bAsset.postTimeStamp - aAsset.postTimeStamp);
     return (
