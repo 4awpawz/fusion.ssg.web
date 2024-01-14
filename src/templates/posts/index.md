@@ -5,6 +5,6 @@ tokens: {
 }
 ---
 
-# Articles
+# News
 
 <BlogList />
