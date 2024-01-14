@@ -8,6 +8,6 @@ interface Props {
 
 export const PostDate = function({ asset }: Props) {
     return (
-        <span style="color: #fff; opacity: 0.755;">{new Date(asset.postTimeStamp).toLocaleDateString()}</span>
+        <span style="color: #fff; opacity: 0.755;"><small>{new Date(asset.postTimeStamp).toLocaleDateString()}</small></span>
     );
 };
