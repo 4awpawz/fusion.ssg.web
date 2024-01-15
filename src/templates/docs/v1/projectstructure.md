@@ -30,6 +30,7 @@ fusion.ssg projects will contain the files and folders that are depicted below.
   ├─ src/
   │  ├─ components/
   │  ├─ css/
+  │     ├─ libs/
   │  ├─ data/
   │  ├─ etc/
   │  ├─ includes/
@@ -95,7 +96,11 @@ fusion.ssg projects will contain the files and folders that are depicted below.
         </tr>
         <tr>
             <td>src/css</td>
-            <td>Contains your site's css. If you are using a css pre compiler, you should target its output to this folder. During builds, fusion.ssg copies all the .css file from this folder to the targeted build folder's css folder.</td>
+            <td>Contains your site's css. If you are using a css pre compiler, you should target its output to this folder. During builds, fusion.ssg copies all the .css files from this folder to the targeted build folder's css folder.</td>
+        </tr>
+        <tr>
+            <td>src/css/libs</td>
+            <td>Contains 3rd party CSS libraries. During builds, fusion.ssg copies all the .css files from this folder to the targeted build folder's css/libs folder.</td></td>
         </tr>
         <tr>
             <td>src/data</td>
