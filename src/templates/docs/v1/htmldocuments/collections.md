@@ -30,7 +30,7 @@ A <em>collection</em> consists of _one or more_ HTML documents created using a s
 
 Imagine for the moment that you have a portfolio of one kind or another, and that you want to create an HTML document for each item in the portfolio. Imagine how tedious and laborious that process would be if you had to do that manually. fusion.ssg provides a much better solution.
 
-Simply put, fusion.ssg can generate a "collection" of HTML documents using a single <a href="#collection-templates">template</a> and a <a href="#collection-component-implementation">collection component</a> that is called multiple times and that returns objects that define the <a href="#returns">properties</a> an HTML document.
+Simply put, fusion.ssg can generate a "collection" of HTML documents using a single <a href="#collection-templates">template</a> and a <a href="#collection-component-implementation">collection component</a> that is called multiple times and that returns an object that defines the <a href="#returns">properties</a> of an HTML document.
 
 ## Collection Component Tags
 
