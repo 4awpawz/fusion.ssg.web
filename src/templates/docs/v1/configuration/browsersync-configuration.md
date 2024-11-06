@@ -11,6 +11,10 @@ docindex: {
 
 <em>CONFIGURATION</em>
 
+ <p class="warn">Beginning with fusion.ssg v1.3.0 the warning about a missing 404.html file is no longer implemented in browsersync.js, and is handled internally by fusion.ssg. If you are upgrading a project to v1.3.0 or greater then you need to remove the following from your project's browsersync.js file which is located in your project's root folder:</p>
+
+`console.log(chalk.yellowBright("Warning: this site is missing a 404.html doc - using default 404.html."));`
+
 # browsersync-options.json
 
 <p class="ver">Introduced in v1.0.0</p>
