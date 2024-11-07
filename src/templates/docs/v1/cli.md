@@ -83,6 +83,12 @@ or
 <pre><code class="language-shell">fusion r | release</code></pre>
 </aside>
 
+## Optional Verbose Metrics Reporting
+
+<p class="ver">Introduced in v1.3.0</p>
+
+Beginning with v1.3.0, metrics reporting to the console after each build cycle now defaults to a condensed set of metrics for both development and release builds. The detailed metrics reporting of previous versions is still available via the `--verbose` option and can be applied to either development or release builds or to both.
+
 ## Optional Cache Busting Of Release Builds
 
 <p class="ver">Introduced in v1.2.0</p>

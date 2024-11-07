@@ -36,7 +36,7 @@ The _name_ to use for the folder that hosts your site's <a href="{baseURL}/docs/
 
 ## baseURL
 
-If your site is served from a <em>subfloder</em>, such as is the case for sites hosted on <em>github.io</em>, prepend <em>&lbrace;baseURL&rbrace;</em> to your site's <a href="https://www.ibm.com/docs/en/eslm/10.0.4?topic=parameters-absolute-root-relative-url">root relative URLs</a> and they will be replaced with this value during <a href="{baseURL}/docs/{docsCurrentVersion}/cli#npm-run-release">release builds</a>.
+If your site is served from a <em>subfolder</em>, such as is the case for sites hosted on <em>github.io</em>, prepend <em>&lbrace;baseURL&rbrace;</em> to your site's <a href="https://www.ibm.com/docs/en/eslm/10.0.4?topic=parameters-absolute-root-relative-url">root relative URLs</a> and they will be replaced with this value during <a href="{baseURL}/docs/{docsCurrentVersion}/cli#npm-run-release">release builds</a>.
 
 <p class="warn"><code>{baseURL}</code> is a reserved token and should only be used in this context.</p>
 
@@ -58,6 +58,20 @@ If your site is served from a <em>subfloder</em>, such as is the case for sites 
 &lt;a href="4awpawz.github.io/fusion.ssg.docs/docs"&gt;Docs&lt;/a&gt;
 </code></pre>
 </aside>
+
+### CSS File Support
+
+<p class="ver">Introduced in v1.3.0</p>
+
+Beginning with v1.3.0, the use of _baseURL_ is now supported in your project's CSS files. If you are building a site that has background images and your project employs the use of fusion.ssg's reserved baseURL token with a value other than '', you no longer have to declare 2 URLs for the image, one for development builds, and one for release builds. Instead, you can now prepend the URL with fusion.ssg's reserved _baseURL_ token and the URL will resolve properly for both development and release builds.
+
+Example:
+
+```css
+.hero {
+    background-image: url({baseURL}/media/stretching-cat.png);
+}
+```
 
 ## wips
 
