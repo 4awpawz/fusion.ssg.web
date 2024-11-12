@@ -14,7 +14,7 @@ interface Props {
     asset: Asset
 }
 
-export const DocIndex = function({ asset }: Props) {
+export const DocIndex = function ({ asset }: Props) {
     const topic = asset.fm.data.docindex.topic;
     const subtopic = asset.fm.data.docindex.subtopic;
     return <aside>
@@ -46,6 +46,7 @@ export const DocIndex = function({ asset }: Props) {
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/collections" aria-current={subtopic === "collections" && "page"}>Collections</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/posts" aria-current={subtopic === "posts" && "page"}>Posts</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/404-pages" aria-current={subtopic === "404.html" && "page"}>404.html</a></li>
+                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/wips" aria-current={subtopic === "wips" && "page"}>Works In Progress</a></li>
                 </ul>
             </details>
             <details open={topic === "metadata"}>

@@ -51,43 +51,31 @@ The name of the subfolder that your site is served from. Please see <a href="{ba
 
 ## wips
 
-These are _files_ and _folders_ located in the _src/templates_ folder that are _works in progress_ and that are to be _ignored_ during release builds.
+These are the paths to the _files_ and _folders_ that are located in the _src/templates_ folder that are _works in progress_ and that are to be _ignored_ during release builds. To learn more about _wips_, please read <a href="{baseURL}/docs/v1/htmldocuments/wips">Works In Progress</a>.
 
 - default: []
 
 <aside>
 <header>
-<p><em>Example</em>: Declaring the files and folders to be ignored during release builds.</p>
+<p><em>Example</em>: Declaring the files and folders located in the <em>src/templates</em> folder that are to be ignored during release builds.</p>
 </header>
 <pre><code class="language-JSON">"wips": ["docs/next-version/", "!docs/next-version/index.md"]</code></pre>
 <p class="info">Files and folders prepended with "!" are <em>negated and will be generated</em>.</p>
 <p class="info">Folders must be appended with <em>"/"</em>.</p>
 </aside>
 
-<p class="ver">Introduced in v1.2.0</p>
-
-Beginning with v1.2.0, fusion.ssg will _report all works in progress_ for each release build cycle. These warnings serve to prevent the _unintended_ updating of websites with missing HTML documents that should have been included but haven't because they are still marked as works in progress.
-
-<img src="{baseURL}/media/posts/WIPS-reporting.png" alt="imgage">
-
-
 ## tokens
 
-Simple token property values declared here are global to the project and replace all matching simple tokens declared in _all HTML documents_. If both a local simple token and a global simple token have the same name _the local simple token takes precedence_.
+Simple token property values declared here are global to the project and replace all matching simple tokens declared in _all HTML documents_. If both a local simple token and a global simple token have the same name _the local simple token takes precedence_. Please see <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens/#simple-tokens">Simple Tokens</a> for more information.
 
 - default: {}
 
 <aside>
 <header>
-<p><em>Example</em>: Declaring tokens.</p>
+<p><em>Example</em>: Declaring simple global tokens.</p>
 </header>
 <pre><code class="language-JSON">"tokens": {"version": "v1.0.0"}</code></pre>
 </aside>
-
-### Unresolved Simple Token Reporting
-<p class="ver">Introduced in v1.1.0
-
-At the end of each build cycle, fusion.ssg will report any unresolved simple tokens that it finds in your project's generated HTML documents. Please see <a href="{baseURL}/docs/{docsCurrentVersion}/htmldocuments/tokens/#simple-tokens">Simple Tokens</a> for more information.
 
 ## Conditional Includes
 
