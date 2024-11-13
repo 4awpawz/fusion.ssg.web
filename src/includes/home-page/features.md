@@ -1,15 +1,12 @@
+- Easily create new projects (\*\*\* batteries included \*\*\*).
 - Zero initial project configuration.
-- DOMless and serverless execution.
-- .ts, .tsx and .jsx compilation.
-- .tsx and .jsx sand-boxed execution.
-- Bultk HTML document generation via collection components.
-- package.json scripts for development and release builds.
-- CLI one-off development and release builds.
-- Base URL support for sites hosted in sub folders.
-- Works in progress ignored during release builds.
-- Works in progress reporting during release builds <span>(v1.2.0)</span>.
-- Blog posts with multiple categories and tags
-- Blog posts metadata exposed as simple tokens <span>(v1.2.0)</span>.
+- DOMless and serverless for really fast site generation.
+- Component compilation and sand-boxed execution.
+- Bulk HTML document generation.
+- Fully scripted development and release builds.
 - Beautified HTML and CSS documents.
-- Optional cache busting for release builds <span>(v1.2.0)</span>.
-- Conditional includes based on build strategy <span>(v1.2.0)</span>.
+- Cache busting for release builds (optional).
+- Blog posts, tags and categories support.
+- Works In Progress (WIPS) support.
+- Base URL support for sites hosted in sub folders.
+- Informative metrics reporting after every build cycle.
