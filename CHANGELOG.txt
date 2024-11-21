@@ -1,0 +1,25 @@
+4awpawz/fusion.ssg.web
+
+✓ #27: Add a change log to the repository. [ documentation ] [ Jeff Schwartz ] v1.3.0
+✓ #26: Update features list to reflect v1.3.0. [ documentation ] [ Jeff Schwartz ] v1.3.0
+✓ #25: Document wips under html documents. [ documentation ] [ Jeff Schwartz ] v1.3.0
+✓ #24: Document the baseURL token in the tokens document under HTML documents. [ documentation ] [ Jeff Schwartz ] v1.3.0
+✓ #23: Document baseURL is now supported in CSS files. [ documentation ] [ Jeff Schwartz ] v1.3.0
+✓ #22: Spacing and alignment of elements on the posts and blog pages require tweaking for conformity. [ revision ] [ Jeff Schwartz ] v1.3.0
+✓ #20: Document that user should remove missing 404 console log message from their project's browser-sync.js configuration. [ revision ] [ Jeff Schwartz ] v1.3.0
+✓ #18: Create release article for v1.3.0. [ documentation ] [ Jeff Schwartz ] v1.3.0
+✓ #17: In wips documentation, state that paths to folders to be ignored must end with a "/". [ documentation, revision ] [ Jeff Schwartz ] v1.3.0
+✓ #16: Document that the src/css/libs folder is reserved for 3rd party libraries. [ documentation ] [ Jeff Schwartz ] v1.3.0
+✓ #14: Document fpg's new --bare option. [ documentation, revision ] [ Jeff Schwartz ] v1.3.0
+✓ #12: Modify the documentation that states that templates must always have front matter. [ documentation, wontfix, revision ] [ Jeff Schwartz ] v1.3.0
+✓ #11: Update site to reflect the release of fusioin.ssg v1.2.0. [ documentation, revision ] [ Jeff Schwartz ] v1.2.0
+✓ #10: Update features list in home page and development pages to reflect features added in v1.2.0. [ documentation, revision ] [ Jeff Schwartz ] v1.2.0
+✓ #9: Docs for tokens and templates and posts should reflect the additional simple tokens added in v1.2.0. [ documentation, revision ] [ Jeff Schwartz ] No Milestone
+✓ #8: Front matter documentation of excerpts marker is missing. [ revision ] [ Jeff Schwartz ] >v1.0.0
+✓ #7: CLI documentation needs further refactoring. [ revision ] [ Jeff Schwartz ] v1.0.0
+✓ #6: Use npm package concurrently to agnostically run npm script commands in parallel. [ revision ] [ Jeff Schwartz ] v1.0.0
+✓ #5: Document support for 404.html documents. [ No Labels ] [ Jeff Schwartz ] v1.0.0
+✓ #3: Document support for Browsersync including browsersync-options.json. [ documentation, feature ] [ Jeff Schwartz ] v1.0.0
+✓ #1: Documentation should be versioned. [ feature ] [ Jeff Schwartz ] >v1.0.0
+
+| This report was created with Snitch 👉 @ https://github.com/4awpawz/snitch

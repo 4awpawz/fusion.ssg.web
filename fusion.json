@@ -2,7 +2,7 @@
     "postsFolder": "news",
     "wips": [
         "docs/tutorials/",
-        "posts/2024-11-15-v1.3.0.md"
+        "docs/v1/gettingstarted/cheatsheet.md"
     ],
     "conditionalIncludes": {
         "developmentOnly": [],

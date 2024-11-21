@@ -14,7 +14,7 @@ interface Props {
     asset: Asset
 }
 
-export const DocIndex = function ({ asset }: Props) {
+export const DocIndex = function({ asset }: Props) {
     const topic = asset.fm.data.docindex.topic;
     const subtopic = asset.fm.data.docindex.subtopic;
     return <aside>
@@ -29,7 +29,7 @@ export const DocIndex = function ({ asset }: Props) {
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/projectstructure" aria-current={subtopic === "projectstructure" && "page"}>Project Structure</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/htmldocnamingconvention" aria-current={subtopic === "htmldocnamingconvention" && "page"}>HTML Document Naming Convention</a></li>
                     <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/htmlfilepathsandurls" aria-current={subtopic === "htmlfilepathsandurls" && "page"}>HTML File Paths And URLS</a></li>
-                    <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/cheatsheet" aria-current={subtopic === "cheatsheet" && "page"}>Cheat Sheet</a></li>
+                    {/* <li><a class="secondary" href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/cheatsheet" aria-current={subtopic === "cheatsheet" && "page"}>Cheat Sheet</a></li> */}
                     {/* <li><a class="secondary" href="{baseURL}/docs/tutorials" aria-current={subtopic === "tutorials" && "page"}>Tutorials</a></li> */}
                 </ul>
             </details>
