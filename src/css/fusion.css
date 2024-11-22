@@ -428,6 +428,7 @@ nav a {
     color: var(--primary);
     padding-bottom: 1rem;
     text-align: center;
+    font-size: 2.3rem;
 }
 
 .why-fusion p {
