@@ -223,6 +223,7 @@ nav a {
 /* hero */
 
 .hero {
+    container-type: inline-size;
     text-align: center;
     background: var(--hero-background-gradient);
     letter-spacing: 2px;
@@ -240,10 +241,16 @@ nav a {
 
 .hero hgroup h1 {
     margin: 1rem auto;
-    font-size: 3.7rem;
+    font-size: 3rem;
     line-height: 1em;
     font-weight: 500;
     color: #000;
+}
+
+@container (min-width: 625px) {
+    .hero hgroup h1 {
+        font-size: 3.7rem;
+    }
 }
 
 .hero hgroup p {
