@@ -382,19 +382,17 @@ nav a {
 
 .examples h3 {
     text-align: center;
+    color: var(--primary);
+    font-size: 2.3rem;
+}
+
+.examples h4 {
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .examples pre code {
     font-size: 1rem;
-}
-
-.examples h3 {
-    color: var(--primary);
-}
-
-.examples h4 {
-    font-size: 2rem;
-    text-align: center;
 }
 
 .why-fusion article {
@@ -418,10 +416,6 @@ nav a {
     margin: 0;
     padding-block: 2rem;
     /* background-color: hsl(0 0% 25%); */
-}
-
-.examples h3 {
-    font-size: 2.5rem;
 }
 
 .why-fusion hgroup h3 {
