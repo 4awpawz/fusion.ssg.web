@@ -2,7 +2,7 @@ interface Props {
     target: string;
 }
 
-export const MainMenu = function({ target }: Props) {
+export const MainMenu = function ({ target }: Props) {
     return (
         <nav class="container-fluid topnav">
             <ul>
@@ -10,7 +10,7 @@ export const MainMenu = function({ target }: Props) {
                 <li><a class="contrast fixed" href="{baseURL}/"><strong>fusion.ssg</strong></a></li>
             </ul>
             <ul>
-                <li><a class="secondary" href="{baseURL}/#examples">Examples</a></li>
+                <li><a id="navbar-examples" class="secondary" href="{baseURL}/#examples">Examples</a></li>
                 <li><a class={target === "docs" ? "contrast" : "secondary"} href="{baseURL}/docs/v1/gettingstarted">Docs</a></li>
                 <li><a class={target === "news" ? "contrast" : "secondary"} href="{baseURL}/news">News</a></li>
                 <li><a aria-label="fusion.ssg Github Repositroy" href="https://github.com/4awpawz/fusion.ssg">
