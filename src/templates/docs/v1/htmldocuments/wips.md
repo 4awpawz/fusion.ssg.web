@@ -15,7 +15,7 @@ docindex: {
 
 _Works in progress_ or _wips_ are _files_ and _folders_ that are located in the _src/templates_ folder that aren't ready to be released yet and which should be ignored when building for release.
 
-To declare your project's works in progress, please see <a href="{baseURL}/docs/v1/configuration/fusionssg-configuration#wips">wips</a> for more information.
+You declare your project's works in progress in _fusion.json_, your project's configuration file, which is located in the project's root folder. Please see <a href="{baseURL}/docs/v1/configuration/fusionssg-configuration#wips">wips</a> for more information.
 
 <p class="ver">Introduced in v1.2.0</p>
 
