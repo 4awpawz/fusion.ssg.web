@@ -1,6 +1,14 @@
 {
     "development": {
+        "browser": [
+            "safari",
+            "firefox"
+        ]
     },
     "release": {
+        "browser": [
+            "safari",
+            "firefox"
+        ]
     }
 }
