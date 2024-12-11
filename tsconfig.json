@@ -12,7 +12,9 @@
         "noUnusedParameters": true,
         "noImplicitReturns": true,
         "noImplicitAny": true,
-        "typeRoots": ["node_modules/@types"],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
         "moduleDetection": "force",
         "ignoreDeprecations": "5.0"
     }
