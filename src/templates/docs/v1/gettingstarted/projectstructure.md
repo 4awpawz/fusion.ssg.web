@@ -11,12 +11,11 @@ docindex: {
 
 <em>GETTING STARTED</em>
 
-
 # Project Structure
 
 fusion.ssg projects will contain the files and folders that are depicted below.
 
-<p class="info">fusion.ssg's <a href="{baseURL}/docs/{docsCurrentVersion}/projectgenerator">project generator</a> relieves you of the burden of having to manually create and configure your projects.</p>
+<p class="info">fusion.ssg's <a href="{baseURL}/docs/{docsCurrentVersion}/gettingstarted/projectgenerator">project generator</a> relieves you of the burden of having to manually create and configure your projects.</p>
 
 <pre>
 
